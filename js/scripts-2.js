@@ -59,7 +59,7 @@
 
 	// =====================================================
 	//      MOBILE MENU
-	// =====================================================	
+	// =====================================================
 	var $menu = $("nav#menu").mmenu({
 		"extensions": ["pagedim-black", "theme-dark"], // "theme-dark" can be changed to: "theme-white"
 		counters: true,
@@ -174,35 +174,44 @@
 
 	// =====================================================
 	//      CALCULATOR ELEMENTS
-	// =====================================================	
+	// =====================================================
 
 	// Function to format item prices usign priceFormat plugin
 	function formatItemPrice() {
 		$('.price').priceFormat({
-			prefix: '$ ',
+			prefix: 'CHF ',
 			centsSeparator: '.',
-			thousandsSeparator: ','
+			thousandsSeparator: '`'
 		});
 	}
 
 	// Function to format total price usign priceFormat plugin
 	function formatTotalPrice() {
 		$('#total').priceFormat({
-			prefix: '$ ',
+			prefix: 'CHF ',
 			centsSeparator: '.',
-			thousandsSeparator: ','
+			thousandsSeparator: ''
 		});
 	}
 
 	// Function to set total title and price initially
 	function setTotalOnStart() {
 
-		$('#totalTitle').val('Total');
-		$('#total').val('$ 0.00');
+		$('#totalTitle').val('Kosten 1. Jahr: ');
+		$('#total').val('CHF 0.00');
 
+		$('#totalFollowingTitle').val('Kosten Folgejahr: ');
+		$('#totalFollowing').val('CHF 0.00');
 	}
 
 	// Variables for calculation
+
+	var dmpIsChecked = false;
+	var dmpTitle = '';
+	var dmpPrice = 0;
+	var dmpQuantity = 0;
+	var dmpSum = 0;
+
 	var singleOption1IsChecked = false;
 	var singleOption1Title = '';
 	var singleOption1Price = 0;
@@ -230,9 +239,26 @@
 	var extraOption2Price = 0;
 
 	var total = 0;
+	var total2 = 0;
 
 	// Function to manage the calculations and update summary
 	function updateSummary() {
+
+		//Get the current data from Desktop Medium Performance elements
+		dmpIsChecked = $('#dmp').is(':checked');
+		dmpTitle = $('#dmpTitle').text();
+		dmpPrice = $('#dmp').val();
+		dmpQuantity = $('#dmpQty').val();
+
+		//Update order summary with Desktop Medium Performance details
+		if (dmpIsChecked && (dmpQuantity != 0)){
+			dmpSum = (dmpPrice * 1) * (dmpQuantity * 1);
+			$('#dmpSumTot').html('<a href="javascript:;" id="dmpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + dmpTitle + ' x ' + dmpQuantity + '<span class="price">' + dmpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			dmpSum = 0;
+			clearSummaryLine('dmpSumTot');
+		}
 
 		// Get the current data from option1Single elements
 		singleOption1IsChecked = $('#option1Single').is(':checked');
@@ -254,7 +280,8 @@
 
 		}
 
-		// Get the current data from option2Single elements		
+		/*
+		// Get the current data from option2Single elements
 		singleOption2IsChecked = $('#option2Single').is(':checked');
 		singleOption2Title = $('#option2SingleTitle').text();
 		singleOption2Price = $('#option2Single').val();
@@ -294,7 +321,7 @@
 
 		}
 
-		// Get the current data from extraOption1 
+		// Get the current data from extraOption1
 		extraOption1IsChecked = $('#extraOption1').is(':checked');
 		extraOption1Title = $('#extraOption1Title').text();
 		extraOption1Price = $('#extraOption1').val();
@@ -312,7 +339,7 @@
 
 		}
 
-		// Get the current data from extraOption2 
+		// Get the current data from extraOption2
 		extraOption2IsChecked = $('#extraOption2').is(':checked');
 		extraOption2Title = $('#extraOption2Title').text();
 		extraOption2Price = $('#extraOption2').val();
@@ -323,16 +350,21 @@
 			$('#extraOption2Sum').html('<a href="javascript:;" id="extraOption2SumReset"><i class="fa fa-times-circle"></i></a> ' + extraOption2Title + '<span class="price">' + extraOption2Price.toFixed(2) + '</span>');
 			formatItemPrice();
 
-		} else { // If option in not checked			
+		} else { // If option in not checked
 
 			extraOption2Price = 0;
 			clearSummaryLine('extraOption2Sum');
 
 		}
+		*/
 
-		// Update total in order summary		
-		total = subSum1 + subSum2 + subSum3 + extraOption1Price + extraOption2Price;
+		// Update total in order summary
+		total = dmpSum + subSum1 + subSum2 + subSum3 + extraOption1Price + extraOption2Price;
+		total2 = dmpSum + subSum1;
+
 		$('#total').val(total.toFixed(2));
+		formatTotalPrice();
+		$('#totalFollowing').val(total2.toFixed(2));
 		formatTotalPrice();
 
 	}
@@ -340,23 +372,31 @@
 	// Function to save actual values with updating the hidden fields
 	function saveState() {
 
+		// Update hidden fields with Desktop Medium Performance details
+		$('#dmpTitleHidden').val(dmpTitle);
+		$('#dmpPriceHidden').val(dmpPrice);
+		$('#dmpSum').val(dmpSum);
+
 		// Update hidden fields with option1Single details
 		$('#option1Title').val(singleOption1Title);
 		$('#option1Price').val(singleOption1Price);
 		$('#subSum1').val(subSum1);
 
+		/*
 		// Update hidden fields with option2Single details
 		$('#option2Title').val(singleOption2Title);
 		$('#option2Price').val(singleOption2Price);
 		$('#subSum2').val(subSum2);
 
-		// Update hidden fields with option3Single details		
+		// Update hidden fields with option3Single details
 		$('#option3Title').val(singleOption3Title);
 		$('#option3Price').val(singleOption3Price);
 		$('#subSum3').val(subSum3);
+		*/
 
 		// Update hidden field total
 		$('#totalDue').val(total);
+		$('#totalFollowingDue').val(total2);
 
 	}
 
@@ -364,15 +404,20 @@
 	function clearSummaryLine(summaryLineName) {
 
 		if (summaryLineName == 'all') {
+			$('#dmpSumTot').html('');
 			$('#option1SingleSum').html('');
 			$('#option2SingleSum').html('');
 			$('#option3SingleSum').html('');
 			$('#extraOption1Sum').html('');
 			$('#extraOption2Sum').html('');
 		}
+		if (summaryLineName == 'dmpSumTot') {
+			$('#dmpSumTot').html('');
+		}
 		if (summaryLineName == 'option1SingleSum') {
 			$('#option1SingleSum').html('');
 		}
+		/*
 		if (summaryLineName == 'option2SingleSum') {
 			$('#option2SingleSum').html('');
 		}
@@ -385,36 +430,48 @@
 		if (summaryLineName == 'extraOption2Sum') {
 			$('#extraOption2Sum').html('');
 		}
+		 */
 
 	}
 
 	// Function to activate a given checkbox
 	function activateSingleOption(singleOptionName) {
 
+		if (singleOptionName == 'dmp'){
+			$('#dmp').prop('checked', true);
+		}
+
 		if (singleOptionName == 'option1Single') {
 			$('#option1Single').prop('checked', true);
 		}
+		/*
 		if (singleOptionName == 'option2Single') {
 			$('#option2Single').prop('checked', true);
 		}
 		if (singleOptionName == 'option3Single') {
 			$('#option3Single').prop('checked', true);
 		}
+		*/
 	}
 
 	// Function to reset the given checkbox
 	function resetCheckbox(optionName) {
 
 		if (optionName == 'all') {
+			$('#dmp').prop('checked', false);
 			$('#option1Single').prop('checked', false);
 			$('#option2Single').prop('checked', false);
 			$('#option3Single').prop('checked', false);
 			$('#extraOption1').prop('checked', false);
 			$('#extraOption2').prop('checked', false);
 		}
+		if (optionName == 'dmp') {
+			$('#dmp').prop('checked', false);
+		}
 		if (optionName == 'option1Single') {
 			$('#option1Single').prop('checked', false);
 		}
+		/*
 		if (optionName == 'option2Single') {
 			$('#option2Single').prop('checked', false);
 		}
@@ -427,6 +484,7 @@
 		if (optionName == 'extraOption2') {
 			$('#extraOption2').prop('checked', false);
 		}
+		*/
 
 	}
 
@@ -434,10 +492,18 @@
 	function reValidateTotal() {
 
 		$('#total').parsley().validate();
+		$('#totalFollowing').parsley().validate();
 	}
 
 	// Set total title and price initially
 	setTotalOnStart();
+
+	// When dmp is clicked
+	$('#dmp').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
 
 	// When option1Single is clicked
 	$('#option1Single').on('click', function () {
@@ -446,6 +512,7 @@
 		reValidateTotal();
 	});
 
+	/*
 	// When option2Single is clicked
 	$('#option2Single').on('click', function () {
 		updateSummary();
@@ -473,6 +540,17 @@
 		saveState();
 		reValidateTotal();
 	});
+	*/
+
+	// Delete Desktop Medium Performance in summary list
+	$('#dmpSumTot').delegate('#dmpSumTotReset', 'click', function () {
+		clearSummaryLine('dmpSumTot');
+		resetCheckbox('dmp');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
 
 	// Delete line 1 in summary list
 	$('#option1SingleSum').delegate('#option1SingleSumReset', 'click', function () {
@@ -492,6 +570,7 @@
 		reValidateTotal();
 	});
 
+	/*
 	// Delete line 3 in summary list
 	$('#option3SingleSum').delegate('#option3SingleSumReset', 'click', function () {
 		clearSummaryLine('option3SingleSum');
@@ -518,8 +597,9 @@
 		saveState();
 		reValidateTotal();
 	});
+	*/
 
-	// If reset is clicked, set the selected item to default	
+	// If reset is clicked, set the selected item to default
 	$('#resetBtn').on('click', function () {
 		clearSummaryLine('all');
 		resetCheckbox('all');
@@ -528,8 +608,66 @@
 	});
 
 	// =====================================================
+	//      RANGE SLIDER Desktop Medium Performance
+	// =====================================================
+	var $rangeDMP = $('#dmpRangeSlider'),
+		$inputDMP = $('#dmpQty'),
+		instanceDMP,
+		min = 1,
+		max = 50;
+
+	$rangeDMP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputDMP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputDMP.prop('value', data.from);
+			if (!dmpIsChecked) {
+				activateSingleOption('dmp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceDMP = $rangeDMP.data("ionRangeSlider");
+
+	$inputDMP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$input.val(min);
+		} else if (val > max) {
+			val = max;
+			$input.val(max);
+		}
+
+		instanceDMP.update({
+			from: val
+		});
+
+		if (!dmpIsChecked) {
+			activateSingleOption('dmp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
 	//      RANGE SLIDER 1
-	// =====================================================	
+	// =====================================================
 	var $range = $('#option1SingleRangeSlider'),
 		$input = $('#option1SingleQty'),
 		instance,
@@ -585,9 +723,10 @@
 
 	});
 
+	/*
 	// =====================================================
 	//      RANGE SLIDER 2
-	// =====================================================	
+	// =====================================================
 	var $range2 = $('#option2SingleRangeSlider'),
 		$input2 = $('#option2SingleQty'),
 		instance2,
@@ -646,7 +785,7 @@
 
 	// =====================================================
 	//      RANGE SLIDER 3
-	// =====================================================	
+	// =====================================================
 	var $range3 = $('#option3SingleRangeSlider'),
 		$input3 = $('#option3SingleQty'),
 		instance3,
@@ -702,10 +841,11 @@
 		saveState();
 
 	});
+	*/
 
 	// =====================================================
 	//      FORM LABELS
-	// =====================================================		
+	// =====================================================
 	new FloatLabels('#personalDetails', {
 		style: 1
 	});
@@ -755,7 +895,7 @@
 
 	// Whole form validation
 	$('#orderForm').parsley();
-	
+
 	// Clear parsley empty elements
 	if ('#orderForm'.length > 0) {
 		$('#orderForm').parsley().on('field:success', function () {

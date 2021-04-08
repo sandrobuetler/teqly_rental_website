@@ -435,7 +435,7 @@ a.social-link {
 }
 
 a.social-link:visited {
-	color: #999;	
+	color: #999;
 }
 
 .social-links li {
@@ -852,7 +852,7 @@ ul#faqNav li a:hover, ul#faqNav li a#active, ul#faqNav li a.active {
 	color: #ff7b79;
 }
 
-#markerInfo a:hover {	
+#markerInfo a:hover {
 	text-decoration: underline;
 }
 
@@ -1002,6 +1002,10 @@ input.form-control:disabled {
 }
 
 #total {
+	text-align: right;
+}
+
+#totalFollowing {
 	text-align: right;
 }
 
