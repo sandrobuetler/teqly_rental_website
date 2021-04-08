@@ -1,8 +1,180 @@
 (function ($) {
 
+	"use strict";
+
+	// =====================================================
+	//      PRELOADER
+	// =====================================================
+	$(window).on("load", function () {
+		'use strict';
+		$('[data-loader="circle-side"]').fadeOut(); // will first fade out the loading animation
+		$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+		var $hero = $('.hero-home .content');
+		var $hero_v = $('#hero_video .content ');
+		$hero.find('h3, p, form').addClass('fadeInUp animated');
+		$hero.find('.btn-1').addClass('fadeIn animated');
+		$hero_v.find('.h3, p, form').addClass('fadeInUp animated');
+		$(window).scroll();
+	})
+
+	// =====================================================
+	//      BACK TO TOP BUTTON
+	// =====================================================
+	function scrollToTop() {
+		$('html, body').animate({ scrollTop: 0 }, 500, 'easeInOutExpo');
+	}
+
+	$(window).on('scroll', function () {
+		if ($(this).scrollTop() > 100) {
+			$('#toTop').fadeIn('slow');
+		} else {
+			$('#toTop').fadeOut('slow');
+		}
+	});
+
+	$('#toTop').on('click', function () {
+		scrollToTop();
+		return false;
+	});
+
+	// =====================================================
+	//      NAVBAR
+	// =====================================================
+	$(window).on('scroll load', function () {
+
+		if ($(window).scrollTop() >= 1) {
+			$('.main-header').addClass('active');
+		} else {
+			$('.main-header').removeClass('active');
+		}
+
+	});
+
+	// =====================================================
+	//      STICKY SIDEBAR SETUP
+	// =====================================================
+	$('#mainContent, #sidebar').theiaStickySidebar({
+		additionalMarginTop: 90
+	});
+
+	// =====================================================
+	//      MOBILE MENU
+	// =====================================================	
+	var $menu = $("nav#menu").mmenu({
+		"extensions": ["pagedim-black", "theme-dark"], // "theme-dark" can be changed to: "theme-white"
+		counters: true,
+		keyboardNavigation: {
+			enable: true,
+			enhance: true
+		},
+		navbar: {
+			title: 'MENU'
+		},
+		navbars: [{ position: 'bottom', content: ['<a href="#">© 2021 Costy</a>'] }]
+	},
+		{
+			// configuration
+			clone: true,
+		});
+	var $icon = $("#hamburger");
+	var API = $menu.data("mmenu");
+	$icon.on("click", function () {
+		API.open();
+	});
+	API.bind("open:finish", function () {
+		setTimeout(function () {
+			$icon.addClass("is-active");
+		}, 100);
+	});
+	API.bind("close:finish", function () {
+		setTimeout(function () {
+			$icon.removeClass("is-active");
+		}, 100);
+	});
+
+	// =====================================================
+	//      FAQ NICE SCROLL
+	// =====================================================
+	var position;
+
+	$('a.nice-scroll-faq').on('click', function (e) {
+		e.preventDefault();
+		position = $($(this).attr('href')).offset().top - 125;
+		$('body, html').animate({
+			scrollTop: position
+		}, 500, 'easeInOutExpo');
+	});
+
+	$('ul#faqNav li a').on('click', function () {
+		$('ul#faqNav li a.active').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	// =====================================================
+	//      FAQ ACCORDION
+	// =====================================================
+	function toggleChevron(e) {
+		$(e.target).prev('.card-header').find('i.indicator').toggleClass('icon-minus icon-plus');
+	}
+	$('.faq-accordion').on('hidden.bs.collapse shown.bs.collapse', toggleChevron);
+
+	// =====================================================
+	//      GALLERY
+	// =====================================================
+	// Single Image
+	$('#openImage1').magnificPopup({
+		items: {
+			src: 'img/gallery/1.jpg',
+			title: 'Image related to Option Single 1'
+		},
+		type: 'image',
+		fixedContentPos: false,
+	});
+
+	$('#openSimpleMailSummaryImage').magnificPopup({
+		items: {
+			src: 'img/presentation/simple-mail-summary.jpg',
+			title: 'Simple Mail Summary'
+		},
+		type: 'image',
+		fixedContentPos: false,
+	});
+
+	// Single Video
+	$('#openVideo1').magnificPopup({
+		items: {
+			src: 'https://vimeo.com/158520582'
+		},
+		type: 'iframe',
+		fixedContentPos: false,
+	});
+
+	// Image Gallery
+	$('#openGallery1').magnificPopup({
+		items: [
+			{
+				src: 'img/gallery/1.jpg',
+				title: 'Image related to Option 1.1'
+			},
+			{
+				src: 'img/gallery/2.jpg',
+				title: 'Image related to Option 1.2'
+			},
+			{
+				src: 'img/gallery/3.jpg',
+				title: 'Image related to Option 1.3'
+			}
+		],
+		gallery: {
+			enabled: true
+		},
+		type: 'image',
+		fixedContentPos: false,
+	});
+
 	// =====================================================
 	//      CALCULATOR ELEMENTS
-	// =====================================================
+	// =====================================================	
 
 	// Function to format item prices usign priceFormat plugin
 	function formatItemPrice() {
@@ -82,7 +254,7 @@
 
 		}
 
-		// Get the current data from option2Single elements
+		// Get the current data from option2Single elements		
 		singleOption2IsChecked = $('#option2Single').is(':checked');
 		singleOption2Title = $('#option2SingleTitle').text();
 		singleOption2Price = $('#option2Single').val();
@@ -122,7 +294,7 @@
 
 		}
 
-		// Get the current data from extraOption1
+		// Get the current data from extraOption1 
 		extraOption1IsChecked = $('#extraOption1').is(':checked');
 		extraOption1Title = $('#extraOption1Title').text();
 		extraOption1Price = $('#extraOption1').val();
@@ -140,7 +312,7 @@
 
 		}
 
-		// Get the current data from extraOption2
+		// Get the current data from extraOption2 
 		extraOption2IsChecked = $('#extraOption2').is(':checked');
 		extraOption2Title = $('#extraOption2Title').text();
 		extraOption2Price = $('#extraOption2').val();
@@ -151,14 +323,14 @@
 			$('#extraOption2Sum').html('<a href="javascript:;" id="extraOption2SumReset"><i class="fa fa-times-circle"></i></a> ' + extraOption2Title + '<span class="price">' + extraOption2Price.toFixed(2) + '</span>');
 			formatItemPrice();
 
-		} else { // If option in not checked
+		} else { // If option in not checked			
 
 			extraOption2Price = 0;
 			clearSummaryLine('extraOption2Sum');
 
 		}
 
-		// Update total in order summary
+		// Update total in order summary		
 		total = subSum1 + subSum2 + subSum3 + extraOption1Price + extraOption2Price;
 		$('#total').val(total.toFixed(2));
 		formatTotalPrice();
@@ -178,7 +350,7 @@
 		$('#option2Price').val(singleOption2Price);
 		$('#subSum2').val(subSum2);
 
-		// Update hidden fields with option3Single details
+		// Update hidden fields with option3Single details		
 		$('#option3Title').val(singleOption3Title);
 		$('#option3Price').val(singleOption3Price);
 		$('#subSum3').val(subSum3);
@@ -347,7 +519,7 @@
 		reValidateTotal();
 	});
 
-	// If reset is clicked, set the selected item to default
+	// If reset is clicked, set the selected item to default	
 	$('#resetBtn').on('click', function () {
 		clearSummaryLine('all');
 		resetCheckbox('all');
@@ -357,7 +529,7 @@
 
 	// =====================================================
 	//      RANGE SLIDER 1
-	// =====================================================
+	// =====================================================	
 	var $range = $('#option1SingleRangeSlider'),
 		$input = $('#option1SingleQty'),
 		instance,
@@ -415,7 +587,7 @@
 
 	// =====================================================
 	//      RANGE SLIDER 2
-	// =====================================================
+	// =====================================================	
 	var $range2 = $('#option2SingleRangeSlider'),
 		$input2 = $('#option2SingleQty'),
 		instance2,
@@ -474,7 +646,7 @@
 
 	// =====================================================
 	//      RANGE SLIDER 3
-	// =====================================================
+	// =====================================================	
 	var $range3 = $('#option3SingleRangeSlider'),
 		$input3 = $('#option3SingleQty'),
 		instance3,
@@ -533,7 +705,7 @@
 
 	// =====================================================
 	//      FORM LABELS
-	// =====================================================
+	// =====================================================		
 	new FloatLabels('#personalDetails', {
 		style: 1
 	});
@@ -583,7 +755,7 @@
 
 	// Whole form validation
 	$('#orderForm').parsley();
-
+	
 	// Clear parsley empty elements
 	if ('#orderForm'.length > 0) {
 		$('#orderForm').parsley().on('field:success', function () {
