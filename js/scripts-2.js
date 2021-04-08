@@ -192,25 +192,26 @@
 			centsSeparator: '.',
 			thousandsSeparator: '`'
 		});
+		/*
 		$('#totalFollowing').priceFormat({
 			prefix: 'CHF ',
 			centsSeparator: '.',
 			thousandsSeparator: '`'
 		});
+		*/
 
 	}
 
 	// Function to set total title and price initially
 	function setTotalOnStart() {
 
-		/*
-		$('#totalTitle').val('Kosten 1. Jahr: ');
-		 */
 		$('#totalTitle').val('Kosten pro Jahr: ');
 		$('#total').val('CHF 0.00');
 
+		/*
 		$('#totalFollowingTitle').val('Kosten Folgejahr: ');
 		$('#totalFollowing').val('CHF 0.00');
+		 */
 	}
 
 	// Variables for calculation
@@ -542,7 +543,9 @@
 	function reValidateTotal() {
 
 		$('#total').parsley().validate();
+		/*
 		$('#totalFollowing').parsley().validate();
+		 */
 	}
 
 	// Set total title and price initially
