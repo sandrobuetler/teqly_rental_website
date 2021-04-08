@@ -190,14 +190,23 @@
 		$('#total').priceFormat({
 			prefix: 'CHF ',
 			centsSeparator: '.',
-			thousandsSeparator: ''
+			thousandsSeparator: '`'
 		});
+		$('#totalFollowing').priceFormat({
+			prefix: 'CHF ',
+			centsSeparator: '.',
+			thousandsSeparator: '`'
+		});
+
 	}
 
 	// Function to set total title and price initially
 	function setTotalOnStart() {
 
+		/*
 		$('#totalTitle').val('Kosten 1. Jahr: ');
+		 */
+		$('#totalTitle').val('Kosten pro Jahr: ');
 		$('#total').val('CHF 0.00');
 
 		$('#totalFollowingTitle').val('Kosten Folgejahr: ');
@@ -212,31 +221,41 @@
 	var dmpQuantity = 0;
 	var dmpSum = 0;
 
-	var singleOption1IsChecked = false;
-	var singleOption1Title = '';
-	var singleOption1Price = 0;
-	var actualQty1 = 0;
-	var subSum1 = 0;
+	var dhpIsChecked = false;
+	var dhpTitle = '';
+	var dhpPrice = 0;
+	var dhpQuantity = 0;
+	var dhpSum = 0;
 
-	var singleOption2IsChecked = false;
-	var singleOption2Title = '';
-	var singleOption2Price = 0;
-	var actualQty2 = 0;
-	var subSum2 = 0;
+	var lmpIsChecked = false;
+	var lmpTitle = '';
+	var lmpPrice = 0;
+	var lmpQuantity = 0;
+	var lmpSum = 0;
 
-	var singleOption3IsChecked = false;
-	var singleOption3Title = '';
-	var singleOption3Price = 0;
-	var actualQty3 = 0;
-	var subSum3 = 0;
+	var lhpIsChecked = false;
+	var lhpTitle = '';
+	var lhpPrice = 0;
+	var lhpQuantity = 0;
+	var lhpSum = 0;
 
-	var extraOption1IsChecked = false;
-	var extraOption1Title = '';
-	var extraOption1Price = 0;
+	var sspIsChecked = false;
+	var sspTitle = '';
+	var sspPrice = 0;
+	var sspQuantity = 0;
+	var sspSum = 0;
 
-	var extraOption2IsChecked = false;
-	var extraOption2Title = '';
-	var extraOption2Price = 0;
+	var smpIsChecked = false;
+	var smpTitle = '';
+	var smpPrice = 0;
+	var smpQuantity = 0;
+	var smpSum = 0;
+
+	var shpIsChecked = false;
+	var shpTitle = '';
+	var shpPrice = 0;
+	var shpQuantity = 0;
+	var shpSum = 0;
 
 	var total = 0;
 	var total2 = 0;
@@ -260,107 +279,105 @@
 			clearSummaryLine('dmpSumTot');
 		}
 
-		// Get the current data from option1Single elements
-		singleOption1IsChecked = $('#option1Single').is(':checked');
-		singleOption1Title = $('#option1SingleTitle').text();
-		singleOption1Price = $('#option1Single').val();
-		actualQty1 = $('#option1SingleQty').val();
+		//Get the current data from Desktop High Performance elements
+		dhpIsChecked = $('#dhp').is(':checked');
+		dhpTitle = $('#dhpTitle').text();
+		dhpPrice = $('#dhp').val();
+		dhpQuantity = $('#dhpQty').val();
 
-		// Update order summary with option1Single details
-		if (singleOption1IsChecked && (actualQty1 != 0)) {
-
-			subSum1 = (singleOption1Price * 1) * (actualQty1 * 1);
-			$('#option1SingleSum').html('<a href="javascript:;" id="option1SingleSumReset"><i class="fa fa-times-circle"></i></a> ' + singleOption1Title + ' x ' + actualQty1 + '<span class="price">' + subSum1.toFixed(2) + '</span>');
-			formatItemPrice();
-
-		} else { // If option is not checked
-
-			subSum1 = 0;
-			clearSummaryLine('option1SingleSum');
-
+		//Update order summary with Desktop High Performance details
+		if (dhpIsChecked && (dhpQuantity != 0)){
+			dhpSum = (dhpPrice * 1) * (dhpQuantity * 1);
+			$('#dhpSumTot').html('<a href="javascript:;" id="dhpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + dhpTitle + ' x ' + dhpQuantity + '<span class="price">' + dhpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			dhpSum = 0;
+			clearSummaryLine('dhpSumTot');
 		}
 
-		/*
-		// Get the current data from option2Single elements
-		singleOption2IsChecked = $('#option2Single').is(':checked');
-		singleOption2Title = $('#option2SingleTitle').text();
-		singleOption2Price = $('#option2Single').val();
-		actualQty2 = $('#option2SingleQty').val();
+		//Get the current data from Laptop Medium Performance elements
+		lmpIsChecked = $('#lmp').is(':checked');
+		lmpTitle = $('#lmpTitle').text();
+		lmpPrice = $('#lmp').val();
+		lmpQuantity = $('#lmpQty').val();
 
-		// Update order summary with option2Single details
-		if (singleOption2IsChecked && (actualQty2 != 0)) {
-
-			subSum2 = (singleOption2Price * 1) * (actualQty2 * 1);
-			$('#option2SingleSum').html('<a href="javascript:;" id="option2SingleSumReset"><i class="fa fa-times-circle"></i></a> ' + singleOption2Title + ' x ' + actualQty2 + '<span class="price">' + subSum2.toFixed(2) + '</span>');
-			formatItemPrice();
-
-		} else { // If option is not checked
-
-			subSum2 = 0;
-			clearSummaryLine('option2SingleSum');
-
+		//Update order summary with Laptop Medium Performance details
+		if (lmpIsChecked && (lmpQuantity != 0)){
+			lmpSum = (lmpPrice * 1) * (lmpQuantity * 1);
+			$('#lmpSumTot').html('<a href="javascript:;" id="lmpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + lmpTitle + ' x ' + lmpQuantity + '<span class="price">' + lmpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			lmpSum = 0;
+			clearSummaryLine('lmpSumTot');
 		}
 
-		// Get the current data from option3Single elements
-		singleOption3IsChecked = $('#option3Single').is(':checked');
-		singleOption3Title = $('#option3SingleTitle').text();
-		singleOption3Price = $('#option3Single').val();
-		actualQty3 = $('#option3SingleQty').val();
+		//Get the current data from Laptop High Performance elements
+		lhpIsChecked = $('#lhp').is(':checked');
+		lhpTitle = $('#lhpTitle').text();
+		lhpPrice = $('#lhp').val();
+		lhpQuantity = $('#lhpQty').val();
 
-		// Update order summary with option3Single details
-		if (singleOption3IsChecked && (actualQty3 != 0)) {
-
-			subSum3 = (singleOption3Price * 1) * (actualQty3 * 1);
-			$('#option3SingleSum').html('<a href="javascript:;" id="option3SingleSumReset"><i class="fa fa-times-circle"></i></a> ' + singleOption3Title + ' x ' + actualQty3 + '<span class="price">' + subSum3.toFixed(2) + '</span>');
-			formatItemPrice();
-
-		} else { // If option is not checked
-
-			subSum3 = 0;
-			clearSummaryLine('option3SingleSum');
-
+		//Update order summary with Laptop High Performance details
+		if (lhpIsChecked && (lhpQuantity != 0)){
+			lhpSum = (lhpPrice * 1) * (lhpQuantity * 1);
+			$('#lhpSumTot').html('<a href="javascript:;" id="lhpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + lhpTitle + ' x ' + lhpQuantity + '<span class="price">' + lhpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			lhpSum = 0;
+			clearSummaryLine('lhpSumTot');
 		}
 
-		// Get the current data from extraOption1
-		extraOption1IsChecked = $('#extraOption1').is(':checked');
-		extraOption1Title = $('#extraOption1Title').text();
-		extraOption1Price = $('#extraOption1').val();
+		//Get the current data from Server Standard Performance elements
+		sspIsChecked = $('#ssp').is(':checked');
+		sspTitle = $('#sspTitle').text();
+		sspPrice = $('#ssp').val();
+		sspQuantity = $('#sspQty').val();
 
-		if (extraOption1IsChecked) {
-
-			extraOption1Price = extraOption1Price * 1;
-			$('#extraOption1Sum').html('<a href="javascript:;" id="extraOption1SumReset"><i class="fa fa-times-circle"></i></a> ' + extraOption1Title + '<span class="price">' + extraOption1Price.toFixed(2) + '</span>');
-			formatItemPrice();
-
-		} else { // If option is not checked
-
-			extraOption1Price = 0;
-			clearSummaryLine('extraOption1Sum');
-
+		//Update order summary with Server Standard Performance details
+		if (sspIsChecked && (sspQuantity != 0)){
+			sspSum = (sspPrice * 1) * (sspQuantity * 1);
+			$('#sspSumTot').html('<a href="javascript:;" id="sspSumTotReset"><i class="fa fa-times-circle"></i></a> ' + sspTitle + ' x ' + sspQuantity + '<span class="price">' + sspSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			sspSum = 0;
+			clearSummaryLine('sspSumTot');
 		}
 
-		// Get the current data from extraOption2
-		extraOption2IsChecked = $('#extraOption2').is(':checked');
-		extraOption2Title = $('#extraOption2Title').text();
-		extraOption2Price = $('#extraOption2').val();
+		//Get the current data from Server Medium Performance elements
+		smpIsChecked = $('#smp').is(':checked');
+		smpTitle = $('#smpTitle').text();
+		smpPrice = $('#smp').val();
+		smpQuantity = $('#smpQty').val();
 
-		if (extraOption2IsChecked) {
-
-			extraOption2Price = extraOption2Price * 1;
-			$('#extraOption2Sum').html('<a href="javascript:;" id="extraOption2SumReset"><i class="fa fa-times-circle"></i></a> ' + extraOption2Title + '<span class="price">' + extraOption2Price.toFixed(2) + '</span>');
-			formatItemPrice();
-
-		} else { // If option in not checked
-
-			extraOption2Price = 0;
-			clearSummaryLine('extraOption2Sum');
-
+		//Update order summary with Server Medium Performance details
+		if (smpIsChecked && (smpQuantity != 0)){
+			smpSum = (smpPrice * 1) * (smpQuantity * 1);
+			$('#smpSumTot').html('<a href="javascript:;" id="smpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + smpTitle + ' x ' + smpQuantity + '<span class="price">' + smpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			smpSum = 0;
+			clearSummaryLine('smpSumTot');
 		}
-		*/
+
+		//Get the current data from Server High Performance elements
+		shpIsChecked = $('#shp').is(':checked');
+		shpTitle = $('#shpTitle').text();
+		shpPrice = $('#shp').val();
+		shpQuantity = $('#shpQty').val();
+
+		//Update order summary with Server High Performance details
+		if (shpIsChecked && (shpQuantity != 0)){
+			shpSum = (shpPrice * 1) * (shpQuantity * 1);
+			$('#shpSumTot').html('<a href="javascript:;" id="shpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + shpTitle + ' x ' + shpQuantity + '<span class="price">' + shpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			shpSum = 0;
+			clearSummaryLine('shpSumTot');
+		}
 
 		// Update total in order summary
-		total = dmpSum + subSum1 + subSum2 + subSum3 + extraOption1Price + extraOption2Price;
-		total2 = dmpSum + subSum1;
+		total = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum;
+		total2 = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum;
 
 		$('#total').val(total.toFixed(2));
 		formatTotalPrice();
@@ -377,22 +394,35 @@
 		$('#dmpPriceHidden').val(dmpPrice);
 		$('#dmpSum').val(dmpSum);
 
-		// Update hidden fields with option1Single details
-		$('#option1Title').val(singleOption1Title);
-		$('#option1Price').val(singleOption1Price);
-		$('#subSum1').val(subSum1);
+		// Update hidden fields with Desktop High Performance details
+		$('#dhpTitleHidden').val(dhpTitle);
+		$('#dhpPriceHidden').val(dhpPrice);
+		$('#dhpSum').val(dhpSum);
 
-		/*
-		// Update hidden fields with option2Single details
-		$('#option2Title').val(singleOption2Title);
-		$('#option2Price').val(singleOption2Price);
-		$('#subSum2').val(subSum2);
+		// Update hidden fields with Laptop Medium Performance details
+		$('#lmpTitleHidden').val(lmpTitle);
+		$('#lmpPriceHidden').val(lmpPrice);
+		$('#lmpSum').val(lmpSum);
 
-		// Update hidden fields with option3Single details
-		$('#option3Title').val(singleOption3Title);
-		$('#option3Price').val(singleOption3Price);
-		$('#subSum3').val(subSum3);
-		*/
+		// Update hidden fields with Laptop High Performance details
+		$('#lhpTitleHidden').val(lhpTitle);
+		$('#lhpPriceHidden').val(lhpPrice);
+		$('#lhpSum').val(lhpSum);
+
+		// Update hidden fields with Server Standard Performance details
+		$('#sspTitleHidden').val(sspTitle);
+		$('#sspPriceHidden').val(sspPrice);
+		$('#sspSum').val(sspSum);
+
+		// Update hidden fields with Server Medium Performance details
+		$('#smpTitleHidden').val(smpTitle);
+		$('#smpPriceHidden').val(smpPrice);
+		$('#smpSum').val(smpSum);
+
+		// Update hidden fields with Server High Performance details
+		$('#shpTitleHidden').val(shpTitle);
+		$('#shpPriceHidden').val(shpPrice);
+		$('#shpSum').val(shpSum);
 
 		// Update hidden field total
 		$('#totalDue').val(total);
@@ -405,6 +435,13 @@
 
 		if (summaryLineName == 'all') {
 			$('#dmpSumTot').html('');
+			$('#dhpSumTot').html('');
+			$('#lmpSumTot').html('');
+			$('#lhpSumTot').html('');
+			$('#sspSumTot').html('');
+			$('#smpSumTot').html('');
+			$('#shpSumTot').html('');
+			$('#systemabbildSumTot').html('');
 			$('#option1SingleSum').html('');
 			$('#option2SingleSum').html('');
 			$('#option3SingleSum').html('');
@@ -414,25 +451,25 @@
 		if (summaryLineName == 'dmpSumTot') {
 			$('#dmpSumTot').html('');
 		}
-		if (summaryLineName == 'option1SingleSum') {
-			$('#option1SingleSum').html('');
+		if (summaryLineName == 'dhpSumTot') {
+			$('#dhpSumTot').html('');
 		}
-		/*
-		if (summaryLineName == 'option2SingleSum') {
-			$('#option2SingleSum').html('');
+		if (summaryLineName == 'lmpSumTot') {
+			$('#lmpSumTot').html('');
 		}
-		if (summaryLineName == 'option3SingleSum') {
-			$('#option3SingleSum').html('');
+		if (summaryLineName == 'lhpSumTot') {
+			$('#lhpSumTot').html('');
 		}
-		if (summaryLineName == 'extraOption1Sum') {
-			$('#extraOption1Sum').html('');
+		if (summaryLineName == 'sspSumTot') {
+			$('#sspSumTot').html('');
 		}
-		if (summaryLineName == 'extraOption2Sum') {
-			$('#extraOption2Sum').html('');
+		if (summaryLineName == 'smpSumTot') {
+			$('#smpSumTot').html('');
 		}
-		 */
-
-	}
+		if (summaryLineName == 'shpSumTot') {
+			$('#shpSumTot').html('');
+		}
+			}
 
 	// Function to activate a given checkbox
 	function activateSingleOption(singleOptionName) {
@@ -441,17 +478,29 @@
 			$('#dmp').prop('checked', true);
 		}
 
-		if (singleOptionName == 'option1Single') {
-			$('#option1Single').prop('checked', true);
+		if (singleOptionName == 'dhp'){
+			$('#dhp').prop('checked', true);
 		}
-		/*
-		if (singleOptionName == 'option2Single') {
-			$('#option2Single').prop('checked', true);
+
+		if (singleOptionName == 'lmp'){
+			$('#lmp').prop('checked', true);
 		}
-		if (singleOptionName == 'option3Single') {
-			$('#option3Single').prop('checked', true);
+
+		if (singleOptionName == 'lhp'){
+			$('#lhp').prop('checked', true);
 		}
-		*/
+
+		if (singleOptionName == 'ssp'){
+			$('#ssp').prop('checked', true);
+		}
+
+		if (singleOptionName == 'smp'){
+			$('#smp').prop('checked', true);
+		}
+
+		if (singleOptionName == 'shp'){
+			$('#shp').prop('checked', true);
+		}
 	}
 
 	// Function to reset the given checkbox
@@ -459,33 +508,34 @@
 
 		if (optionName == 'all') {
 			$('#dmp').prop('checked', false);
-			$('#option1Single').prop('checked', false);
-			$('#option2Single').prop('checked', false);
-			$('#option3Single').prop('checked', false);
-			$('#extraOption1').prop('checked', false);
-			$('#extraOption2').prop('checked', false);
-		}
+			$('#dhp').prop('checked', false);
+			$('#lmp').prop('checked', false);
+			$('#lhp').prop('checked', false);
+			$('#ssp').prop('checked', false);
+			$('#smp').prop('checked', false);
+			$('#shp').prop('checked', false);
+					}
 		if (optionName == 'dmp') {
 			$('#dmp').prop('checked', false);
 		}
-		if (optionName == 'option1Single') {
-			$('#option1Single').prop('checked', false);
+		if (optionName == 'dhp') {
+			$('#dhp').prop('checked', false);
 		}
-		/*
-		if (optionName == 'option2Single') {
-			$('#option2Single').prop('checked', false);
+		if (optionName == 'lmp') {
+			$('#lmp').prop('checked', false);
 		}
-		if (optionName == 'option3Single') {
-			$('#option3Single').prop('checked', false);
+		if (optionName == 'lhp') {
+			$('#lhp').prop('checked', false);
 		}
-		if (optionName == 'extraOption1') {
-			$('#extraOption1').prop('checked', false);
+		if (optionName == 'ssp') {
+			$('#ssp').prop('checked', false);
 		}
-		if (optionName == 'extraOption2') {
-			$('#extraOption2').prop('checked', false);
+		if (optionName == 'smp') {
+			$('#smp').prop('checked', false);
 		}
-		*/
-
+		if (optionName == 'shp') {
+			$('#shp').prop('checked', false);
+		}
 	}
 
 	// Function to re-validate total price
@@ -498,49 +548,54 @@
 	// Set total title and price initially
 	setTotalOnStart();
 
-	// When dmp is clicked
+	// When Desktop Medium Performance is clicked
 	$('#dmp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// When option1Single is clicked
-	$('#option1Single').on('click', function () {
+	// When Desktop High Performance is clicked
+	$('#dhp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	/*
-	// When option2Single is clicked
-	$('#option2Single').on('click', function () {
+	// When Laptop Medium Performance is clicked
+	$('#lmp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// When option3Single is clicked
-	$('#option3Single').on('click', function () {
+	// When Laptop High Performance is clicked
+	$('#lhp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// When extraOption1 is checked
-	$('#extraOption1').on('click', function () {
+	// When Server Standard Performance is clicked
+	$('#ssp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// When extraOption2 is checked
-	$('#extraOption2').on('click', function () {
+	// When Server Medium Performance is clicked
+	$('#smp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
-	*/
+
+	// When Server High Performance is clicked
+	$('#shp').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
 
 	// Delete Desktop Medium Performance in summary list
 	$('#dmpSumTot').delegate('#dmpSumTotReset', 'click', function () {
@@ -551,53 +606,59 @@
 		reValidateTotal();
 	});
 
-
-	// Delete line 1 in summary list
-	$('#option1SingleSum').delegate('#option1SingleSumReset', 'click', function () {
-		clearSummaryLine('option1SingleSum');
-		resetCheckbox('option1Single');
+	// Delete Desktop High Performance in summary list
+	$('#dhpSumTot').delegate('#dhpSumTotReset', 'click', function () {
+		clearSummaryLine('dhpSumTot');
+		resetCheckbox('dhp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// Delete line 2 in summary list
-	$('#option2SingleSum').delegate('#option2SingleSumReset', 'click', function () {
-		clearSummaryLine('option2SingleSum');
-		resetCheckbox('option2Single');
+	// Delete Laptop Medium Performance in summary list
+	$('#lmpSumTot').delegate('#lmpSumTotReset', 'click', function () {
+		clearSummaryLine('lmpSumTot');
+		resetCheckbox('lmp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	/*
-	// Delete line 3 in summary list
-	$('#option3SingleSum').delegate('#option3SingleSumReset', 'click', function () {
-		clearSummaryLine('option3SingleSum');
-		resetCheckbox('option3Single');
+	// Delete Laptop High Performance in summary list
+	$('#lhpSumTot').delegate('#lhpSumTotReset', 'click', function () {
+		clearSummaryLine('lhpSumTot');
+		resetCheckbox('lhp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// Delete line 4 in summary list
-	$('#extraOption1Sum').delegate('#extraOption1SumReset', 'click', function () {
-		clearSummaryLine('extraOption1Sum');
-		resetCheckbox('extraOption1');
+	// Delete Server Standard Performance in summary list
+	$('#sspSumTot').delegate('#sspSumTotReset', 'click', function () {
+		clearSummaryLine('sspSumTot');
+		resetCheckbox('ssp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// Delete line 5 in summary list
-	$('#extraOption2Sum').delegate('#extraOption2SumReset', 'click', function () {
-		clearSummaryLine('extraOption2Sum');
-		resetCheckbox('extraOption2');
+	// Delete Server Medium Performance in summary list
+	$('#smpSumTot').delegate('#smpSumTotReset', 'click', function () {
+		clearSummaryLine('smpSumTot');
+		resetCheckbox('smp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
-	*/
+
+	// Delete Server High Performance in summary list
+	$('#shpSumTot').delegate('#shpSumTotReset', 'click', function () {
+		clearSummaryLine('shpSumTot');
+		resetCheckbox('shp');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
 
 	// If reset is clicked, set the selected item to default
 	$('#resetBtn').on('click', function () {
@@ -645,10 +706,10 @@
 		// Validate
 		if (val < min) {
 			val = min;
-			$input.val(min);
+			$inputDMP.val(min);
 		} else if (val > max) {
 			val = max;
-			$input.val(max);
+			$inputDMP.val(max);
 		}
 
 		instanceDMP.update({
@@ -657,6 +718,354 @@
 
 		if (!dmpIsChecked) {
 			activateSingleOption('dmp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Desktop High Performance
+	// =====================================================
+	var $rangeDHP = $('#dhpRangeSlider'),
+		$inputDHP = $('#dhpQty'),
+		instanceDHP,
+		min = 1,
+		max = 50;
+
+	$rangeDHP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputDHP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputDHP.prop('value', data.from);
+			if (!dhpIsChecked) {
+				activateSingleOption('dhp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceDHP = $rangeDHP.data("ionRangeSlider");
+
+	$inputDHP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputDHP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputDHP.val(max);
+		}
+
+		instanceDHP.update({
+			from: val
+		});
+
+		if (!dhpIsChecked) {
+			activateSingleOption('dhp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Laptop Medium Performance
+	// =====================================================
+	var $rangeLMP = $('#lmpRangeSlider'),
+		$inputLMP = $('#lmpQty'),
+		instanceLMP,
+		min = 1,
+		max = 50;
+
+	$rangeLMP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputLMP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputLMP.prop('value', data.from);
+			if (!lmpIsChecked) {
+				activateSingleOption('lmp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceLMP = $rangeLMP.data("ionRangeSlider");
+
+	$inputLMP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputLMP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputLMP.val(max);
+		}
+
+		instanceLMP.update({
+			from: val
+		});
+
+		if (!lmpIsChecked) {
+			activateSingleOption('lmp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Laptop High Performance
+	// =====================================================
+	var $rangeLHP = $('#lhpRangeSlider'),
+		$inputLHP = $('#lhpQty'),
+		instanceLHP,
+		min = 1,
+		max = 50;
+
+	$rangeLHP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputLHP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputLHP.prop('value', data.from);
+			if (!lhpIsChecked) {
+				activateSingleOption('lhp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceLHP = $rangeLHP.data("ionRangeSlider");
+
+	$inputLHP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputLHP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputLHP.val(max);
+		}
+
+		instanceLHP.update({
+			from: val
+		});
+
+		if (!lhpIsChecked) {
+			activateSingleOption('lhp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Server Standard Performance
+	// =====================================================
+	var $rangeSSP = $('#sspRangeSlider'),
+		$inputSSP = $('#sspQty'),
+		instanceSSP,
+		min = 1,
+		max = 10;
+
+	$rangeSSP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputSSP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputSSP.prop('value', data.from);
+			if (!sspIsChecked) {
+				activateSingleOption('ssp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceSSP = $rangeSSP.data("ionRangeSlider");
+
+	$inputSSP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputSSP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputSSP.val(max);
+		}
+
+		instanceSSP.update({
+			from: val
+		});
+
+		if (!sspIsChecked) {
+			activateSingleOption('ssp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Server Medium Performance
+	// =====================================================
+	var $rangeSMP = $('#smpRangeSlider'),
+		$inputSMP = $('#smpQty'),
+		instanceSMP,
+		min = 1,
+		max = 10;
+
+	$rangeSMP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputSMP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputSMP.prop('value', data.from);
+			if (!smpIsChecked) {
+				activateSingleOption('smp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceSMP = $rangeSMP.data("ionRangeSlider");
+
+	$inputSMP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputSMP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputSMP.val(max);
+		}
+
+		instanceSMP.update({
+			from: val
+		});
+
+		if (!smpIsChecked) {
+			activateSingleOption('smp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Server High Performance
+	// =====================================================
+	var $rangeSHP = $('#shpRangeSlider'),
+		$inputSHP = $('#shpQty'),
+		instanceSHP,
+		min = 1,
+		max = 10;
+
+	$rangeSHP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputSHP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputSHP.prop('value', data.from);
+			if (!shpIsChecked) {
+				activateSingleOption('shp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceSHP = $rangeSHP.data("ionRangeSlider");
+
+	$inputSHP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputSHP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputSHP.val(max);
+		}
+
+		instanceSHP.update({
+			from: val
+		});
+
+		if (!shpIsChecked) {
+			activateSingleOption('shp');
 		}
 
 		updateSummary();
