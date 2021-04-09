@@ -1,5 +1,5 @@
 // Redirect
 function delayedRedirect()	{
-    window.location = 'https://teqly.ch'
+    window.location = 'https://www.teqly.ch'
 }
 
