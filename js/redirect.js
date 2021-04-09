@@ -1,5 +1,5 @@
 // Redirect
 function delayedRedirect()	{
-    window.location = 'https://ultimatewebsolutions.net/costy/'
+    window.location = 'https://teqly.ch'
 }
 

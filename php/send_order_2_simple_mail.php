@@ -52,51 +52,51 @@ $errors = '';
 /* Validate User Inputs
 ==================================== */
 
-// Name 
+// Name
 if ($_POST['username'] != '') {
-	
+
 	// Sanitizing
 	$_POST['username'] = filter_var($_POST['username'], FILTER_SANITIZE_STRING);
 
 	if ($_POST['username'] == '') {
-		$errors .= 'Please enter a valid name.<br/>';
-	}
-}
-else { 
-	// Required to fill
-	$errors .= 'Please enter your name.<br/>';
-}
-
-// Email 
-if ($_POST['email'] != '') {
-
-	// Sanitizing 
-	$_POST['email'] = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-
-	// After sanitization validation is performed
-	$_POST['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-	
-	if($_POST['email'] == '') {
-		$errors .= 'Please enter a valid email address.<br/>';
+		$errors .= 'Geben Sie bitte einen Namen an.<br/>';
 	}
 }
 else {
 	// Required to fill
-	$errors .= 'Please enter your email address.<br/>';
+	$errors .= 'Geben Sie bitte einen Namen an.<br/>';
 }
 
-// Phone 
+// Email
+if ($_POST['email'] != '') {
+
+	// Sanitizing
+	$_POST['email'] = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+
+	// After sanitization validation is performed
+	$_POST['email'] = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+
+	if($_POST['email'] == '') {
+		$errors .= 'Geben Sie bitte eine gültige E-Mail Adresse ein.<br/>';
+	}
+}
+else {
+	// Required to fill
+	$errors .= 'Geben Sie bitte eine E-Mail Adresse ein.<br/>';
+}
+
+// Phone
 if ($_POST['phone'] != '') {
 
 	// Sanitizing
 	$_POST['phone'] = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
 
 	// After sanitization validation is performed
-	$pattern_phone = array('options'=>array('regexp'=>'/^\+{1}[0-9]+$/'));
+	$pattern_phone = array('options'=>array('regexp'=>'/^\+{41}[0-9]+$/'));
 	$_POST['phone'] = filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, $pattern_phone);
-	
+
 	if($_POST['phone'] == '') {
-		$errors .= 'Please enter a valid phone number like: +363012345<br/>';
+		$errors .= 'Geben Sie bitte eine gültige Telefonnummer im Format +41 12 345 67 89 ein.<br/>';
 	}
 }
 
@@ -105,9 +105,9 @@ if ($_POST['address'] != '') {
 
 	// Sanitizing
 	$_POST['address'] = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
-	
+
 	if($_POST['address'] == '') {
-		$errors .= 'Please enter a valid address.<br/>';
+		$errors .= 'Bitte geben Sie eine gültige Adresse ein.<br/>';
 	}
 }
 
@@ -116,9 +116,9 @@ if ($_POST['message'] != '') {
 
 	// Sanitizing
 	$_POST['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-	
+
 	if($_POST['message'] == '') {
-		$errors .= 'Please enter a valid message.<br/>';
+		$errors .= 'Schreiben Sie bitte ein gültige Nachricht.<br/>';
 	}
 }
 
@@ -126,12 +126,12 @@ if ($_POST['message'] != '') {
 ==================================== */
 
 function sanitizePostTitle($postName, $invalidMessage) {
-	
+
 	if ($_POST[$postName] != '') {
-		
+
 		// Sanitizing
 	  	$_POST[$postName] = filter_var($_POST[$postName], FILTER_SANITIZE_STRING);
-		  
+
 		if ($_POST[$postName] == '') {
 			return $invalidMessage . '<br/>';
 	  	}
@@ -145,30 +145,30 @@ function validatePostValue($postValue, $invalidMessage) {
 	if ($_POST[$postValue] != '') {
 
 		// Sanitizing
-		$_POST[$postValue] = filter_var($_POST[$postValue], FILTER_SANITIZE_STRING);		
+		$_POST[$postValue] = filter_var($_POST[$postValue], FILTER_SANITIZE_STRING);
 
 		// After sanitization validation is performed
 		if ($_POST[$postValue] != '0') {
 			$_POST[$postValue] = filter_var($_POST[$postValue], FILTER_VALIDATE_FLOAT);
-		}		
+		}
 
 		if ($_POST[$postValue] == '') {
 			return $invalidMessage . '<br/>';
 		}
 
-	}	
+	}
 	return '';
 }
 
 function validatePostTotal($postValue, $invalidMessage) {
 
 	if ($_POST[$postValue] != '') {
-		
-		if (!filter_var($_POST[$postValue], FILTER_VALIDATE_FLOAT)) {			
+
+		if (!filter_var($_POST[$postValue], FILTER_VALIDATE_FLOAT)) {
 			return $invalidMessage . '<br/>';
 		}
 
-	}	
+	}
 	return '';
 }
 
@@ -199,19 +199,19 @@ $errors .= validatePostValue('extraOption2', 'Please set a valid number for extr
 $errors .= validatePostTotal('totalDue', 'Total should be a valid number.');
 
 // Continue if NO errors found after validation
-if (!$errors) {	
+if (!$errors) {
 
 	// Customer Details
 	$customer_name = $_POST['username'];
 	$customer_mail = $_POST['email'];
 	$customer_phone = $_POST['phone'];
-	$customer_address = $_POST['address'];	
-	$customer_message = $_POST['message'];	
+	$customer_address = $_POST['address'];
+	$customer_message = $_POST['message'];
 
 	// Option Group 1
 	$selected_option1 = $_POST['option1Single'];
 	$selected_option1_title = $_POST['option1Title'];
-	$selected_option1_price = $_POST['option1Price'];	
+	$selected_option1_price = $_POST['option1Price'];
 	$option1_qty = $_POST['optionGroup1Qty'];
 	$optionGroup1Sum = $selected_option1_price * $option1_qty;
 
@@ -253,7 +253,7 @@ if (!$errors) {
 	if (isset($selected_option3)) {
 		$order .= $selected_option3_title . ' x ' . $option3_qty . ' x ' . $currency . number_format($selected_option3_price, 2, '.',',') . ' = ' . $currency . number_format($optionGroup3Sum, 2, '.',',') . "\n";
 	}
-	
+
 	// Adding Extra Items
 	if (isset($extra_option_1)) {
 		$order .= $extra_option_1_title . ' x ' . '1' . ' x ' . $currency . number_format($extra_option_1, 2, '.',',') . ' = ' . $currency . number_format($extra_option_1, 2, '.',',') . "\n";
@@ -262,47 +262,47 @@ if (!$errors) {
 		$order .= $extra_option_2_title . ' x ' . '1' . ' x ' . $currency . number_format($extra_option_2, 2, '.',',') . ' = ' . $currency . number_format($extra_option_2, 2, '.',',') . "\n";
 	}
 
-	// Adding Total 
+	// Adding Total
 	$order .= "\n" . "Total: " . $currency . number_format($total, 2, '.',',');
 
 	// Handle empty customer inputs
 	if (empty($customer_phone)) {
-		$customer_phone = 'Was not provided.';
+		$customer_phone = 'Wurde nicht ausgefüllt';
 	}
 	if (empty($customer_address)) {
-		$customer_address = 'Was not provided.';
+		$customer_address = 'Wurde nicht ausgefüllt';
 	}
 	if (empty($customer_message)) {
-		$customer_message = 'Was not provided.';
+		$customer_message = 'Wurde nicht ausgefüllt';
 	}
 
 	/* Mail Sending
 	==================================== */
 
 	// Setup for site owner
-	$to = "websolutions.ultimate@gmail.com"; // Your email goes here	
-	$subject = "Order request";
-	$headers = "From: Costy <replyto@yourdomain.com>";	
-	$message = "Order request is arrived with the details below. Order ID: " . $timestamp . ". " . "\n\n";
-	$message .= "CONTACT DATA" . "\n";
+	$to = "info@teqly.ch"; // Your email goes here
+	$subject = "Rental Anfrage";
+	$headers = "From: Costy <replyto@yourdomain.com>";
+	$message = "Eine Anfrage mit den untenstehenden Details ist eingegangen. Anfrage ID: " . $timestamp . ". " . "\n\n";
+	$message .= "Kundenangaben" . "\n";
 	$message .= "--\n";
 	$message .= "Name: " . $customer_name . "\n";
-	$message .= "Email: " . $customer_mail . "\n";
-	$message .= "Phone: " . $customer_phone . "\n";
-	$message .= "Address: " . $customer_address . "\n";
-	$message .= "Message: " . $customer_message . "\n\n";	
-	$message .= "ORDER SUMMARY" . "\n";
+	$message .= "E-Mail: " . $customer_mail . "\n";
+	$message .= "Telefon: " . $customer_phone . "\n";
+	$message .= "Adresse: " . $customer_address . "\n";
+	$message .= "Bemerkungen: " . $customer_message . "\n\n";
+	$message .= "Konfiguration" . "\n";
 	$message .= "--\n";
 	$message .= $order;
-												
+
 	// Send to site owner
 	mail($to, $subject, $message, $headers);
-	
+
 	// Setup for the user
 	$user = $_POST['email'];
-	$usersubject = "Order confirmation";
-	$usermessage = "Dear " . $customer_name . "," . "\n\n" . "Thank you for your request. Your order ID is: " . $timestamp . ". " . "Please find the summary below." . "\n\n";	
-	$usermessage .= "ORDER SUMMARY" . "\n";
+	$usersubject = "Anfrage Bestätigung";
+	$usermessage = "Guten Tag " . $customer_name . "," . "\n\n" . "Vielen Dank für Ihre Anfrage. Ihre Anfrage ID ist: " . $timestamp . ". " . "Wir werden uns so schnell wie möglich bei Ihnen melden. \n Untenstehend finden Sie nochmal die gewählte Konfiguration." . "\n\n";
+	$usermessage .= "Gewählte Konfiguration:" . "\n";
 	$usermessage .= "--\n";
 	$usermessage .= $order;
 
@@ -318,9 +318,9 @@ if (!$errors) {
 	echo '<path d="M17.417,37.778l9.93,9.909l25.444-25.393" style="stroke-dasharray:50px, 50px; stroke-dashoffset: 0px;"></path>';
 	echo '</g>';
 	echo '</svg>';
-	echo '</div>';    
-	echo '<h4>Thank you for contacting us.</h4>';
-	echo '<small>Check your mailbox.</small>';
+	echo '</div>';
+	echo '<h4>Vielen Dank für Ihre Anfrage. Sie wurde erfolgreich übermittelt.</h4>';
+	echo '<small>Wir haben Ihnen eine Bestätigungsnachricht geschickt. Überprüfen Sie Ihre Mailbox.</small>';
 	echo '</div>';
 	echo '<script src="../js/redirect.js"></script>';
 
@@ -328,10 +328,10 @@ if (!$errors) {
 
 	// Error Page
 	echo '<div style="color: #e9431c">' . $errors . '</div>';
-	echo '<div id="success">';    
-	echo '<h4>Something went wrong.</h4>';
-	echo '<a class="animated-link" href="../index.html">Go Back</small>';
-	echo '</div>';	
+	echo '<div id="success">';
+	echo '<h4>Ups, da hatt etwas nicht geklappt!</h4>';
+	echo '<a class="animated-link" href="../index.html">Zurück zur Startseite</small>';
+	echo '</div>';
 }
 
 ?>
