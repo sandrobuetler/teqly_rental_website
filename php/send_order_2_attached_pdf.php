@@ -65,8 +65,8 @@ $errors = '';
 
 // Setup Seller Details
 $seller_name = 'TEQLY GmbH';
-$seller_address = 'TECHNOPARK Aargau, Badenerstrasse 13, 5200 Brugg';
-$seller_notice = 'Alle Preise unverbindlich & exkl. MwSt';
+$seller_address = 'TECHNOPARK Aargau' . '<br/>' . 'Badenerstrasse 13' . '<br/>' . '5200 Brugg';
+$seller_notice = 'Alle Preise unverbindlich & exkl. Setup-/Konfigurations-/Zusatzkosten';
 
 /* Validate User Inputs
 ==================================== */
@@ -271,7 +271,7 @@ if (!$errors) {
 	==================================== */
 
 	// Header Settings
-	$order->setLogo('phpinvoice/templates/purple/logo.png');
+	$order->setLogo('phpinvoice/templates/purple/logo_teqly.png');
 	$order->setReference('ANFRAGE-'.$timestamp);
 	$order->setDate(date('M dS, Y',time()));
 
