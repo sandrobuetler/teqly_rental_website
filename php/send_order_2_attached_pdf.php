@@ -316,7 +316,7 @@ if (!$errors) {
 	$order->setFooternote('Dieses Dokument wurde automatisch generiert. © 2021 <a href="https://teqly.ch">TEQLY GmbH</a>');
 
 	// Render
-	$order->render('phpinvoice/pdf/anfrage_' . $timestamp . '.pdf','F');
+	$order->render('phpinvoice/pdf/teqly_anfrage_' . $timestamp . '.pdf','F');
 
 	/* Mail Sending
 	==================================== */
@@ -344,7 +344,7 @@ if (!$errors) {
 		$mail->MsgHTML($body);
 
 		// Attach Invoice
-		$file = 'phpinvoice/pdf/order_' . $timestamp . '.pdf';
+		$file = 'phpinvoice/pdf/teqly_anfrage_' . $timestamp . '.pdf';
 		$mail->addAttachment($file);
 
 		$mail->send();
