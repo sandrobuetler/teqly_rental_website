@@ -65,8 +65,8 @@ $errors = '';
 
 // Setup Seller Details
 $seller_name = 'TEQLY GmbH';
-$seller_address = 'TECHNOPARK Aargua, Badenerstrasse 13, 5200 Brugg';
-$seller_notice = 'info@teqly.ch';
+$seller_address = 'TECHNOPARK Aargau, Badenerstrasse 13, 5200 Brugg';
+$seller_notice = 'Alle Preise unverbindlich & exkl. MwSt';
 $seller_company_name = 'Was macht hier Sinn?';
 
 /* Validate User Inputs
@@ -236,6 +236,12 @@ if (!$errors) {
 		$customer_message = 'Keine Bermerkungen hinterlasssen';
 	}
 
+    // Option DMP
+    $selected_dmp = $_POST['dmp'];
+    $selected_dmp_title = $_POST['dmpTitle'];
+    $selected_dmp_price = $_POST['dmpPrice'];
+    $dmp_qty = $_POST['dmpGroupQty'];
+
 	// Option Group 1
 	$selected_option1 = $_POST['option1Single'];
 	$selected_option1_title = $_POST['option1Title'];
@@ -266,7 +272,7 @@ if (!$errors) {
 	==================================== */
 
 	// Header Settings
-	$order->setLogo('phpinvoice/templates/purple/logo.png');
+	$order->setLogo('phpinvoice/templates/purple/teqly_logo_black.png');
 	$order->setReference('ANFRAGE-'.$timestamp);
 	$order->setDate(date('M dS, Y',time()));
 
@@ -274,6 +280,10 @@ if (!$errors) {
 	$order->setTo(array($customer_name, $customer_address));
 
 	// Adding Items (name, description, amount, vat, price, discount) only if selected
+    if (isset($selected_dmp)) {
+        $order->addItem($selected_dmp_title, '', $dmp_qty, "0%", $selected_dmp_price, false);
+    }
+
 	if (isset($selected_option1)) {
 		$order->addItem($selected_option1_title, '', $option1_qty, "0%", $selected_option1_price, false);
 	}
@@ -293,7 +303,7 @@ if (!$errors) {
 	}
 
 	// Add Totals
-	$order->addTotal("Total", $order->items_total);
+	$order->addTotal("Kosten pro Jahr", $order->items_total);
 
 	// Add Title
 	$order->addTitle($seller_notice);
@@ -304,7 +314,7 @@ if (!$errors) {
 	$order->addParagraph('<strong>Nachricht:</strong> ' . '<br />' . $customer_message);
 
 	// Set Footer Note
-	$order->setFooternote('Created with <a href="https://ultimatewebsolutions.net/costy/" target="_blank">Costy 2.0</a>');
+	$order->setFooternote('Dieses Dokument wurde automatisch generiert. © 2021 <a href="https://teqly.ch>TEQLY GmbH</a> "');
 
 	// Render
 	$order->render('phpinvoice/pdf/order_' . $timestamp . '.pdf','F');
@@ -315,10 +325,10 @@ if (!$errors) {
 	try {
 
 		// Set Sender
-		$mail->setFrom('noreply@teqly.ch', 'TEQLY');
+		$mail->setFrom('noreply@teqly.ch', 'TEQLY | Rental');
 
 		// Set Reply-to Address
-		$mail->addReplyTo('info@teqly.ch', 'TEQLY');
+		$mail->addReplyTo('info@teqly.ch', 'TEQLY GmbH');
 
 		// Set Recipients
 		$mail->addAddress('info@teqly.ch', 'TEQLY GmbH');

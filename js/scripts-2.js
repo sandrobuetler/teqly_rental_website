@@ -181,7 +181,7 @@
 		$('.price').priceFormat({
 			prefix: 'CHF ',
 			centsSeparator: '.',
-			thousandsSeparator: '`'
+			thousandsSeparator: "'"
 		});
 	}
 
@@ -190,7 +190,7 @@
 		$('#total').priceFormat({
 			prefix: 'CHF ',
 			centsSeparator: '.',
-			thousandsSeparator: '`'
+			thousandsSeparator: "'"
 		});
 		/*
 		$('#totalFollowing').priceFormat({
