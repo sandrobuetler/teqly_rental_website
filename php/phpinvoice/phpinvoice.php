@@ -14,7 +14,7 @@ Mustache_Autoloader::register();
 use \Mpdf\Mpdf;
 
 class phpinvoice extends Mpdf  {
-	
+
 	// Templates folder and default filename adjustment variables.
     private $template_dir 	 = "/templates";
     private $main_file    	 = "/main.mustache";
@@ -29,7 +29,7 @@ class phpinvoice extends Mpdf  {
     public $currency 		 = "";
     public $logo			 = "";
     public $date			 = "";
-    public $time			 = "";		
+    public $time			 = "";
     public $due				 = "";
     public $from			 = array();
     public $to				 = array();
@@ -42,7 +42,7 @@ class phpinvoice extends Mpdf  {
 
     /* Class Constructor */
     public function __construct($template = 'basic', $page_size = 'A4', $currency = '$') {
-		
+
         $this->mpdfobj      = new Mpdf(array(
 											'', 		 // mode - default ''
 											$page_size,  // format - A4, for example, default 'A4'
@@ -84,7 +84,7 @@ class phpinvoice extends Mpdf  {
 	public function setType($title) {
 		$this->title = $title;
 	}
-	
+
     public function setDate($date) {
         $this->date = $date;
     }
@@ -116,10 +116,10 @@ class phpinvoice extends Mpdf  {
     public function addItem($item , $description = "" , $quantity = 1 , $vat = 0 , $price = 0 , $discount = 0) {
 
         $p['item'] 			= $item;
-		$p['description'] 	= $description;		
+		$p['description'] 	= $description;
 		$total_amount		= 0;
-		$total_amount 		= (((float)$quantity)*((float)$price));		
-		
+		$total_amount 		= (((float)$quantity)*((float)$price));
+
 		if($vat !== false) {
 		  $p['vat']			= $vat;
 		  if(is_numeric($vat)) {
@@ -138,7 +138,7 @@ class phpinvoice extends Mpdf  {
 		  }
 			$this->vatField = true;
 		}
-		
+
 		if($discount !== false) {
 			$p['discount'] = $discount;
 			if(is_numeric($discount)) {
@@ -156,24 +156,24 @@ class phpinvoice extends Mpdf  {
 		  	}
 			$this->discountField = true;
 		}
-				
+
 		$p['quantity'] 		= $quantity;
 		$p['price']			= $price;
 		$p['total']			= $total_amount;
 
 		if ($this->curreny_direction == "left") {
 			$p['price'] = $this->currency . ' ' . number_format($price, 2, $this->referenceformat[0], $this->referenceformat[1]);
-			$p['total'] = $this->currency . ' ' . number_format($total_amount, 2, $this->referenceformat[0], $this->referenceformat[1]);			
-        } else {			
+			$p['total'] = $this->currency . ' ' . number_format($total_amount, 2, $this->referenceformat[0], $this->referenceformat[1]);
+        } else {
 			$p['price'] = number_format($price, 2, $this->referenceformat[0], $this->referenceformat[1]) . ' ' . $this->currency;
 			$p['total'] = number_format($total_amount, 2, $this->referenceformat[0], $this->referenceformat[1]) . ' ' . $this->currency;
         }
-		
+
 		$this->items[]		= $p;
-		$this->items_total  += $total_amount;		
+		$this->items_total  += $total_amount;
 
     }
-	
+
 	public function addTotal($name,$value,$colored = "",$subtract = FALSE) {
       $t['name']  = $name;
       $t['value'] = $value;
@@ -192,9 +192,9 @@ class phpinvoice extends Mpdf  {
       $t['colored']   = $colored;
       $this->totals[] = $t;
       // Make Total Due equal to Balance Due
-      if (strtolower($name) == 'total due') $this->balanceDue = $value;      
-	}	
-	
+      if (strtolower($name) == 'total due') $this->balanceDue = $value;
+	}
+
 	public function GetPercentage($percentage) {
 		$total		= $this->grand_total;
 		if(!empty($total) and !empty($percentage)) {
@@ -203,7 +203,7 @@ class phpinvoice extends Mpdf  {
 			return $vat;
 		}
 	}
-	
+
     public function GetGrandTotal() {
         return $this->grand_total;
     }
@@ -211,25 +211,25 @@ class phpinvoice extends Mpdf  {
 	public function addTitle($title) {
 		$this->addText[] = "<h3>$title</h3>";
 	}
-	
+
 	public function addParagraph($paragraph) {
 		$this->addText[] = "<p>$paragraph</p>";
 	}
-	
+
 	public function addBadge($badge) {
 		$this->badge = $badge;
 	}
-	
+
 	public function setFooternote($note) {
 		$this->footernote = $note;
 	}
 
     public function render($filename = "invoice",$action = "") {
-    		
+
 		$m = new Mustache_Engine(array(
 			'loader' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . $this->template_dir),
 		));
-		$tpl = $m->loadTemplate($this->_template. $this->main_file);			
+		$tpl = $m->loadTemplate($this->_template. $this->main_file);
 		$template_output = $tpl->render(array(
 			'title'				=> $this->title,
 			'reference'			=> $this->reference,
@@ -243,17 +243,17 @@ class phpinvoice extends Mpdf  {
 			'footer_details' 	=> $this->addText,
 			'custom'			=> $this->_data
 		));
-				
-        $this->mpdfobj->SetFooter($this->footernote.' | Costy Corporation | Page No.{PAGENO}');
+
+        $this->mpdfobj->SetFooter($this->footernote.' | © 2021 TEQLY GmbH | Seite Nr.{PAGENO}');
 		if(isset($this->badge) and !empty($this->badge)) {
 			$this->mpdfobj->SetWatermarkText($this->badge,0.1);
 			$this->mpdfobj->showWatermarkText = true;
 			$this->mpdfobj->watermark_font = 'ZawgyiOne';
 		}
-		
+
 		//echo $template_output;
 		//die;
-		
+
         $this->mpdfobj->WriteHTML($template_output);
 		$this->mpdfobj->Output($filename,$action);
     }

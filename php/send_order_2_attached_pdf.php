@@ -67,7 +67,6 @@ $errors = '';
 $seller_name = 'TEQLY GmbH';
 $seller_address = 'TECHNOPARK Aargau, Badenerstrasse 13, 5200 Brugg';
 $seller_notice = 'Alle Preise unverbindlich & exkl. MwSt';
-$seller_company_name = 'Was macht hier Sinn?';
 
 /* Validate User Inputs
 ==================================== */
@@ -317,7 +316,7 @@ if (!$errors) {
 	$order->setFooternote('Dieses Dokument wurde automatisch generiert. © 2021 <a href="https://teqly.ch">TEQLY GmbH</a>');
 
 	// Render
-	$order->render('phpinvoice/pdf/order_' . $timestamp . '.pdf','F');
+	$order->render('phpinvoice/pdf/anfrage_' . $timestamp . '.pdf','F');
 
 	/* Mail Sending
 	==================================== */
