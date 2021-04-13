@@ -113,7 +113,7 @@ if ($_POST['phone'] != '') {
 
 	// After sanitization validation is performed
 	$pattern_phone = array('options'=>array('regexp'=>'/^\+{41}[0-9]+$/'));
-	$_POST['phone'] = filter_var($_POST['phone'], FILTER_VALIDATE_REGEXP, $pattern_phone);
+	$_POST['phone'] = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
 
 	if($_POST['phone'] == '') {
 		$errors .= 'Geben Sie bitte eine gültige Telefonnummer im Format +41 12 345 67 89 ein.<br/>';
