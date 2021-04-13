@@ -303,7 +303,7 @@ if (!$errors) {
 
 	// Adding Items (name, description, amount, vat, price, discount) only if selected
     if (isset($selected_dmp)) {
-        $order->addItem($selected_dmp_title, '', $dmp_qty, "7.7%", $selected_dmp_price, false);
+        $order->addItem($selected_dmp_title, 'Desktop Medium Performance', $dmp_qty, "7.7%", $selected_dmp_price, false);
     }
     if (isset($selected_dhp)) {
         $order->addItem($selected_dhp_title, '', $dhp_qty, "7.7%", $selected_dhp_price, false);
