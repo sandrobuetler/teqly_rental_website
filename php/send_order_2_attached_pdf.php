@@ -282,13 +282,13 @@ if (!$errors) {
     $selected_smp = $_POST['smp'];
     $selected_smp_title = $_POST['smpTitle'];
     $selected_smp_price = $_POST['smpPrice'];
-    $smp_qty = $_POST['smppGroupQty'];
+    $smp_qty = $_POST['smpGroupQty'];
 
     // SHP
     $selected_shp = $_POST['shp'];
     $selected_shp_title = $_POST['shpTitle'];
     $selected_shp_price = $_POST['shpPrice'];
-    $shp_qty = $_POST['dmpGroupQty'];
+    $shp_qty = $_POST['shpGroupQty'];
 
 	/* Order Generation
 	==================================== */
