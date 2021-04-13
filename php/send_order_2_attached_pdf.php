@@ -272,7 +272,7 @@ if (!$errors) {
 	==================================== */
 
 	// Header Settings
-	$order->setLogo('phpinvoice/templates/purple/teqly_logo_black.png');
+	$order->setLogo('phpinvoice/templates/purple/logo.png');
 	$order->setReference('ANFRAGE-'.$timestamp);
 	$order->setDate(date('M dS, Y',time()));
 
@@ -281,7 +281,7 @@ if (!$errors) {
 
 	// Adding Items (name, description, amount, vat, price, discount) only if selected
     if (isset($selected_dmp)) {
-        $order->addItem($selected_dmp_title, '', $dmp_qty, "0%", $selected_dmp_price, false);
+        $order->addItem($selected_dmp_title, '', $dmp_qty, "7.7%", $selected_dmp_price, false);
     }
 
 	if (isset($selected_option1)) {
@@ -314,7 +314,7 @@ if (!$errors) {
 	$order->addParagraph('<strong>Nachricht:</strong> ' . '<br />' . $customer_message);
 
 	// Set Footer Note
-	$order->setFooternote('Dieses Dokument wurde automatisch generiert. © 2021 <a href="https://teqly.ch>TEQLY GmbH</a> "');
+	$order->setFooternote('Dieses Dokument wurde automatisch generiert. © 2021 <a href="https://teqly.ch">TEQLY GmbH</a>');
 
 	// Render
 	$order->render('phpinvoice/pdf/order_' . $timestamp . '.pdf','F');

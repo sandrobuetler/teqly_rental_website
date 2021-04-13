@@ -3,7 +3,7 @@
 <head>
     <title>PHP INVOICE</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<style type="text/css">		
+	<style type="text/css">
 		@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&subset=latin,latin-ext");
 		html, body, div, span, applet, object, iframe,
 		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,7 +71,7 @@
 		}
 		body a {
 			text-decoration: underline;
-			color: #3f4079;			
+			color: #3f4079;
 		}
 		body a:hover {
 			color: inherit;
@@ -110,9 +110,9 @@
 			max-width:100%;
 		}
 		header .company-info {
-			color: #000000;			
+			color: #000000;
 			font-size: 14px;
-			padding-top: 15px;			
+			padding-top: 15px;
 		}
 		section .details {
             margin-bottom: 40px;
@@ -132,7 +132,7 @@
 			text-align: right;
 		}
 		section .details .title {
-			margin-bottom: 15px;			
+			margin-bottom: 15px;
 			font-size: 18px;
 			font-weight: 400;
 			text-transform: uppercase;
@@ -159,8 +159,8 @@
 		section table .qty,
 		section table .vat, {
 			width: 10%;
-		}		
-		section table .unit, 
+		}
+		section table .unit,
 		section table .total {
 			width: 20%;
 		}
@@ -183,8 +183,8 @@
 		section table tbody.head th:first-child {
 			background: transparent;
 		}
-		
-		
+
+
 		section table tbody.body td {
 			padding: 10px 5px;
 			background: #F3F3F3;
@@ -205,7 +205,7 @@
 		}
 		section table tbody.body .desc {
 			padding-top: 0;
-			padding-bottom: 0;			
+			padding-bottom: 0;
 			color: #000000;
 			text-align: left;
 			background: #F3F3F3;
@@ -229,7 +229,7 @@
 			font-weight: 600;
 			color: #3f4079;
 		}
-		
+
 		section .grand-total td {
 			padding:5px 10px;
 			background-color: #3f4079;
@@ -244,8 +244,8 @@
 		footer {
 			margin-bottom: 20px;
 			padding: 0 5px;
-		}		
-		footer .notice {						
+		}
+		footer .notice {
 			padding-top: 50px;
 			margin-bottom: 50px;
 			font-size:12px;
@@ -275,7 +275,7 @@
 	<section>
 		<div class="details clearfix">
 			<div class="client left">
-				<p class="invoice_to">Requested by:</p>
+				<p class="invoice_to">Anfrage von:</p>
 				{{# to }}
 					<p>{{{.}}}</p>
 				{{/ to }}
@@ -283,7 +283,7 @@
 			<div class="data right">
 				<div class="title">{{reference}}</div>
 				<div class="date">
-					Date: {{invoice_date}}					
+					Date: {{invoice_date}}
 				</div>
 			</div>
 		</div>
@@ -292,10 +292,10 @@
 				<table>
 					<tbody class="head">
 						<tr>
-							<th class="desc">Description</th>
-							<th class="qty">QTY</th>
-							<th class="vat">VAT</th>							
-							<th class="unit">Price</th>							
+							<th class="desc">Beschreibung</th>
+							<th class="qty">Stk.</th>
+							<th class="vat">MwSt.</th>
+							<th class="unit">Preis</th>
 							<th class="total">Total</th>
 						</tr>
 					</tbody>
@@ -306,8 +306,8 @@
 									{{{item}}} <br /> <em>{{{description}}}</em>
 								</td>
 								<td class="qty">{{quantity}}</td>
-								<td class="vat">{{vat}}</td>								
-								<td class="unit">{{price}}</td>								
+								<td class="vat">{{vat}}</td>
+								<td class="unit">{{price}}</td>
 								<td class="total">{{total}}</td>
 							</tr>
 						{{/ items }}
@@ -327,7 +327,7 @@
 	</section>
 
 	<footer>
-		<div class="container">			
+		<div class="container">
 			<div class="notice">
 				{{# footer_details }}
 					{{{.}}}
