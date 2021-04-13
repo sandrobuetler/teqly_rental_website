@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Cost Calculator and Order Wizard">
+	<meta name="description" content="Vielen Dank für Ihre Anfrage!">
 	<meta name="author" content="UWS">
-	<title>COSTY | Cost Calculator and Order Wizard</title>
+	<title>TEQLY | Rental - Preisrechner (Jahr)</title>
 
 	<!-- Favicon -->
-	<link href="../img/favicon.png" rel="shortcut icon">
+	<link href="../images/teqly_favicon.png" rel="shortcut icon">
 
 	<!-- Google Fonts - Poppins, Karla -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -191,28 +191,41 @@ function validatePostTotal($postValue, $invalidMessage) {
 	return '';
 }
 
-// Option Group 1
-$errors .= sanitizePostTitle('option1Title', 'Please set a valid option1Title.');
-$errors .= validatePostValue('option1Price', 'Please set a valid number for option1Price.');
-$errors .= validatePostValue('optionGroup1Qty', 'Please set a valid number for optionGroup1Qty.');
+// DMP
+$errors .= sanitizePostTitle('dmpTitle', 'Fehler beim Namen! (DMP)');
+$errors .= validatePostValue('dmpPrice', 'Fehler beim Preis! (DMP)');
+$errors .= validatePostValue('dmpGroupQty', 'Fehler bei der Anzahl! (DMP)');
 
-// Option Group 2
-$errors .= sanitizePostTitle('option2Title', 'Please set a valid option2Title.');
-$errors .= validatePostValue('option2Price', 'Please set a valid number for option2Price.');
-$errors .= validatePostValue('optionGroup2Qty', 'Please set a valid number for optionGroup2Qty.');
+// DHP
+$errors .= sanitizePostTitle('dhpTitle', 'Fehler beim Namen! (DHP)');
+$errors .= validatePostValue('dhpPrice', 'Fehler beim Preis! (DHP)');
+$errors .= validatePostValue('dhpGroupQty', 'Fehler bei der Anzahl! (DHP)');
 
-// Option Group 3
-$errors .= sanitizePostTitle('option3Title', 'Please set a valid option3Title.');
-$errors .= validatePostValue('option3Price', 'Please set a valid number for option3Price.');
-$errors .= validatePostValue('optionGroup3Qty', 'Please set a valid number for optionGroup3Qty.');
+// LMP
+$errors .= sanitizePostTitle('lmpTitle', 'Fehler beim Namen! (LMP)');
+$errors .= validatePostValue('lmpPrice', 'Fehler beim Preis! (LMP)');
+$errors .= validatePostValue('lmpGroupQty', 'Fehler bei der Anzahl! (LMP)');
 
-// Extra Option 1
-$errors .= sanitizePostTitle('extraOption1Title', 'Please set a valid extraOption1Title.');
-$errors .= validatePostValue('extraOption1', 'Please set a valid number for extraOption1.');
+// LHP
+$errors .= sanitizePostTitle('lhpTitle', 'Fehler beim Namen! (LHP)');
+$errors .= validatePostValue('lhpPrice', 'Fehler beim Preis! (LHP)');
+$errors .= validatePostValue('lhpGroupQty', 'Fehler bei der Anzahl! (LHP)');
 
-// Extra Option 2
-$errors .= sanitizePostTitle('extraOption2Title', 'Please set a valid extraOption2Title.');
-$errors .= validatePostValue('extraOption2', 'Please set a valid number for extraOption2.');
+// SSP
+$errors .= sanitizePostTitle('sspTitle', 'Fehler beim Namen! (SSP)');
+$errors .= validatePostValue('sspPrice', 'Fehler beim Preis! (SSP)');
+$errors .= validatePostValue('sspGroupQty', 'Fehler bei der Anzahl! (SSP)');
+
+// SMP
+$errors .= sanitizePostTitle('smpTitle', 'Fehler beim Namen! (SMP)');
+$errors .= validatePostValue('smpPrice', 'Fehler beim Preis! (SMP)');
+$errors .= validatePostValue('smpGroupQty', 'Fehler bei der Anzahl! (SMP)');
+
+// SHP
+$errors .= sanitizePostTitle('shpTitle', 'Fehler beim Namen! (SHP)');
+$errors .= validatePostValue('shpPrice', 'Fehler beim Preis! (SHP)');
+$errors .= validatePostValue('shpGroupQty', 'Fehler bei der Anzahl! (SHP)');
+
 
 // Continue if NO errors found after validation
 if (!$errors) {
@@ -226,46 +239,56 @@ if (!$errors) {
 
 	// Handle empty customer inputs
 	if (empty($customer_phone)) {
-		$customer_phone = 'Keine Telefonnummer hinterlasssen';
+		$customer_phone = 'Telefonnummer n.v.';
 	}
 	if (empty($customer_address)) {
-		$customer_address = 'Keine Adresse hinterlasssen';
+		$customer_address = 'Telefonnummer n.v.';
 	}
 	if (empty($customer_message)) {
-		$customer_message = 'Keine Bermerkungen hinterlasssen';
+		$customer_message = 'Es wurden keine Bemerkungen hinterlasssen.';
 	}
 
-    // Option DMP
+    // DMP
     $selected_dmp = $_POST['dmp'];
     $selected_dmp_title = $_POST['dmpTitle'];
     $selected_dmp_price = $_POST['dmpPrice'];
     $dmp_qty = $_POST['dmpGroupQty'];
 
-	// Option Group 1
-	$selected_option1 = $_POST['option1Single'];
-	$selected_option1_title = $_POST['option1Title'];
-	$selected_option1_price = $_POST['option1Price'];
-	$option1_qty = $_POST['optionGroup1Qty'];
+    // DHP
+    $selected_dhp = $_POST['dhp'];
+    $selected_dhp_title = $_POST['dhpTitle'];
+    $selected_dhp_price = $_POST['dhpPrice'];
+    $dhp_qty = $_POST['dhpGroupQty'];
 
-	// Option Group 2
-	$selected_option2 = $_POST['option2Single'];
-	$selected_option2_title = $_POST['option2Title'];
-	$selected_option2_price = $_POST['option2Price'];
-	$option2_qty = $_POST['optionGroup2Qty'];
+    // LMP
+    $selected_lmp = $_POST['lmp'];
+    $selected_lmp_title = $_POST['lmpTitle'];
+    $selected_lmp_price = $_POST['lmpPrice'];
+    $lmp_qty = $_POST['lmpGroupQty'];
 
-	// Option Group 3
-	$selected_option3 = $_POST['option3Single'];
-	$selected_option3_title = $_POST['option3Title'];
-	$selected_option3_price = $_POST['option3Price'];
-	$option3_qty = $_POST['optionGroup3Qty'];
+    // LHP
+    $selected_lhp = $_POST['lhp'];
+    $selected_lhp_title = $_POST['lhpTitle'];
+    $selected_lhp_price = $_POST['lhpPrice'];
+    $lhp_qty = $_POST['lhpGroupQty'];
 
-	// Extra Option 1
-	$extra_option_1 = $_POST['extraOption1'];
-	$extra_option_1_title = $_POST['extraOption1Title'];
+    // SSP
+    $selected_ssp = $_POST['ssp'];
+    $selected_ssp_title = $_POST['sspTitle'];
+    $selected_ssp_price = $_POST['sspPrice'];
+    $ssp_qty = $_POST['sspGroupQty'];
 
-	// Extra Option 2
-	$extra_option_2 = $_POST['extraOption2'];
-	$extra_option_2_title = $_POST['extraOption2Title'];
+    // SMP
+    $selected_smp = $_POST['smp'];
+    $selected_smp_title = $_POST['smpTitle'];
+    $selected_smp_price = $_POST['smpPrice'];
+    $smp_qty = $_POST['smppGroupQty'];
+
+    // SHP
+    $selected_shp = $_POST['shp'];
+    $selected_shp_title = $_POST['shpTitle'];
+    $selected_shp_price = $_POST['shpPrice'];
+    $shp_qty = $_POST['dmpGroupQty'];
 
 	/* Order Generation
 	==================================== */
@@ -282,38 +305,39 @@ if (!$errors) {
     if (isset($selected_dmp)) {
         $order->addItem($selected_dmp_title, '', $dmp_qty, "7.7%", $selected_dmp_price, false);
     }
-
-	if (isset($selected_option1)) {
-		$order->addItem($selected_option1_title, '', $option1_qty, "0%", $selected_option1_price, false);
-	}
-	if (isset($selected_option2)) {
-		$order->addItem($selected_option2_title, '', $option2_qty, "0%", $selected_option2_price, false);
-	}
-	if (isset($selected_option3)) {
-		$order->addItem($selected_option3_title, '', $option3_qty, "0%", $selected_option3_price, false);
-	}
-
-	// Adding Extra Items (name, description, amount, vat, price, discount) only if selected
-	if (isset($extra_option_1)) {
-		$order->addItem($extra_option_1_title, 'Extra Option 1 description', 1, "0%", 50, false);
-	}
-	if (isset($extra_option_2)) {
-		$order->addItem($extra_option_2_title, 'Extra Option 2 description', 1, "0%", 70, false);
-	}
+    if (isset($selected_dhp)) {
+        $order->addItem($selected_dhp_title, '', $dhp_qty, "7.7%", $selected_dhp_price, false);
+    }
+    if (isset($selected_lmp)) {
+        $order->addItem($selected_lmp_title, '', $lmp_qty, "7.7%", $selected_lmp_price, false);
+    }
+    if (isset($selected_lhp)) {
+        $order->addItem($selected_lhp_title, '', $lhp_qty, "7.7%", $selected_lhp_price, false);
+    }
+    if (isset($selected_ssp)) {
+        $order->addItem($selected_ssp_title, '', $ssp_qty, "7.7%", $selected_ssp_price, false);
+    }
+    if (isset($selected_smp)) {
+        $order->addItem($selected_smp_title, '', $smp_qty, "7.7%", $selected_smp_price, false);
+    }
+    if (isset($selected_shp)) {
+        $order->addItem($selected_shp_title, '', $shp_qty, "7.7%", $selected_shp_price, false);
+    }
 
 	// Add Totals
 	$order->addTotal("Kosten pro Jahr", $order->items_total);
 
 	// Add Title
-	$order->addTitle($seller_notice);
+	$order->addTitle($seller_notice . '<br/><br/>');
 
 	// Add Paragraph
+    $order->addTitle('Kontaktdaten Kunde:');
 	$order->addParagraph('E-Mail: ' . $customer_mail);
-	$order->addParagraph('Telefon ' . $customer_phone . '<br/><br />');
+	$order->addParagraph('Telefon: ' . $customer_phone . '<br/><br/>');
 	$order->addParagraph('<strong>Nachricht:</strong> ' . '<br />' . $customer_message);
 
 	// Set Footer Note
-	$order->setFooternote('Dieses Dokument wurde automatisch generiert. © 2021 <a href="https://teqly.ch">TEQLY GmbH</a>');
+	$order->setFooternote('Dieses Dokument wurde automatisch generiert.');
 
 	// Render
 	$order->render('phpinvoice/pdf/teqly_anfrage_' . $timestamp . '.pdf','F');
