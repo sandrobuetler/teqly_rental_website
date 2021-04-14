@@ -396,7 +396,7 @@ if (!$errors) {
     }
 
     // Add Totals
-    $order->addTotal("Kosten pro Jahr", $order->items_total);
+    $order->addTotal("Kosten pro Monat", $order->items_total);
 
     // Add Title
     $order->addTitle($seller_notice . '<br/><br/>');
