@@ -47,7 +47,7 @@ body {
 }
 
 a {
-  color: #DD356E;
+  color: black;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a span {
-  background: #dd356e;
+  background: #DD356E;
   padding: 4px 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: '';
   width: 30px;
   height: 2px;
-  background: #DD356E;
+  background: black;
   margin: 0 auto;
 }
 
@@ -362,13 +362,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc .btn.btn-demo,
 .fh5co-cover .display-tc .btn.btn-demo {
-  background: #dd356e;
+  background: grey;
+  color: white;
   border: none;
 }
 #fh5co-header .display-tc .btn.btn-demo:hover, #fh5co-header .display-tc .btn.btn-demo:focus,
 .fh5co-cover .display-tc .btn.btn-demo:hover,
 .fh5co-cover .display-tc .btn.btn-demo:focus {
-  background: rgba(221, 53, 110, 0.9) !important;
+  background: black !important;
   color: #fff !important;
 }
 #fh5co-header .display-tc .btn:hover,
@@ -391,7 +392,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #FEE856;
+  background: #EEEEEE;
 }
 #fh5co-features .services-padding {
   padding: 7em 0;
@@ -425,7 +426,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 60px;
-  color: #DD356E !important;
+  color: black !important;
 }
 #fh5co-features .feature-left .feature-copy {
   float: right;
@@ -508,7 +509,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-slider {
-  background: #2A528A;
+  background: #232A31;
 }
 #fh5co-slider .heading h2, #fh5co-slider .heading p {
   color: #fff;
@@ -661,7 +662,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #DD356E;
+  color: black;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -709,7 +710,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: #dd356e;
+  background: #232A31;
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 0;
@@ -725,7 +726,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #DD356E;
+  color: black;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
