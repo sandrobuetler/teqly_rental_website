@@ -90,7 +90,7 @@
 	// Function to set total title and price initially
 	function setTotalOnStart() {
 
-		$('#totalTitle').val('Kosten pro Jahr: ');
+		$('#totalTitle').val('Kosten pro Monat: ');
 		$('#total').val('CHF 0.00');
 
 		/*
