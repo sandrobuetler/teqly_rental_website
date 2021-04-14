@@ -143,6 +143,36 @@
 	var shpQuantity = 0;
 	var shpSum = 0;
 
+	var tcsIsChecked = false;
+	var tcsTitle = '';
+	var tcsPrice = 0;
+	var tcsQuantity = 0;
+	var tcsSum = 0;
+
+	var tcpIsChecked = false;
+	var tcpTitle = '';
+	var tcpPrice = 0;
+	var tcpQuantity = 0;
+	var tcpSum = 0;
+
+	var mbaIsChecked = false;
+	var mbaTitle = '';
+	var mbaPrice = 0;
+	var mbaQuantity = 0;
+	var mbaSum = 0;
+
+	var mbsIsChecked = false;
+	var mbsTitle = '';
+	var mbsPrice = 0;
+	var mbsQuantity = 0;
+	var mbsSum = 0;
+
+	var mbpIsChecked = false;
+	var mbpTitle = '';
+	var mbpPrice = 0;
+	var mbpQuantity = 0;
+	var mbpSum = 0;
+
 	var total = 0;
 	var total2 = 0;
 
@@ -261,9 +291,90 @@
 			clearSummaryLine('shpSumTot');
 		}
 
+		//Get the current data from TEQLY Cloud Standard elements
+		tcsIsChecked = $('#tcs').is(':checked');
+		tcsTitle = $('#tcsTitle').text();
+		tcsPrice = $('#tcs').val();
+		tcsQuantity = $('#tcsQty').val();
+
+		//Update order summary with TEQLY Cloud Standard details
+		if (tcsIsChecked && (tcsQuantity != 0)){
+			tcsSum = (tcsPrice * 1) * (tcsQuantity * 1);
+			$('#tcsSumTot').html('<a href="javascript:;" id="tcsSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tcsTitle + ' x ' + tcsQuantity + '<span class="price">' + tcsSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			tcsSum = 0;
+			clearSummaryLine('tcsSumTot');
+		}
+
+		//Get the current data from TEQLY Cloud Premium elements
+		tcpIsChecked = $('#tcp').is(':checked');
+		tcpTitle = $('#tcpTitle').text();
+		tcpPrice = $('#tcp').val();
+		tcpQuantity = $('#tcpQty').val();
+
+		//Update order summary with TEQLY Cloud Premium details
+		if (tcpIsChecked && (tcpQuantity != 0)){
+			tcpSum = (tcpPrice * 1) * (tcpQuantity * 1);
+			$('#tcpSumTot').html('<a href="javascript:;" id="tcpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tcpTitle + ' x ' + tcpQuantity + '<span class="price">' + tcpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			tcpSum = 0;
+			clearSummaryLine('tcpSumTot');
+		}
+
+		//Get the current data from M365 Apps elements
+		mbaIsChecked = $('#mba').is(':checked');
+		mbaTitle = $('#mbaTitle').text();
+		mbaPrice = $('#mba').val();
+		mbaQuantity = $('#mbaQty').val();
+
+		//Update order summary with M365 Apps details
+		if (mbaIsChecked && (mbaQuantity != 0)){
+			mbaSum = (mbaPrice * 1) * (mbaQuantity * 1);
+			$('#mbaSumTot').html('<a href="javascript:;" id="mbaSumTotReset"><i class="fa fa-times-circle"></i></a> ' + mbaTitle + ' x ' + mbaQuantity + '<span class="price">' + mbaSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			mbaSum = 0;
+			clearSummaryLine('mbaSumTot');
+		}
+
+		//Get the current data from M365 Standard elements
+		mbsIsChecked = $('#mbs').is(':checked');
+		mbsTitle = $('#mbsTitle').text();
+		mbsPrice = $('#mbs').val();
+		mbsQuantity = $('#mbsQty').val();
+
+		//Update order summary with M365 Standard details
+		if (mbsIsChecked && (mbsQuantity != 0)){
+			mbsSum = (mbsPrice * 1) * (mbsQuantity * 1);
+			$('#mbsSumTot').html('<a href="javascript:;" id="mbsSumTotReset"><i class="fa fa-times-circle"></i></a> ' + mbsTitle + ' x ' + mbsQuantity + '<span class="price">' + mbsSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			mbsSum = 0;
+			clearSummaryLine('mbsSumTot');
+		}
+
+		//Get the current data from M365 Premium elements
+		mbpIsChecked = $('#mbp').is(':checked');
+		mbpTitle = $('#mbpTitle').text();
+		mbpPrice = $('#mbp').val();
+		mbpQuantity = $('#mbpQty').val();
+
+		//Update order summary with M365 Standard details
+		if (mbpIsChecked && (mbpQuantity != 0)){
+			mbpSum = (mbpPrice * 1) * (mbpQuantity * 1);
+			$('#mbpSumTot').html('<a href="javascript:;" id="mbpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + mbpTitle + ' x ' + mbpQuantity + '<span class="price">' + mbpSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			mbpSum = 0;
+			clearSummaryLine('mbpSumTot');
+		}
+
+
 		// Update total in order summary
-		total = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum;
-		total2 = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum;
+		total = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
+		total2 = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
 
 		$('#total').val(total.toFixed(2));
 		formatTotalPrice();
@@ -310,6 +421,31 @@
 		$('#shpPriceHidden').val(shpPrice);
 		$('#shpSum').val(shpSum);
 
+		// Update hidden fields with TEQLY Cloud Standard details
+		$('#tcsTitleHidden').val(tcsTitle);
+		$('#tcsPriceHidden').val(tcsPrice);
+		$('#tcsSum').val(tcsSum);
+
+		// Update hidden fields with TEQLY Cloud Premium details
+		$('#tcpTitleHidden').val(tcpTitle);
+		$('#tcpPriceHidden').val(tcpPrice);
+		$('#tcpSum').val(tcpSum);
+
+		// Update hidden fields with M365 Apps details
+		$('#mbaTitleHidden').val(mbaTitle);
+		$('#mbaPriceHidden').val(mbaPrice);
+		$('#mbaSum').val(mbaSum);
+
+		// Update hidden fields with M365 Standard details
+		$('#mbsTitleHidden').val(mbsTitle);
+		$('#mbsPriceHidden').val(mbsPrice);
+		$('#mbsSum').val(mbsSum);
+
+		// Update hidden fields with M365 Premium details
+		$('#mbpTitleHidden').val(mbpTitle);
+		$('#mbpPriceHidden').val(mbpPrice);
+		$('#mbpSum').val(mbpSum);
+
 		// Update hidden field total
 		$('#totalDue').val(total);
 		$('#totalFollowingDue').val(total2);
@@ -327,12 +463,11 @@
 			$('#sspSumTot').html('');
 			$('#smpSumTot').html('');
 			$('#shpSumTot').html('');
-			$('#systemabbildSumTot').html('');
-			$('#option1SingleSum').html('');
-			$('#option2SingleSum').html('');
-			$('#option3SingleSum').html('');
-			$('#extraOption1Sum').html('');
-			$('#extraOption2Sum').html('');
+			$('#tcsSumTot').html('');
+			$('#tcpSumTot').html('');
+			$('#mbaSumTot').html('');
+			$('#mbsSumTot').html('');
+			$('#mbpSumTot').html('');
 		}
 		if (summaryLineName == 'dmpSumTot') {
 			$('#dmpSumTot').html('');
@@ -354,6 +489,21 @@
 		}
 		if (summaryLineName == 'shpSumTot') {
 			$('#shpSumTot').html('');
+		}
+		if (summaryLineName == 'tcsSumTot') {
+			$('#tcsSumTot').html('');
+		}
+		if (summaryLineName == 'tcpSumTot') {
+			$('#tcpSumTot').html('');
+		}
+		if (summaryLineName == 'mbaSumTot') {
+			$('#mbaSumTot').html('');
+		}
+		if (summaryLineName == 'mbsSumTot') {
+			$('#mbsSumTot').html('');
+		}
+		if (summaryLineName == 'mbpSumTot') {
+			$('#mbpSumTot').html('');
 		}
 			}
 
@@ -387,6 +537,26 @@
 		if (singleOptionName == 'shp'){
 			$('#shp').prop('checked', true);
 		}
+
+		if (singleOptionName == 'tcs'){
+			$('#tcs').prop('checked', true);
+		}
+
+		if (singleOptionName == 'tcp'){
+			$('#tcp').prop('checked', true);
+		}
+
+		if (singleOptionName == 'mba'){
+			$('#mba').prop('checked', true);
+		}
+
+		if (singleOptionName == 'mbs'){
+			$('#mbs').prop('checked', true);
+		}
+
+		if (singleOptionName == 'mbp'){
+			$('#mbp').prop('checked', true);
+		}
 	}
 
 	// Function to reset the given checkbox
@@ -400,7 +570,12 @@
 			$('#ssp').prop('checked', false);
 			$('#smp').prop('checked', false);
 			$('#shp').prop('checked', false);
-					}
+			$('#tcs').prop('checked', false);
+			$('#tcp').prop('checked', false);
+			$('#mba').prop('checked', false);
+			$('#mbs').prop('checked', false);
+			$('#mbp').prop('checked', false);
+		}
 		if (optionName == 'dmp') {
 			$('#dmp').prop('checked', false);
 		}
@@ -421,6 +596,21 @@
 		}
 		if (optionName == 'shp') {
 			$('#shp').prop('checked', false);
+		}
+		if (optionName == 'tcs') {
+			$('#tcs').prop('checked', false);
+		}
+		if (optionName == 'tcp') {
+			$('#tcp').prop('checked', false);
+		}
+		if (optionName == 'mba') {
+			$('#mba').prop('checked', false);
+		}
+		if (optionName == 'mbs') {
+			$('#mbs').prop('checked', false);
+		}
+		if (optionName == 'mbp') {
+			$('#mbp').prop('checked', false);
 		}
 	}
 
@@ -485,6 +675,41 @@
 		reValidateTotal();
 	});
 
+	// When TEQLY Cloud Standard is clicked
+	$('#tcs').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// When TEQLY Cloud Standard is clicked
+	$('#tcp').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// When M365 Apps is clicked
+	$('#mba').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// When M365 Standard is clicked
+	$('#mbs').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// When M365 Premium is clicked
+	$('#mbp').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
 	// Delete Desktop Medium Performance in summary list
 	$('#dmpSumTot').delegate('#dmpSumTotReset', 'click', function () {
 		clearSummaryLine('dmpSumTot');
@@ -543,6 +768,51 @@
 	$('#shpSumTot').delegate('#shpSumTotReset', 'click', function () {
 		clearSummaryLine('shpSumTot');
 		resetCheckbox('shp');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// Delete TEQLY Cloud Standard  in summary list
+	$('#tcsSumTot').delegate('#tcsSumTotReset', 'click', function () {
+		clearSummaryLine('tcsSumTot');
+		resetCheckbox('tcs');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// Delete TEQLY Cloud Premium in summary list
+	$('#tcpSumTot').delegate('#tcpSumTotReset', 'click', function () {
+		clearSummaryLine('tcpSumTot');
+		resetCheckbox('tcp');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// Delete M365 Apps  in summary list
+	$('#mbaSumTot').delegate('#mbaSumTotReset', 'click', function () {
+		clearSummaryLine('mbaSumTot');
+		resetCheckbox('mba');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// Delete M365 Standard  in summary list
+	$('#mbsSumTot').delegate('#mbsSumTotReset', 'click', function () {
+		clearSummaryLine('mbsSumTot');
+		resetCheckbox('mbs');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// Delete M365 Premium in summary list
+	$('#mbpSumTot').delegate('#mbpSumTotReset', 'click', function () {
+		clearSummaryLine('mbpSumTot');
+		resetCheckbox('mbp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -963,28 +1233,28 @@
 	});
 
 	// =====================================================
-	//      RANGE SLIDER 1
+	//      RANGE SLIDER TEQLY Cloud Standard
 	// =====================================================
-	var $range = $('#option1SingleRangeSlider'),
-		$input = $('#option1SingleQty'),
-		instance,
+	var $rangeTCS = $('#tcsRangeSlider'),
+		$inputTCS = $('#tcsQty'),
+		instanceTCS,
 		min = 1,
-		max = 100;
+		max = 5;
 
-	$range.ionRangeSlider({
+	$rangeTCS.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
 		min: min,
 		max: max,
-		from: 50,
+		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
-			$input.prop('value', data.from);
+			$inputTCS.prop('value', data.from);
 		},
 		onChange: function (data) {
-			$input.prop('value', data.from);
-			if (!singleOption1IsChecked) {
-				activateSingleOption('option1Single');
+			$inputTCS.prop('value', data.from);
+			if (!tcsIsChecked) {
+				activateSingleOption('tcs');
 			}
 			updateSummary();
 			reValidateTotal();
@@ -992,26 +1262,26 @@
 		}
 	});
 
-	instance = $range.data("ionRangeSlider");
+	instanceTCS = $rangeTCS.data("ionRangeSlider");
 
-	$input.on('input', function () {
+	$inputTCS.on('input', function () {
 		var val = $(this).prop('value');
 
 		// Validate
 		if (val < min) {
 			val = min;
-			$input.val(min);
+			$inputTCS.val(min);
 		} else if (val > max) {
 			val = max;
-			$input.val(max);
+			$inputTCS.val(max);
 		}
 
-		instance.update({
+		instanceTCS.update({
 			from: val
 		});
 
-		if (!singleOption1IsChecked) {
-			activateSingleOption('option1Single');
+		if (!tcsIsChecked) {
+			activateSingleOption('tcs');
 		}
 
 		updateSummary();
@@ -1020,31 +1290,29 @@
 
 	});
 
-	/*
 	// =====================================================
-	//      RANGE SLIDER 2
+	//      RANGE SLIDER TEQLY Cloud Premium
 	// =====================================================
-	var $range2 = $('#option2SingleRangeSlider'),
-		$input2 = $('#option2SingleQty'),
-		instance2,
-		min2 = 0,
-		max2 = 50;
+	var $rangeTCP = $('#tcpRangeSlider'),
+		$inputTCP = $('#tcpQty'),
+		instanceTCP,
+		min = 1,
+		max = 10;
 
-	$range2.ionRangeSlider({
+	$rangeTCP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min2,
-		max: max2,
-		from: 25,
-		step: 5,
+		min: min,
+		max: max,
+		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
-			$input2.prop('value', data.from);
+			$inputTCP.prop('value', data.from);
 		},
 		onChange: function (data) {
-			$input2.prop('value', data.from);
-			if (!singleOption2IsChecked) {
-				activateSingleOption('option2Single');
+			$inputTCP.prop('value', data.from);
+			if (!tcpIsChecked) {
+				activateSingleOption('tcp');
 			}
 			updateSummary();
 			reValidateTotal();
@@ -1052,26 +1320,26 @@
 		}
 	});
 
-	instance2 = $range2.data("ionRangeSlider");
+	instanceTCP = $rangeTCP.data("ionRangeSlider");
 
-	$input2.on('input', function () {
-		var val2 = $(this).prop('value');
+	$inputTCP.on('input', function () {
+		var val = $(this).prop('value');
 
 		// Validate
-		if (val2 < min2) {
-			val2 = min2;
-			$input2.val(min2);
-		} else if (val2 > max2) {
-			val2 = max2;
-			$input2.val(max2);
+		if (val < min) {
+			val = min;
+			$inputTCP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputTCP.val(max);
 		}
 
-		instance2.update({
-			from: val2
+		instanceTCP.update({
+			from: val
 		});
 
-		if (!singleOption2IsChecked) {
-			activateSingleOption('option2Single');
+		if (!tcpIsChecked) {
+			activateSingleOption('tcp');
 		}
 
 		updateSummary();
@@ -1081,29 +1349,28 @@
 	});
 
 	// =====================================================
-	//      RANGE SLIDER 3
+	//      RANGE SLIDER M365 Apps
 	// =====================================================
-	var $range3 = $('#option3SingleRangeSlider'),
-		$input3 = $('#option3SingleQty'),
-		instance3,
-		min3 = 0,
-		max3 = 100;
+	var $rangeMBA = $('#mbaRangeSlider'),
+		$inputMBA = $('#mbaQty'),
+		instanceMBA,
+		min = 1,
+		max = 10;
 
-	$range3.ionRangeSlider({
+	$rangeMBA.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min3,
-		max: max3,
-		from: 50,
-		step: 10,
+		min: min,
+		max: max,
+		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
-			$input3.prop('value', data.from);
+			$inputMBA.prop('value', data.from);
 		},
 		onChange: function (data) {
-			$input3.prop('value', data.from);
-			if (!singleOption3IsChecked) {
-				activateSingleOption('option3Single');
+			$inputMBA.prop('value', data.from);
+			if (!mbaIsChecked) {
+				activateSingleOption('mba');
 			}
 			updateSummary();
 			reValidateTotal();
@@ -1111,26 +1378,26 @@
 		}
 	});
 
-	instance3 = $range3.data("ionRangeSlider");
+	instanceMBA = $rangeMBA.data("ionRangeSlider");
 
-	$input3.on('input', function () {
-		var val3 = $(this).prop('value');
+	$inputMBA.on('input', function () {
+		var val = $(this).prop('value');
 
 		// Validate
-		if (val3 < min3) {
-			val3 = min3;
-			$input3.val(min3);
-		} else if (val3 > max3) {
-			val3 = max3;
-			$input3.val(max3);
+		if (val < min) {
+			val = min;
+			$inputMBA.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputMBA.val(max);
 		}
 
-		instance3.update({
-			from: val3
+		instanceMBA.update({
+			from: val
 		});
 
-		if (!singleOption3IsChecked) {
-			activateSingleOption('option3Single');
+		if (!mbaIsChecked) {
+			activateSingleOption('mba');
 		}
 
 		updateSummary();
@@ -1138,7 +1405,123 @@
 		saveState();
 
 	});
-	*/
+
+	// =====================================================
+	//      RANGE SLIDER M365 Standard
+	// =====================================================
+	var $rangeMBS = $('#mbsRangeSlider'),
+		$inputMBS = $('#mbsQty'),
+		instanceMBS,
+		min = 1,
+		max = 10;
+
+	$rangeMBS.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputMBS.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputMBS.prop('value', data.from);
+			if (!mbsIsChecked) {
+				activateSingleOption('mbs');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceMBS = $rangeMBS.data("ionRangeSlider");
+
+	$inputMBS.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputMBS.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputMBS.val(max);
+		}
+
+		instanceMBS.update({
+			from: val
+		});
+
+		if (!mbsIsChecked) {
+			activateSingleOption('mbs');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER M365 Premium
+	// =====================================================
+	var $rangeMBP = $('#mbpRangeSlider'),
+		$inputMBP = $('#mbpQty'),
+		instanceMBP,
+		min = 1,
+		max = 10;
+
+	$rangeMBP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputMBP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputMBP.prop('value', data.from);
+			if (!mbpIsChecked) {
+				activateSingleOption('mbp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceMBP = $rangeMBP.data("ionRangeSlider");
+
+	$inputMBP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputMBP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputMBP.val(max);
+		}
+
+		instanceMBP.update({
+			from: val
+		});
+
+		if (!mbpIsChecked) {
+			activateSingleOption('mbp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
 
 	// =====================================================
 	//      FORM LABELS
