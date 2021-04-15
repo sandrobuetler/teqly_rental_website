@@ -76,7 +76,8 @@
                 <div class="col-md-12 text-center animate-box">
                     <p><img src="images/teqly_cloud_narrow.png"
                             alt="Logo der TEQLY | Cloud"
-                            class="img-responsive img-rounded"></p>
+                            class="img-responsive img-rounded"
+                            width="100%"></p>
                 </div>
             </div>
         </div>
