@@ -434,8 +434,8 @@ h1, h2, h3, h4, h5, h6, figure {
 				color: $brand-white !important;
 			}
 			&.btn-demo{
-				background: rgba($brand-primary,1);
-				border: none;
+				background: rgba(white,1);
+				border: 2px solid black;
 				&:hover, &:focus{
 					background: rgba($brand-primary,.9) !important;
 					color: $brand-white !important;

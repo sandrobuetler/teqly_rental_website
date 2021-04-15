@@ -671,7 +671,9 @@
 <!-- Page End -->
 
 <!-- Back to top button -->
-<div id="toTop"><i class="fa fa-chevron-up"></i></div>
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+</div>
 <!-- jQuery -->
 <!-- jQuery Easing -->
 <!-- Vendor Javascript Files -->
