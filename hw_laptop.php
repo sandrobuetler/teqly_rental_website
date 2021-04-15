@@ -228,7 +228,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="#">
+                        <a>
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
@@ -246,7 +246,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="#">
+                        <a>
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
