@@ -28,9 +28,6 @@
     <!-- Vendor CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/animate/css/animate.min.css" rel="stylesheet">
-    <link href="vendor/dmenu/css/menu.css" rel="stylesheet">
-    <link href="vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
-    <link href="vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
     <link href="vendor/range-slider/css/ion.rangeSlider.css" rel="stylesheet">
     <link href="vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
     <link href="vendor/float-labels/css/float-labels.min.css" rel="stylesheet">
@@ -650,10 +647,8 @@
 <script src="vendor/price-format/js/jquery.priceformat.min.js"></script>
 <script src="vendor/theia-sticky-sidebar/js/ResizeSensor.min.js"></script>
 <script src="vendor/theia-sticky-sidebar/js/theia-sticky-sidebar.min.js"></script>
-<script src="vendor/mmenu/js/mmenu.min.js"></script>
 <script src="vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
 <script src="vendor/float-labels/js/float-labels.min.js"></script>
-
 
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
@@ -666,7 +661,7 @@
 <!-- Main -->
 
 <!-- Main Javascript File -->
-<script src="js/scripts-2_monthly.js"></script>
+<script src="js/scripts-2.js"></script>
 <script src="js/main.js"></script>
 
 <!-- Zammad Chat -->
