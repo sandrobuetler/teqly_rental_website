@@ -6,7 +6,7 @@
                 <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                 <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                     und Telefon.</p>
-                <p><a href="kontakt.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                <p><a href="kontakt.php" class="btn btn-primary btn-lg btn-demo">Kontaktieren Sie uns!</a></p>
             </div>
         </div>
     </div>
