@@ -1788,7 +1788,7 @@ label.cbx {
 	padding: 10px;
 	line-height: 20px;
 	position: fixed;
-	bottom: 15px;
+	bottom: 50px;
 	right: 15px;
 	cursor: pointer;
 	display: none;
@@ -3137,7 +3137,7 @@ input[type="text"] {
 
 .gototop {
 	position: fixed;
-	bottom: 20px;
+	bottom: 50px;
 	right: 20px;
 	z-index: 999;
 	opacity: 0;
@@ -3151,8 +3151,8 @@ input[type="text"] {
 	visibility: visible;
 }
 .gototop a {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	display: table;
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
@@ -3163,7 +3163,7 @@ input[type="text"] {
 	border-radius: 4px;
 }
 .gototop a i {
-	height: 50px;
+	height: 40px;
 	display: table-cell;
 	vertical-align: middle;
 }

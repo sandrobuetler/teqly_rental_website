@@ -362,9 +362,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header .display-tc .btn.btn-demo,
 .fh5co-cover .display-tc .btn.btn-demo {
-  background: grey;
-  color: white;
-  border: none;
+  background: white;
+  color: black;
+  border: 2px solid black !important;
 }
 #fh5co-header .display-tc .btn.btn-demo:hover, #fh5co-header .display-tc .btn.btn-demo:focus,
 .fh5co-cover .display-tc .btn.btn-demo:hover,
@@ -1145,7 +1145,7 @@ input[type="text"] {
 
 .gototop {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   z-index: 999;
   opacity: 0;
@@ -1159,8 +1159,8 @@ input[type="text"] {
   visibility: visible;
 }
 .gototop a {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: table;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -1171,7 +1171,7 @@ input[type="text"] {
   border-radius: 4px;
 }
 .gototop a i {
-  height: 50px;
+  height: 40px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -1310,13 +1310,13 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: grey;
-  color: #fff;
-  border: 0px solid #DD356E;
+  background: white;
+  color: black;
+  border: 2px solid black;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: black !important;
-  border-color: #e14b7e !important;
+  border-color: black !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
