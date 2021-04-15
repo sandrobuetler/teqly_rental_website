@@ -63,30 +63,30 @@
                             <li style="margin: -10px" class="active" style="margin: -10px !important;"><a href="index.php">Start</a></li>
                             <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="hardware.html">Hardware</a>
+                                <a href="hardware.php">Hardware</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/config/desktop_config.html">Desktop's</a></li>
-                                    <li><a href="html/config/laptop_config.html">Laptops's</a></li>
-                                    <li><a href="html/config/server_config.html">Server</a></li>
+                                    <li><a href="html/config/desktop_config.php">Desktop's</a></li>
+                                    <li><a href="html/config/laptop_config.php">Laptops's</a></li>
+                                    <li><a href="html/config/server_config.php">Server</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="software.html">Software</a>
+                                <a href="software.php">Software</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/config/teqly_config.html">TEQLY|Cloud</a></li>
-                                    <li><a href="html/config/microsoft_config.html">Microsoft365</a></li>
+                                    <li><a href="html/config/teqly_config.php">TEQLY|Cloud</a></li>
+                                    <li><a href="html/config/microsoft_config.php">Microsoft365</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="swissmade.html">Swiss Made</a>
+                                <a href="swissmade.php">Swiss Made</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/swissmade/teqly.html">TEQLY</a></li>
-                                    <li><a href="html/swissmade/primecomputer.html">Prime Computer</a></li>
-                                    <li><a href="html/swissmade/axxiv.html">axxiv</a></li>
+                                    <li><a href="html/swissmade/teqly.php">TEQLY</a></li>
+                                    <li><a href="html/swissmade/primecomputer.php">Prime Computer</a></li>
+                                    <li><a href="html/swissmade/axxiv.php">axxiv</a></li>
                                 </ul>
                             </li>
-                            <li style="margin: -10px !important;" ><a href="contact.html">Kontakt</a></li>
-                            <li class="btn-cta"><a href="calculator_yearly.html"><span>Preisrechner</span></a></li>
+                            <li style="margin: -10px !important;" ><a href="contact.php">Kontakt</a></li>
+                            <li class="btn-cta"><a href="calculator_yearly.php"><span>Preisrechner</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
                                 einkaufen. Dank unserem All-Inclusive Angebot müssen Sie sich nicht mehr um Ihre
                                 IT-Ifrastruktur kümmen. </h2>
                             <p> <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="#fh5co-features"></i>Vorteile</a>
-                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="hardware.html"></i>Hardware</a>
-                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="calculator_yearly.html">Preisrechner</a>
+                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="hardware.php"></i>Hardware</a>
+                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="calculator_yearly.php">Preisrechner</a>
                             </p>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                                 <h3>Moderne Hardware</h3>
                                 <p>Sie erhalten immer aktuelle Hardware, die auch durch uns regelmässig ausgetauscht
                                     wird. So bleiben Sie und Ihre Mitarbeitenden "up to date".</p>
-                                <p><a href="hardware.html">Zur Hardware<i class="icon-arrow-right22"></i></a></p>
+                                <p><a href="hardware.php">Zur Hardware<i class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +150,7 @@
                                 <h3>Schweizer Produkte</h3>
                                 <p>Vom Mini PC aus St. Gallen bis zur Maus aus Lausanne: Wenn immer möglich verwenden
                                     wir Hard- & Software von Schweizer Herstellern!</p>
-                                <p><a href="swissmade.html">Zu unseren Lieferanten <i
+                                <p><a href="swissmade.php">Zu unseren Lieferanten <i
                                         class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                 <h3>Kostentransparenz</h3>
                                 <p>Dank der einfachen und skalierbaren Kostenstruktur ist TEQLY | Rental eine
                                     Alternative zur traditionellen Beschaffung von IT-Systemen in KMU's.</p>
-                                <p><a href="calculator_yearly.html">Zum Preisrechner <i class="icon-arrow-right22"></i></a>
+                                <p><a href="calculator_yearly.php">Zum Preisrechner <i class="icon-arrow-right22"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                                 <h3>Persönlich</h3>
                                 <p>Wir wachsen und skalieren mit Ihnen zusammen! Wir beraten Sie gerne unverbindlich und
                                     suchen die beste Lösung für Ihre Anforderungen. Kontaktieren Sie uns noch heute!</p>
-                                <p><a href="contact.html">Kontaktieren Sie uns <i class="icon-arrow-right22"></i></a>
+                                <p><a href="contact.php">Kontaktieren Sie uns <i class="icon-arrow-right22"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -262,76 +262,15 @@
                     <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                         und Telefon.</p>
-                    <p><a href="contact.html" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer id="fh5co-footer" role="contentinfo">
-        <div class="container">
-            <div class="row row-pb-md">
-                <div class="col-md-4 fh5co-widget">
-                    <h4>TEQLY | Rental</h4>
-                    <p>Dieses Angebot ist eine Dienstleistung der TEQLY GmbH, dem innovativen KMU IT-Partner aus dem
-                        Aargau</p>
-                </div>
-                <div class="col-md-2 col-md-push-1 fh5co-widget">
-                    <h4>Navigation</h4>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="index.php">Start</a></li>
-                        <li><a href="vorteile.php">Vorteile</a></li>
-                        <li><a href="hardware.html">Hardware</a></li>
-                        <li><a href="software.html">Software</a></li>
-                        <li><a href="swissmade.html">Swiss Made</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                        <li><a href="calculator_yearly.html">Preisrechner</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-md-push-1 fh5co-widget">
-                    <h4>Mehr TEQLY</h4>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="https://teqly.ch/">Website</a></li>
-                        <li><a href="https://teqly.ch/blog.html">Blog</a></li>
-                        <li><a href="https://teqly.ch/services.html">Services</a></li>
-                        <li><a href="https://teqly.ch/produkte.html">Produkte</a></li>
-                        <li><a href="https://support.teqly.app">Support Plattform</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-md-push-1 fh5co-widget">
-                    <h4>Kontakt</h4>
-                    <ul class="fh5co-footer-links">
-                        <li>TEQLY GmbH <br> TECHNOPARK&copy; Aargau <br> Badenerstrasse 13 <br> 5200 Brugg</li>
-                        <li><a href="tel://+41625614002">+41 62 561 40 02</a></li>
-                        <li><a href="mailto:info@teqly.ch">info@teqly.ch</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="row copyright">
-                <div class="col-md-12 text-center">
-                    <p>
-                        <small class="block">&copy; 2021 gebaut und gehostet von TEQLY</small>
-                        <small class="block"><a href="https://teqly.ch/legal.html#impressum"
-                                                target="_blank">Impressum</a> <a
-                                href="https://teqly.ch/legal.html#datenschutz" target="_blank">Datenschutz</a> <a
-                                href="https://teqly.ch/legal.html#agb" target="_blank">AGB's</a> </small>
-                    </p>
-                    <p>
-                    <ul class="fh5co-social-icons">
-                        <li><a href="https://www.instagram.com/teqly/" target="_blank"><i class="icon-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/teqly" target="_blank"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="mailto:info@teqly.ch" target="_blank"><i class="icon-mail" ></i></a></li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </footer>
+    <?php
+    include('footer.php');
+    ?>
 </div>
 
 <div class="gototop js-top">

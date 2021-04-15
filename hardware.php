@@ -63,30 +63,30 @@
                             <li style="margin: -10px" style="margin: -10px !important;"><a href="index.php">Start</a></li>
                             <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown active">
-                                <a href="hardware.html">Hardware</a>
+                                <a href="hardware.php">Hardware</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/config/desktop_config.html">Desktop's</a></li>
-                                    <li><a href="html/config/laptop_config.html">Laptops's</a></li>
-                                    <li><a href="html/config/server_config.html">Server</a></li>
+                                    <li><a href="html/config/desktop_config.php">Desktop's</a></li>
+                                    <li><a href="html/config/laptop_config.php">Laptops's</a></li>
+                                    <li><a href="html/config/server_config.php">Server</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="software.html">Software</a>
+                                <a href="software.php">Software</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/config/teqly_config.html">TEQLY|Cloud</a></li>
-                                    <li><a href="html/config/microsoft_config.html">Microsoft365</a></li>
+                                    <li><a href="html/config/teqly_config.php">TEQLY|Cloud</a></li>
+                                    <li><a href="html/config/microsoft_config.php">Microsoft365</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="swissmade.html">Swiss Made</a>
+                                <a href="swissmade.php">Swiss Made</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/swissmade/teqly.html">TEQLY</a></li>
-                                    <li><a href="html/swissmade/primecomputer.html">Prime Computer</a></li>
-                                    <li><a href="html/swissmade/axxiv.html">axxiv</a></li>
+                                    <li><a href="html/swissmade/teqly.php">TEQLY</a></li>
+                                    <li><a href="html/swissmade/primecomputer.php">Prime Computer</a></li>
+                                    <li><a href="html/swissmade/axxiv.php">axxiv</a></li>
                                 </ul>
                             </li>
-                            <li style="margin: -10px !important;" ><a href="contact.html">Kontakt</a></li>
-                            <li class="btn-cta"><a href="calculator_yearly.html"><span>Preisrechner</span></a></li>
+                            <li style="margin: -10px !important;" ><a href="contact.php">Kontakt</a></li>
+                            <li class="btn-cta"><a href="calculator_yearly.php"><span>Preisrechner</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/desktop_config.html">
+                        <a href="html/config/desktop_config.php">
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_pm_front.png);"></div>
                             <div class="portfolio-text">
@@ -123,7 +123,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/laptop_config.html">
+                        <a href="html/config/laptop_config.php">
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
@@ -136,7 +136,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/server_config.html">
+                        <a href="html/config/server_config.php">
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
@@ -159,76 +159,15 @@
                     <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                         und Telefon.</p>
-                    <p><a href="contact.html" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer id="fh5co-footer" role="contentinfo">
-        <div class="container">
-            <div class="row row-pb-md">
-                <div class="col-md-4 fh5co-widget">
-                    <h4>TEQLY | Rental</h4>
-                    <p>Dieses Angebot ist eine Dienstleistung der TEQLY GmbH, dem innovativen KMU IT-Partner aus dem
-                        Aargau</p>
-                </div>
-                <div class="col-md-2 col-md-push-1 fh5co-widget">
-                    <h4>Navigation</h4>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="index.php">Start</a></li>
-                        <li><a href="vorteile.php">Vorteile</a></li>
-                        <li><a href="hardware.html">Hardware</a></li>
-                        <li><a href="software.html">Software</a></li>
-                        <li><a href="swissmade.html">Swiss Made</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                        <li><a href="calculator_yearly.html">Preisrechner</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-md-push-1 fh5co-widget">
-                    <h4>Mehr TEQLY</h4>
-                    <ul class="fh5co-footer-links">
-                        <li><a href="https://teqly.ch/">Website</a></li>
-                        <li><a href="https://teqly.ch/blog.html">Blog</a></li>
-                        <li><a href="https://teqly.ch/services.html">Services</a></li>
-                        <li><a href="https://teqly.ch/produkte.html">Produkte</a></li>
-                        <li><a href="https://support.teqly.app">Support Plattform</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 col-md-push-1 fh5co-widget">
-                    <h4>Kontakt</h4>
-                    <ul class="fh5co-footer-links">
-                        <li>TEQLY GmbH <br> TECHNOPARK&copy; Aargau <br> Badenerstrasse 13 <br> 5200 Brugg</li>
-                        <li><a href="tel://+41625614002">+41 62 561 40 02</a></li>
-                        <li><a href="mailto:info@teqly.ch">info@teqly.ch</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="row copyright">
-                <div class="col-md-12 text-center">
-                    <p>
-                        <small class="block">&copy; 2021 gebaut und gehostet von TEQLY</small>
-                        <small class="block"><a href="https://teqly.ch/legal.html#impressum"
-                                                target="_blank">Impressum</a> <a
-                                href="https://teqly.ch/legal.html#datenschutz" target="_blank">Datenschutz</a> <a
-                                href="https://teqly.ch/legal.html#agb" target="_blank">AGB's</a> </small>
-                    </p>
-                    <p>
-                    <ul class="fh5co-social-icons">
-                        <li><a href="https://www.instagram.com/teqly/" target="_blank"><i class="icon-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/teqly" target="_blank"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="mailto:info@teqly.ch" target="_blank"><i class="icon-mail" ></i></a></li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </footer>
+    <?php
+    include('footer.php');
+    ?>
 </div>
 
 <div class="gototop js-top">

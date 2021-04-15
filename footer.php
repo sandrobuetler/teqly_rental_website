@@ -12,11 +12,11 @@
                 <ul class="fh5co-footer-links">
                     <li><a href="index.php">Start</a></li>
                     <li><a href="why_rent.html">Vorteile</a></li>
-                    <li><a href="hardware.html">Hardware</a></li>
-                    <li><a href="software.html">Software</a></li>
-                    <li><a href="swissmade.html">Swiss Made</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                    <li><a href="calculator_yearly.html">Preisrechner</a></li>
+                    <li><a href="hardware.php">Hardware</a></li>
+                    <li><a href="software.php">Software</a></li>
+                    <li><a href="swissmade.php">Swiss Made</a></li>
+                    <li><a href="contact.php">Kontakt</a></li>
+                    <li><a href="calculator_yearly.php">Preisrechner</a></li>
                 </ul>
             </div>
 

@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Prime Computer</title>
+    <title>TEQLY | Rental - axxiv</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Prime Computer ist ein St. Galler Mini PC und Server Produzent."/>
+    <meta name="description"
+          content="axxiv ist die Eigenmarke des Zuger Technologieunternehmens Littlebit Technology."/>
     <meta name="keywords"
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service"/>
     <meta name="author" content="TEQLY GmbH"/>
@@ -62,30 +63,30 @@
                             <li style="margin: -10px" style="margin: -10px !important;"><a href="../../index.php">Start</a></li>
                             <li style="margin: -10px !important;"><a href="../../vorteile.php">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="../../hardware.html">Hardware</a>
+                                <a href="../../hardware.php">Hardware</a>
                                 <ul class="dropdown">
-                                    <li><a href="../config/desktop_config.html">Desktop's</a></li>
-                                    <li><a href="../config/laptop_config.html">Laptops's</a></li>
-                                    <li><a href="../config/server_config.html">Server</a></li>
+                                    <li><a href="../config/desktop_config.php">Desktop's</a></li>
+                                    <li><a href="../config/laptop_config.php">Laptops's</a></li>
+                                    <li><a href="../config/server_config.php">Server</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="../../software.html">Software</a>
+                                <a href="../../software.php">Software</a>
                                 <ul class="dropdown">
-                                    <li><a href="../config/teqly_config.html">TEQLY|Cloud</a></li>
-                                    <li><a href="../config/microsoft_config.html">Microsoft365</a></li>
+                                    <li><a href="../config/teqly_config.php">TEQLY|Cloud</a></li>
+                                    <li><a href="../config/microsoft_config.php">Microsoft365</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown active">
-                                <a href="../../swissmade.html">Swiss Made</a>
+                                <a href="../../swissmade.php">Swiss Made</a>
                                 <ul class="dropdown">
-                                    <li><a href="teqly.html">TEQLY</a></li>
-                                    <li><a href="primecomputer.html">Prime Computer</a></li>
-                                    <li><a href="axxiv.html">axxiv</a></li>
+                                    <li><a href="teqly.php">TEQLY</a></li>
+                                    <li><a href="primecomputer.php">Prime Computer</a></li>
+                                    <li><a href="axxiv.php">axxiv</a></li>
                                 </ul>
                             </li>
-                            <li style="margin: -10px !important;" ><a href="../../contact.html">Kontakt</a></li>
-                            <li class="btn-cta"><a href="../../calculator_yearly.html"><span>Preisrechner</span></a></li>
+                            <li style="margin: -10px !important;" ><a href="../../contact.php">Kontakt</a></li>
+                            <li class="btn-cta"><a href="../../calculator_yearly.php"><span>Preisrechner</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,32 +98,30 @@
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>Prime Computer</h2>
-                    <p>Prime Computer ist überzeugt, dass IT-Hardware nachhaltig produziert und eingesetzt werden muss.
-                        Bei der Produktion der Prime Computer Produkte spielen ökologische und soziale Aspekte deshalb
-                        eine zentrale Rolle. Im Betrieb steht Energieeffizienz und eine möglichst lange Lebensdauer
-                        ihrer PCs und Server im Vordergrund. Aus diesen Gründen haben sie ihre langlebigen,
-                        wartungsarmen und sparsamen Mini-PCs und Server entwickelt. Die lüfterlose Bauweise und der
-                        Einsatz von hochwertigen und exakt aufeinander abgestimmten Komponenten, erlaubt eine besonders
-                        kompakte Bauweise und verleiht ihren PCs und Servern höchste Zuverlässigkeit.</p>
-                    <p><a class="btn btn-primary btn-lg btn-demo" href="https://primecomputer.ch" target="_blank"></i>
+                    <h2>axxiv</h2>
+                    <p>2008 als Eigenmarke der Littlebit Technology AG gegründet, profitiert axxiv von langjähriger
+                        Erfahrung im IT-Business und Partnerschaften mit internationalen Herstellern. In axxiv steckt
+                        der unermüdliche Geist motivierter Mitarbeiter, viel Leidenschaft und jahrelang angeeignetes
+                        Know-How.</p>
+                    <p><a class="btn btn-primary btn-lg btn-demo" href="https://axxiv.ch" target="_blank"></i>
                         Website</a></p>
                 </div>
             </div>
             <div class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center heading-section">
-                    <h3>Swiss Made</h3>
-                    <p>Die Produkte der Prime Computer AG werden in der Schweiz, am Hauptsitz in St. Gallen, entwickelt
-                        und assembliert. Jeder PC und Server wird hier einzeln getestet, bevor er ausgeliefert wird. Die
-                        Prime Computer AG verwendet Komponenten von namhaften Firmen wie Intel, Samsung und
-                        Kingston.</p>
+                    <h3>Philosophie</h3>
+                    <p>Die Welt der IT ist im stetigen Wandel. Das ist axxiv auch. Und dennoch wird den Traditionen treu
+                        geblieben: Beste Schweizer Qualität für eine zukunftssichere IT-Landschaft. Massenware? Kennt
+                        axxiv nicht. axxiv ist überzeugt individuelle Anforderungen benötigen massgeschneiderte
+                        Lösungen. Höchstes Ziel ist, dass Sie so flexibel und effizient arbeiten können, wie nur
+                        möglich.</p>
                 </div>
             </div>
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="../../images/teqly_sm_primecomputer_mood.png"
-                            alt="Bild aus der Montage der Prime Computer AG" class="img-responsive img-rounded" width="100%"></p>
+                    <p><img src="../../images/teqly_sm_axxiv_mood.png" alt="Blick in das Logistikzentrum von axxiv"
+                            class="img-responsive img-rounded" width="100%"></p>
                 </div>
             </div>
         </div>
@@ -136,7 +135,7 @@
                     <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                         und Telefon.</p>
-                    <p><a href="../../contact.html" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="../../contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>
@@ -155,11 +154,11 @@
                     <ul class="fh5co-footer-links">
                         <li><a href="../../index.php">Start</a></li>
                         <li><a href="../../vorteile.php">Vorteile</a></li>
-                        <li><a href="../../hardware.html">Hardware</a></li>
-                        <li><a href="../../software.html">Software</a></li>
-                        <li><a href="../../swissmade.html">Swiss Made</a></li>
-                        <li><a href="../../contact.html">Kontakt</a></li>
-                        <li><a href="../../calculator_yearly.html">Preisrechner</a></li>
+                        <li><a href="../../hardware.php">Hardware</a></li>
+                        <li><a href="../../software.php">Software</a></li>
+                        <li><a href="../../swissmade.php">Swiss Made</a></li>
+                        <li><a href="../../contact.php">Kontakt</a></li>
+                        <li><a href="../../calculator_yearly.php">Preisrechner</a></li>
                     </ul>
                 </div>
 
@@ -240,6 +239,7 @@
         });
     });
 </script>
+
 
 </body>
 </html>

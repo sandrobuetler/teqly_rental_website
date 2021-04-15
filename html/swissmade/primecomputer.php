@@ -3,16 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Software</title>
+    <title>TEQLY | Rental - Prime Computer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-          content="Wenn die Grundausstattung unserer Konfigurationen nicht Ihren Anforderungen entspricht, bieten wir Ihnen verschiede Zusatzlösungen an."/>
+    <meta name="description" content="Prime Computer ist ein St. Galler Mini PC und Server Produzent."/>
     <meta name="keywords"
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service"/>
     <meta name="author" content="TEQLY GmbH"/>
 
     <!-- Favicon -->
-    <link href="images/teqly_favicon.png" rel="shortcut icon">
+    <link href="../../images/teqly_favicon.png" rel="shortcut icon">
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
@@ -29,22 +28,22 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../../css/animate.css">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="../../css/icomoon.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
     <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="../../css/flexslider.css">
 
     <!-- Theme style  -->
-    <link rel="stylesheet" href="css/styleair.css">
+    <link rel="stylesheet" href="../../css/styleair.css">
 
     <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="../../js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -57,78 +56,73 @@
         <div class="top-menu">
             <div class="container">
                 <div class="row">
-                    <IMG SRC="images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
+                    <IMG SRC="../../images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
                     <div class="col-xs-10 text-right menu-1">
                         <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" style="margin: -10px !important;"><a href="index.php">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
+                            <li style="margin: -10px" style="margin: -10px !important;"><a href="../../index.php">Start</a></li>
+                            <li style="margin: -10px !important;"><a href="../../vorteile.php">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="hardware.html">Hardware</a>
+                                <a href="../../hardware.php">Hardware</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/config/desktop_config.html">Desktop's</a></li>
-                                    <li><a href="html/config/laptop_config.html">Laptops's</a></li>
-                                    <li><a href="html/config/server_config.html">Server</a></li>
+                                    <li><a href="../config/desktop_config.php">Desktop's</a></li>
+                                    <li><a href="../config/laptop_config.php">Laptops's</a></li>
+                                    <li><a href="../config/server_config.php">Server</a></li>
+                                </ul>
+                            </li>
+                            <li style="margin: -10px !important;" class="has-dropdown">
+                                <a href="../../software.php">Software</a>
+                                <ul class="dropdown">
+                                    <li><a href="../config/teqly_config.php">TEQLY|Cloud</a></li>
+                                    <li><a href="../config/microsoft_config.php">Microsoft365</a></li>
                                 </ul>
                             </li>
                             <li style="margin: -10px !important;" class="has-dropdown active">
-                                <a href="software.html">Software</a>
+                                <a href="../../swissmade.php">Swiss Made</a>
                                 <ul class="dropdown">
-                                    <li><a href="html/config/teqly_config.html">TEQLY|Cloud</a></li>
-                                    <li><a href="html/config/microsoft_config.html">Microsoft365</a></li>
+                                    <li><a href="teqly.php">TEQLY</a></li>
+                                    <li><a href="primecomputer.php">Prime Computer</a></li>
+                                    <li><a href="axxiv.php">axxiv</a></li>
                                 </ul>
                             </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="swissmade.html">Swiss Made</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/swissmade/teqly.html">TEQLY</a></li>
-                                    <li><a href="html/swissmade/primecomputer.html">Prime Computer</a></li>
-                                    <li><a href="html/swissmade/axxiv.html">axxiv</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" ><a href="contact.html">Kontakt</a></li>
-                            <li class="btn-cta"><a href="calculator_yearly.html"><span>Preisrechner</span></a></li>
+                            <li style="margin: -10px !important;" ><a href="../../contact.php">Kontakt</a></li>
+                            <li class="btn-cta"><a href="../../calculator_yearly.php"><span>Preisrechner</span></a></li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </nav>
 
-    <div id="fh5co-portfolio">
+    <div id="fh5co-about">
         <div class="container">
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                    <h2>Zusätzliche Software</h2>
-                    <p>Zwar kommen alle unsere Client Geräte mit vorinstalliertem Office, wenn Sie aber zusätzlich weitere Microsoft Programme oder eine sichere Schweizer Cloud Lösung suchen, können wir Ihnen auch diese Wünsche erfüllen.<br>Falls Sie spezielle Anforderungen an Ihre Software haben, kontaktieren Sie uns gerne
-                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard
-                        Sortiments. Gerne unterstützen wir Sie auch bei der Implementation von komplexeren Programmen wie z.B. CAD-Software oder OnPremise ERP- und Buchhaltungssystemen.</p>
+                    <h2>Prime Computer</h2>
+                    <p>Prime Computer ist überzeugt, dass IT-Hardware nachhaltig produziert und eingesetzt werden muss.
+                        Bei der Produktion der Prime Computer Produkte spielen ökologische und soziale Aspekte deshalb
+                        eine zentrale Rolle. Im Betrieb steht Energieeffizienz und eine möglichst lange Lebensdauer
+                        ihrer PCs und Server im Vordergrund. Aus diesen Gründen haben sie ihre langlebigen,
+                        wartungsarmen und sparsamen Mini-PCs und Server entwickelt. Die lüfterlose Bauweise und der
+                        Einsatz von hochwertigen und exakt aufeinander abgestimmten Komponenten, erlaubt eine besonders
+                        kompakte Bauweise und verleiht ihren PCs und Servern höchste Zuverlässigkeit.</p>
+                    <p><a class="btn btn-primary btn-lg btn-demo" href="https://primecomputer.ch" target="_blank"></i>
+                        Website</a></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/teqly_config.html">
-                            <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_cloud.png);"></div>
-                            <div class="portfolio-text">
-                                <h3>TEQLY | Cloud</h3>
-                                <p style="color: #0b0b0b">Wieso sich bei einem Cloudanbieter einmieten, wenn Sie auch Ihre eigene Cloud haben können? Mit TEQLY | Cloud bieten wir Ihnen die Möglichkeit günstig, sicher & effizient eine eigene Cloudinfrastruktur zu betreiben.</p>
-                            </div>
-                        </a>
-                    </div>
+            <div class="row animate-box">
+                <div class="col-md-6 col-md-offset-3 text-center heading-section">
+                    <h3>Swiss Made</h3>
+                    <p>Die Produkte der Prime Computer AG werden in der Schweiz, am Hauptsitz in St. Gallen, entwickelt
+                        und assembliert. Jeder PC und Server wird hier einzeln getestet, bevor er ausgeliefert wird. Die
+                        Prime Computer AG verwendet Komponenten von namhaften Firmen wie Intel, Samsung und
+                        Kingston.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/microsoft_config.html">
-                            <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_microsoft.png);"></div>
-                            <div class="portfolio-text">
-                                <h3>Microsoft365</h3>
-                                <p style="color: #0b0b0b">Word, Excel & Powerpoint kennen uns schätzen wir alle, aber Microsoft365 hat viel mehr zu bieten: Entdecken Sie Teams, Publisher, SharePoint oder OneDrive. Arbeiten Sie und Ihr Team dezentraler und effizienter.</p>
-                            </div>
-                        </a>
-                    </div>
+            </div>
+
+            <div class="row row-bottom-padded-md">
+                <div class="col-md-12 text-center animate-box">
+                    <p><img src="../../images/teqly_sm_primecomputer_mood.png"
+                            alt="Bild aus der Montage der Prime Computer AG" class="img-responsive img-rounded" width="100%"></p>
                 </div>
             </div>
         </div>
@@ -142,7 +136,7 @@
                     <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                         und Telefon.</p>
-                    <p><a href="contact.html" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="../../contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>
@@ -159,13 +153,13 @@
                 <div class="col-md-2 col-md-push-1 fh5co-widget">
                     <h4>Navigation</h4>
                     <ul class="fh5co-footer-links">
-                        <li><a href="index.php">Start</a></li>
-                        <li><a href="vorteile.php">Vorteile</a></li>
-                        <li><a href="hardware.html">Hardware</a></li>
-                        <li><a href="software.html">Software</a></li>
-                        <li><a href="swissmade.html">Swiss Made</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                        <li><a href="calculator_yearly.html">Preisrechner</a></li>
+                        <li><a href="../../index.php">Start</a></li>
+                        <li><a href="../../vorteile.php">Vorteile</a></li>
+                        <li><a href="../../hardware.php">Hardware</a></li>
+                        <li><a href="../../software.php">Software</a></li>
+                        <li><a href="../../swissmade.php">Swiss Made</a></li>
+                        <li><a href="../../contact.php">Kontakt</a></li>
+                        <li><a href="../../calculator_yearly.php">Preisrechner</a></li>
                     </ul>
                 </div>
 
@@ -221,17 +215,17 @@
 <!-- Zammad jQuery -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
 <!-- jQuery Easing -->
-<script src="js/jquery.easing.1.3.js"></script>
+<script src="../../js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 <!-- Waypoints -->
-<script src="js/jquery.waypoints.min.js"></script>
+<script src="../../js/jquery.waypoints.min.js"></script>
 <!-- Flexslider -->
-<script src="js/jquery.flexslider-min.js"></script>
+<script src="../../js/jquery.flexslider-min.js"></script>
 <!-- Main -->
-<script src="js/main.js"></script>
+<script src="../../js/main.js"></script>
 
 <!-- Zammad Chat -->
 <script src="https://support.teqly.app/assets/chat/chat.min.js"></script>
