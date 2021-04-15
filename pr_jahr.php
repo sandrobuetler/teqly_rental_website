@@ -635,6 +635,7 @@
     <!-- Main End -->
 
     <?php
+    include('shared/calltoaction.php');
     include('shared/footer.php');
     ?>
 </div>
