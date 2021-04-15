@@ -72,7 +72,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="sw_teqlycloud.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_cloud.png);"></div>
+                                 style="background-image: url(images/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud</h3>
                                 <p style="color: #0b0b0b">Wieso sich bei einem Cloudanbieter einmieten, wenn Sie auch Ihre eigene Cloud haben können? Mit TEQLY | Cloud bieten wir Ihnen die Möglichkeit günstig, sicher & effizient eine eigene Cloudinfrastruktur zu betreiben.</p>
@@ -84,7 +84,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="sw_microsoft.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_microsoft.png);"></div>
+                                 style="background-image: url(images/teqly_microsoft.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Microsoft365</h3>
                                 <p style="color: #0b0b0b">Word, Excel & Powerpoint kennen uns schätzen wir alle, aber Microsoft365 hat viel mehr zu bieten: Entdecken Sie Teams, Publisher, SharePoint oder OneDrive. Arbeiten Sie und Ihr Team dezentraler und effizienter.</p>

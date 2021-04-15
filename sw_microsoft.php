@@ -71,7 +71,7 @@
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="images/toBeMadeSmaller/teqly_microsoft_uebersicht.png"
+                    <p><img src="images/teqly_microsoft_uebersicht.png"
                             alt="Logo von Microsoft"
                             class="img-responsive img-rounded"></p>
                 </div>
@@ -92,7 +92,7 @@
                     <aside id="fh5co-hero">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li style="background-image: url(images/toBeMadeSmaller/teqly_microsoft_teams.png);">
+                                <li style="background-image: url(images/teqly_microsoft_teams.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -114,7 +114,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/toBeMadeSmaller/teqly_microsoft_onedrive.png);">
+                                <li style="background-image: url(images/teqly_microsoft_onedrive.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -132,7 +132,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/toBeMadeSmaller/teqly_microsoft_suite.png);">
+                                <li style="background-image: url(images/teqly_microsoft_suite.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -224,7 +224,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_microsoft.png);"></div>
+                                 style="background-image: url(images/teqly_microsoft.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Microsoft365 <br>Business Apps</h3>
                                 <p style="color: #0b0b0b">
@@ -244,7 +244,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_microsoft.png);"></div>
+                                 style="background-image: url(images/teqly_microsoft.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Microsoft365 <br>Business Standard</h3>
                                 <p style="color: #0b0b0b">
@@ -264,7 +264,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_microsoft.png);"></div>
+                                 style="background-image: url(images/teqly_microsoft.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Microsoft365 <br>Business Premium</h3>
                                 <p style="color: #0b0b0b">

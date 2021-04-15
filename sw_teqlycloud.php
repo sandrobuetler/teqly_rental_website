@@ -74,7 +74,7 @@
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="images/toBeMadeSmaller/teqly_cloud_narrow.png"
+                    <p><img src="images/teqly_cloud_narrow.png"
                             alt="Logo der TEQLY | Cloud"
                             class="img-responsive img-rounded"></p>
                 </div>
@@ -95,7 +95,7 @@
                     <aside id="fh5co-hero">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li style="background-image: url(images/toBeMadeSmaller/teqly_cloud_network.png);">
+                                <li style="background-image: url(images/teqly_cloud_network.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -117,7 +117,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/toBeMadeSmaller/teqly_cloud_office.png);">
+                                <li style="background-image: url(images/teqly_cloud_office.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -139,7 +139,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/toBeMadeSmaller/teqly_cloud_style.png);">
+                                <li style="background-image: url(images/teqly_cloud_style.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -232,7 +232,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_cloud.png);"></div>
+                                 style="background-image: url(images/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud S<br>(Standard)</h3>
                                 <p style="color: #0b0b0b">
@@ -250,7 +250,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/toBeMadeSmaller/teqly_cloud.png);"></div>
+                                 style="background-image: url(images/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud P<br>(Premium)</h3>
                                 <p style="color: #0b0b0b">
