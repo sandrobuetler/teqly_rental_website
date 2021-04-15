@@ -47,12 +47,6 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
-    <script>
-        $(function (){
-            $("#footer").load("footer.html");
-        });
-    </script>
-
 </head>
 <body>
 
@@ -60,7 +54,7 @@
 
 <div id="page">
     <?php
-    include('navigation.php');
+    include('shared/navigation.php');
     ?>
 
     <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner">
@@ -277,7 +271,7 @@
     </div>
 
     <?php
-    include('footer.php');
+    include('shared/footer.php');
     ?>
 
 </div>

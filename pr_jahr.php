@@ -61,7 +61,7 @@
 
 <div id="page" style="background: white !important">
     <?php
-    include('navigation.php');
+    include('shared/navigation.php');
     ?>
     <main>
         <!-- Order  -->
@@ -635,7 +635,7 @@
     <!-- Main End -->
 
     <?php
-    include('footer.php');
+    include('shared/footer.php');
     ?>
 </div>
 <!-- Page End -->

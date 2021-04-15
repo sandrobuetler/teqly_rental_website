@@ -54,7 +54,7 @@
 
 <div id="page">
     <?php
-    include('navigation.php');
+    include('shared/navigation.php');
     ?>
 
     <div id="fh5co-about">
@@ -285,7 +285,7 @@
 
 
     <?php
-    include('../../footer.php');
+    include('shared/footer.php');
     ?>
 </div>
 

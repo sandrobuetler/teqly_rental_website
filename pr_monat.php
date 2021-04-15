@@ -65,7 +65,7 @@
 <div id="page">
 
     <?php
-    include('navigation.php');
+    include('shared/navigation.php');
     ?>
 
     <main>
@@ -629,7 +629,7 @@
     <!-- Main End -->
 
     <?php
-    include('footer.php');
+    include('shared/footer.php');
     ?>
 </div>
 <!-- Page End -->
