@@ -47,53 +47,16 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 <body>
 
 <div class="fh5co-loader"></div>
 
 <div id="page">
-    <nav id="menu" class="fh5co-nav" role="navigation">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <IMG SRC="images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
-                    <div class="col-xs-10 text-right menu-1">
-                        <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" class="active" style="margin: -10px !important;"><a href="index.php">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="hardware.php">Hardware</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/config/desktop_config.php">Desktop's</a></li>
-                                    <li><a href="html/config/laptop_config.php">Laptops's</a></li>
-                                    <li><a href="html/config/server_config.php">Server</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="software.php">Software</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/config/teqly_config.php">TEQLY|Cloud</a></li>
-                                    <li><a href="html/config/microsoft_config.php">Microsoft365</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="swissmade.php">Swiss Made</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/swissmade/teqly.php">TEQLY</a></li>
-                                    <li><a href="html/swissmade/primecomputer.php">Prime Computer</a></li>
-                                    <li><a href="html/swissmade/axxiv.php">axxiv</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" ><a href="contact.php">Kontakt</a></li>
-                            <li class="btn-cta"><a href="calculator_yearly.php"><span>Preisrechner</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </nav>
+    <?php
+    include('navigation.php');
+    ?>
 
     <header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner">
         <div class="overlay"></div>
@@ -108,7 +71,7 @@
                                 IT-Ifrastruktur kümmen. </h2>
                             <p> <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="#fh5co-features"></i>Vorteile</a>
                                 <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="hardware.php"></i>Hardware</a>
-                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="calculator_yearly.php">Preisrechner</a>
+                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="pr_jahr.php">Preisrechner</a>
                             </p>
                         </div>
                     </div>
@@ -165,7 +128,7 @@
                                 <h3>Kostentransparenz</h3>
                                 <p>Dank der einfachen und skalierbaren Kostenstruktur ist TEQLY | Rental eine
                                     Alternative zur traditionellen Beschaffung von IT-Systemen in KMU's.</p>
-                                <p><a href="calculator_yearly.php">Zum Preisrechner <i class="icon-arrow-right22"></i></a>
+                                <p><a href="pr_jahr.php">Zum Preisrechner <i class="icon-arrow-right22"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -215,7 +178,7 @@
                                 <h3>Persönlich</h3>
                                 <p>Wir wachsen und skalieren mit Ihnen zusammen! Wir beraten Sie gerne unverbindlich und
                                     suchen die beste Lösung für Ihre Anforderungen. Kontaktieren Sie uns noch heute!</p>
-                                <p><a href="contact.php">Kontaktieren Sie uns <i class="icon-arrow-right22"></i></a>
+                                <p><a href="kontakt.php">Kontaktieren Sie uns <i class="icon-arrow-right22"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -262,7 +225,7 @@
                     <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                         und Telefon.</p>
-                    <p><a href="contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="kontakt.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>

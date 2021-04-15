@@ -53,47 +53,9 @@
 <div class="fh5co-loader"></div>
 
 <div id="page">
-    <nav id="menu" class="fh5co-nav" role="navigation">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <IMG SRC="images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
-                    <div class="col-xs-10 text-right menu-1">
-                        <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" style="margin: -10px !important;"><a href="index.php">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
-                            <li style="margin: -10px !important;" class="has-dropdown active">
-                                <a href="hardware.php">Hardware</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/config/desktop_config.php">Desktop's</a></li>
-                                    <li><a href="html/config/laptop_config.php">Laptops's</a></li>
-                                    <li><a href="html/config/server_config.php">Server</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="software.php">Software</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/config/teqly_config.php">TEQLY|Cloud</a></li>
-                                    <li><a href="html/config/microsoft_config.php">Microsoft365</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="swissmade.php">Swiss Made</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/swissmade/teqly.php">TEQLY</a></li>
-                                    <li><a href="html/swissmade/primecomputer.php">Prime Computer</a></li>
-                                    <li><a href="html/swissmade/axxiv.php">axxiv</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" ><a href="contact.php">Kontakt</a></li>
-                            <li class="btn-cta"><a href="calculator_yearly.php"><span>Preisrechner</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </nav>
+    <?php
+    include('navigation.php');
+    ?>
 
     <div id="fh5co-portfolio">
         <div class="container">
@@ -110,7 +72,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/desktop_config.php">
+                        <a href="hw_desktop.php">
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_pm_front.png);"></div>
                             <div class="portfolio-text">
@@ -123,7 +85,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/laptop_config.php">
+                        <a href="hw_laptop.php">
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
@@ -136,7 +98,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
-                        <a href="html/config/server_config.php">
+                        <a href="hw_server.php">
                             <div class="portfolio-entry"
                                  style="background-image: url(images/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
@@ -159,7 +121,7 @@
                     <h2>Noch Fragen?<br> Stellen Sie sie uns!</h2>
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail, Chat
                         und Telefon.</p>
-                    <p><a href="contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="kontakt.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>

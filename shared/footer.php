@@ -10,13 +10,13 @@
             <div class="col-md-2 col-md-push-1 fh5co-widget">
                 <h4>Navigation</h4>
                 <ul class="fh5co-footer-links">
-                    <li><a href="index.php">Start</a></li>
-                    <li><a href="why_rent.html">Vorteile</a></li>
-                    <li><a href="hardware.php">Hardware</a></li>
-                    <li><a href="software.php">Software</a></li>
-                    <li><a href="swissmade.php">Swiss Made</a></li>
-                    <li><a href="contact.php">Kontakt</a></li>
-                    <li><a href="calculator_yearly.php">Preisrechner</a></li>
+                    <li><a href="../index.php">Start</a></li>
+                    <li><a href="../vorteile.php">Vorteile</a></li>
+                    <li><a href="../hardware.php">Hardware</a></li>
+                    <li><a href="../software.php">Software</a></li>
+                    <li><a href="../swissmade.php">Swiss Made</a></li>
+                    <li><a href="../kontakt.php">Kontakt</a></li>
+                    <li><a href="../pr_jahr.php">Preisrechner</a></li>
                 </ul>
             </div>
 

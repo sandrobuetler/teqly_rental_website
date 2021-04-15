@@ -12,7 +12,7 @@
     <meta name="author" content="TEQLY GmbH"/>
 
     <!-- Favicon -->
-    <link href="../../images/teqly_favicon.png" rel="shortcut icon">
+    <link href="images/teqly_favicon.png" rel="shortcut icon">
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
@@ -29,22 +29,22 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 
     <!-- Animate.css -->
-    <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="../../css/icomoon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Flexslider  -->
-    <link rel="stylesheet" href="../../css/flexslider.css">
+    <link rel="stylesheet" href="css/flexslider.css">
 
     <!-- Theme style  -->
-    <link rel="stylesheet" href="../../css/styleair.css">
+    <link rel="stylesheet" href="css/styleair.css">
 
     <!-- Modernizr JS -->
-    <script src="../../js/modernizr-2.6.2.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="../../js/respond.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -53,46 +53,9 @@
 <div class="fh5co-loader"></div>
 
 <div id="page">
-    <nav id="menu" class="fh5co-nav" role="navigation">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <IMG SRC="../../images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
-                    <div class="col-xs-10 text-right menu-1">
-                        <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" style="margin: -10px !important;"><a href="../../index.php">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="../../vorteile.php">Vorteile</a></li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="../../hardware.php">Hardware</a>
-                                <ul class="dropdown">
-                                    <li><a href="desktop_config.php">Desktop's</a></li>
-                                    <li><a href="laptop_config.php">Laptops's</a></li>
-                                    <li><a href="server_config.php">Server</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown active">
-                                <a href="../../software.php">Software</a>
-                                <ul class="dropdown">
-                                    <li><a href="teqly_config.php">TEQLY|Cloud</a></li>
-                                    <li><a href="microsoft_config.php">Microsoft365</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="../../swissmade.php">Swiss Made</a>
-                                <ul class="dropdown">
-                                    <li><a href="../swissmade/teqly.php">TEQLY</a></li>
-                                    <li><a href="../swissmade/primecomputer.php">Prime Computer</a></li>
-                                    <li><a href="../swissmade/axxiv.php">axxiv</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" ><a href="../../contact.php">Kontakt</a></li>
-                            <li class="btn-cta"><a href="../../calculator_yearly.php"><span>Preisrechner</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php
+    include('navigation.php');
+    ?>
 
     <div id="fh5co-about">
         <div class="container">
@@ -111,7 +74,7 @@
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="../../images/toBeMadeSmaller/teqly_cloud_narrow.png"
+                    <p><img src="images/toBeMadeSmaller/teqly_cloud_narrow.png"
                             alt="Logo der TEQLY | Cloud"
                             class="img-responsive img-rounded"></p>
                 </div>
@@ -132,7 +95,7 @@
                     <aside id="fh5co-hero">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li style="background-image: url(../../images/toBeMadeSmaller/teqly_cloud_network.png);">
+                                <li style="background-image: url(images/toBeMadeSmaller/teqly_cloud_network.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -154,7 +117,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(../../images/toBeMadeSmaller/teqly_cloud_office.png);">
+                                <li style="background-image: url(images/toBeMadeSmaller/teqly_cloud_office.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -176,7 +139,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(../../images/toBeMadeSmaller/teqly_cloud_style.png);">
+                                <li style="background-image: url(images/toBeMadeSmaller/teqly_cloud_style.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -269,7 +232,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(../../images/toBeMadeSmaller/teqly_cloud.png);"></div>
+                                 style="background-image: url(images/toBeMadeSmaller/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud S<br>(Standard)</h3>
                                 <p style="color: #0b0b0b">
@@ -287,7 +250,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="#">
                             <div class="portfolio-entry"
-                                 style="background-image: url(../../images/toBeMadeSmaller/teqly_cloud.png);"></div>
+                                 style="background-image: url(images/toBeMadeSmaller/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud P<br>(Premium)</h3>
                                 <p style="color: #0b0b0b">
@@ -314,7 +277,7 @@
                     <p>Wir sind für Sie da! Für Fragen, Bestellungen oder Anregungen erreichen Sie uns via Mail,
                         Chat
                         und Telefon.</p>
-                    <p><a href="../../contact.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
+                    <p><a href="kontakt.php" class="btn btn-default btn-lg">Kontaktieren Sie uns!</a></p>
                 </div>
             </div>
         </div>
@@ -334,17 +297,17 @@
 <!-- Zammad jQuery -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- jQuery -->
-<script src="../../js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
-<script src="../../js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
-<script src="../../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!-- Waypoints -->
-<script src="../../js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
 <!-- Flexslider -->
-<script src="../../js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
 <!-- Main -->
-<script src="../../js/main.js"></script>
+<script src="js/main.js"></script>
 
 <!-- Zammad Chat -->
 <script src="https://support.teqly.app/assets/chat/chat.min.js"></script>

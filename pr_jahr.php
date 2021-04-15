@@ -60,47 +60,9 @@
 <body>
 
 <div id="page" style="background: white !important">
-    <nav id="menu" class="fh5co-nav" role="navigation">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <IMG SRC="images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
-                    <div class="col-xs-10 text-right menu-1">
-                        <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" style="margin: -10px !important;"><a href="index.php">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="hardware.php">Hardware</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/config/desktop_config.php">Desktop's</a></li>
-                                    <li><a href="html/config/laptop_config.php">Laptops's</a></li>
-                                    <li><a href="html/config/server_config.php">Server</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="software.php">Software</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/config/teqly_config.php">TEQLY|Cloud</a></li>
-                                    <li><a href="html/config/microsoft_config.php">Microsoft365</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" class="has-dropdown">
-                                <a href="swissmade.php">Swiss Made</a>
-                                <ul class="dropdown">
-                                    <li><a href="html/swissmade/teqly.php">TEQLY</a></li>
-                                    <li><a href="html/swissmade/primecomputer.php">Prime Computer</a></li>
-                                    <li><a href="html/swissmade/axxiv.php">axxiv</a></li>
-                                </ul>
-                            </li>
-                            <li style="margin: -10px !important;" ><a href="contact.php">Kontakt</a></li>
-                            <li class="btn-cta"><a href="calculator_yearly.php"><span>Preisrechner</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </nav>
+    <?php
+    include('navigation.php');
+    ?>
     <main>
         <!-- Order  -->
         <div class="order">
@@ -112,7 +74,7 @@
                     Anforderungen ein, senden Sie uns einfach unverbindlich eine Nachricht.</p>
                 <div class="row">
                     <div class="col-lg-12" align="center">
-                        <a href="calculator_monthly.php">
+                        <a href="pr_monat.php">
                         <button type="button" name="clacChange" id="clacChange"
                                 class="btn-form-func btn-form-func-alt-color">
                             <span class="btn-form-func-content">Monatspreise anzeigen</span>
@@ -134,7 +96,7 @@
                                         die Anforderungen von 90% aller Office Software abdecken. Falls Sie spezielle
                                         Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen, unterbreiten wir
                                         Ihnen gerne ein passendes Angebot mit entsprechender Hardware.<br>
-                                        <a href="html/config/desktop_config.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
+                                        <a href="hw_desktop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
@@ -200,7 +162,7 @@
                                         spezielle Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen,
                                         unterbreiten wir Ihnen gerne ein passendes Angebot mit entsprechender
                                         Hardware.<br>
-                                        <a href="html/config/laptop_config.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
+                                        <a href="hw_laptop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
@@ -266,7 +228,7 @@
                                         abdecken. Falls Sie spezielle Anforderungen (z.B. CAD- oder
                                         Grafik-Arbeitsplätze) benötigen, unterbreiten wir Ihnen gerne ein passendes
                                         Angebot mit entsprechender Hardware.<br>
-                                        <a href="html/config/server_config.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
+                                        <a href="hw_server.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
@@ -355,7 +317,7 @@
                                     <p>
                                         TEQLY | Cloud ist eine einfache, mit allen gängigen Betriebssystemen (Windows, MacOS, Linux, iOS & Android) komaptible, Cloud Lösung. Alle Daten werden verschlüsselt auf einem Server in der Schweiz gespeichert. Neben dem klassischen Datenspeicher bietet TEQLY | Cloud die Möglichkeit für einen Firemeninternen Chat (Text, Sprache & Video), Online Dokumentbearbeitung, Klender & Mail - kurz gesagt: Es ist eine Gesamtlösung für Ihr digitales Büro.<br>
                                         Die Preise verstehen sich immer pro Instanz, also pro Domain. Die Anzahl User ist jeweils unbeschränkt & jede Instanz läuft auf einem eigenen virtuellen Server.<br>
-                                        <a href="html/config/teqly_config.php#fh5co-portfolio" class="option-box-link">Erfahren Sie mehr über die Funktionen & Pakete von TEQLY | Cloud.</a>
+                                        <a href="sw_teqlycloud.php#fh5co-portfolio" class="option-box-link">Erfahren Sie mehr über die Funktionen & Pakete von TEQLY | Cloud.</a>
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -417,7 +379,7 @@
                                     <p>
                                         Alle unsere Geräte werde mit einer vorinstallierten Version von Office 2019 ausgeliefert, die Sie ohne Aufpreis nutzen können. Falls Sie die Cloud Dienste von Microsoft wie zum Beispiel OneDrive, MS Teams, SharePoint oder Exchange nutzen möchten bieten wir Ihnen hier die Entsprechenden Lizenzen an. Als Microsoft Partner können wir Ihnen auf Wunsch die Cloud Produkte des Windows Konzerns direkt auf der von uns gemieteten Hardware installieren und einrichten.<br>
                                         Die Preise verstehen sich pro Account/User, also Sie benötigen pro Person eine Lizenz.<br>
-                                        <a href="html/config/microsoft_config.php#fh5co-portfolio" class="option-box-link">Erfahren Sie hier was alles mit Microsoft365 möglich ist.</a>
+                                        <a href="sw_microsoft.php#fh5co-portfolio" class="option-box-link">Erfahren Sie hier was alles mit Microsoft365 möglich ist.</a>
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
