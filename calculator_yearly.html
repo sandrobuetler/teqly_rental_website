@@ -68,7 +68,7 @@
                     <div class="col-xs-10 text-right menu-1">
                         <ul style="font-family: 'Source Code Pro' !important;">
                             <li style="margin: -10px !important;"><a href="index.html">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="why_rent.html">Vorteile</a></li>
+                            <li style="margin: -10px !important;"><a href="vorteile.html">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
                                 <a href="hardware.html">Hardware</a>
                                 <ul class="dropdown">
@@ -684,9 +684,9 @@
                     <h4>Navigation</h4>
                     <ul class="fh5co-footer-links">
                         <li><a href="index.html">Start</a></li>
-                        <li><a href="why_rent.html">Vorteile</a></li>
+                        <li><a href="vorteile.html">Vorteile</a></li>
                         <li><a href="hardware.html">Hardware</a></li>
-                        <li><a href="software.html.html">Software</a></li>
+                        <li><a href="software.html">Software</a></li>
                         <li><a href="swissmade.html">Swiss Made</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                         <li><a href="calculator_yearly.html">Preisrechner</a></li>
@@ -726,9 +726,9 @@
                     </p>
                     <p>
                     <ul class="fh5co-social-icons">
-                        <li><a href="https://www.instagram.com/teqly/"><i class="icon-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/teqly"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="mailto:info@teqly.ch"><i class="icon-mail"></i></a></li>
+                        <li><a href="https://www.instagram.com/teqly/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/teqly" target="_blank"><i class="icon-linkedin2"></i></a></li>
+                        <li><a href="mailto:info@teqly.ch" target="_blank"><i class="icon-mail" ></i></a></li>
                     </ul>
                     </p>
                 </div>
@@ -757,6 +757,8 @@
 <script src="vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
 <script src="vendor/float-labels/js/float-labels.min.js"></script>
 
+<!-- Zammad jQuery -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- jQuery Easing -->
 <script src="js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
@@ -770,6 +772,20 @@
 <!-- Main Javascript File -->
 <script src="js/scripts-2.js"></script>
 <script src="js/main.js"></script>
+
+<!-- Zammad Chat -->
+<script src="https://support.teqly.app/assets/chat/chat.min.js"></script>
+<script>
+    $(function() {
+        new ZammadChat({
+            title: '<strong>Wir beantworten Ihre Fragen gerne im Chat!</strong>',
+            background: '#DD356E',
+            fontSize: '12px',
+            flat: true,
+            chatId: 1
+        });
+    });
+</script>
 
 
 </body>

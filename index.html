@@ -61,7 +61,7 @@
                     <div class="col-xs-10 text-right menu-1">
                         <ul style="font-family: 'Source Code Pro' !important;">
                             <li style="margin: -10px" class="active" tyle="margin: -10px !important;"><a href="index.html">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="why_rent.html">Vorteile</a></li>
+                            <li style="margin: -10px !important;"><a href="vorteile.html">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
                                 <a href="hardware.html">Hardware</a>
                                 <ul class="dropdown">
@@ -184,7 +184,7 @@
                                 <h3>Support</h3>
                                 <p>In all unseren Abo's ist unser Business IT-Support inklusive. Sie kommen so in den
                                     Genuss unserer modernen Supportplattform mit IT-Helpdesk.</p>
-                                <p><a href="why_rent.html#fh5co-slider">Weitere Informationen <i
+                                <p><a href="vorteile.html#fh5co-slider">Weitere Informationen <i
                                         class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                                 <h3>System Management</h3>
                                 <p>Durch unser zentrales Flottenmanagement können Updates automatisiert aufgespielt und
                                     Einstellungen einfach von PC zu PC übertragen werden.</p>
-                                <p><a href="why_rent.html#fh5co-slider">Weitere Informationen <i
+                                <p><a href="vorteile.html#fh5co-slider">Weitere Informationen <i
                                         class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
@@ -280,9 +280,9 @@
                     <h4>Navigation</h4>
                     <ul class="fh5co-footer-links">
                         <li><a href="index.html">Start</a></li>
-                        <li><a href="why_rent.html">Vorteile</a></li>
+                        <li><a href="vorteile.html">Vorteile</a></li>
                         <li><a href="hardware.html">Hardware</a></li>
-                        <li><a href="software.html.html">Software</a></li>
+                        <li><a href="software.html">Software</a></li>
                         <li><a href="swissmade.html">Swiss Made</a></li>
                         <li><a href="contact.html">Kontakt</a></li>
                         <li><a href="calculator_yearly.html">Preisrechner</a></li>
@@ -322,9 +322,9 @@
                     </p>
                     <p>
                     <ul class="fh5co-social-icons">
-                        <li><a href="https://www.instagram.com/teqly/"><i class="icon-instagram"></i></a></li>
-                        <li><a href="https://www.linkedin.com/company/teqly"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="mailto:info@teqly.ch"><i class="icon-mail"></i></a></li>
+                        <li><a href="https://www.instagram.com/teqly/" target="_blank"><i class="icon-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/teqly" target="_blank"><i class="icon-linkedin2"></i></a></li>
+                        <li><a href="mailto:info@teqly.ch" target="_blank"><i class="icon-mail" ></i></a></li>
                     </ul>
                     </p>
                 </div>
@@ -338,6 +338,8 @@
     <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 </div>
 
+<!-- Zammad jQuery -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- jQuery Easing -->
@@ -350,6 +352,20 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <!-- Main -->
 <script src="js/main.js"></script>
+
+<!-- Zammad Chat -->
+<script src="https://support.teqly.app/assets/chat/chat.min.js"></script>
+<script>
+    $(function() {
+        new ZammadChat({
+            title: '<strong>Wir beantworten Ihre Fragen gerne im Chat!</strong>',
+            background: '#DD356E',
+            fontSize: '12px',
+            flat: true,
+            chatId: 1
+        });
+    });
+</script>
 
 </body>
 </html>
