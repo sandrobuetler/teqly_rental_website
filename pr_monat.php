@@ -662,7 +662,7 @@
 <!-- Main -->
 
 <!-- Main Javascript File -->
-<script src="js/scripts-2.js"></script>
+<script src="js/scripts-2_monthly.js"></script>
 <script src="js/main.js"></script>
 
 <?php
