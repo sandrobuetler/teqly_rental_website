@@ -2429,7 +2429,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		width: 84%;
 	}
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
 	#fh5co-features .feature-left .feature-copy {
 		width: 70%;
 	}
@@ -2459,7 +2459,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		height: 210px;
 	}
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
 	#fh5co-features .ipad-bg {
 		display: none;
 	}
@@ -3477,3 +3477,8 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 768px) {
+	.zammad-chat.zammad-chat-is-open {
+		height: 91%;
+	}
+}

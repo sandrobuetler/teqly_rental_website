@@ -1,5 +1,6 @@
 <!-- Zammad Chat -->
 <script src="https://support.teqly.app/assets/chat/chat.min.js"></script>
+<link rel="stylesheet" href="css/chat.css">
 <script>
     $(function() {
         new ZammadChat({
