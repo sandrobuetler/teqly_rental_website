@@ -330,7 +330,7 @@ if (!$errors) {
 	echo '<div style="color: #e9431c">' . $errors . '</div>';
 	echo '<div id="success">';
 	echo '<h4>Ups, da hatt etwas nicht geklappt!</h4>';
-	echo '<a class="animated-link" href="../index.html">Zurück zur Startseite</small>';
+	echo '<a class="animated-link" href="../index.php">Zurück zur Startseite</small>';
 	echo '</div>';
 }
 

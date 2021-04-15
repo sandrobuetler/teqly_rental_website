@@ -47,6 +47,12 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
+    <script>
+        $(function (){
+            $("#footer").load("footer.html");
+        });
+    </script>
+
 </head>
 <body>
 
@@ -60,8 +66,8 @@
                     <IMG SRC="images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
                     <div class="col-xs-10 text-right menu-1">
                         <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" style="margin: -10px !important;"><a href="index.html">Start</a></li>
-                            <li style="margin: -10px !important;" class="active"><a href="vorteile.html">Vorteile</a></li>
+                            <li style="margin: -10px" style="margin: -10px !important;"><a href="index.php">Start</a></li>
+                            <li style="margin: -10px !important;" class="active"><a href="vorteile.php">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
                                 <a href="hardware.html">Hardware</a>
                                 <ul class="dropdown">
@@ -308,6 +314,8 @@
         </div>
     </div>
 
+
+    <!--
     <footer id="fh5co-footer" role="contentinfo">
         <div class="container">
             <div class="row row-pb-md">
@@ -372,7 +380,13 @@
 
         </div>
     </footer>
+    -->
+    <?php
+    include('footer.php');
+    ?>
+
 </div>
+
 
 <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>

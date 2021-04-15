@@ -60,8 +60,8 @@
                     <IMG SRC="images/teqly_logo_back.png" ALT="TEQLY Logo" HEIGHT=50 align="left">
                     <div class="col-xs-10 text-right menu-1">
                         <ul style="font-family: 'Source Code Pro' !important;">
-                            <li style="margin: -10px" class="active" style="margin: -10px !important;"><a href="index.html">Start</a></li>
-                            <li style="margin: -10px !important;"><a href="vorteile.html">Vorteile</a></li>
+                            <li style="margin: -10px" class="active" style="margin: -10px !important;"><a href="index.php">Start</a></li>
+                            <li style="margin: -10px !important;"><a href="vorteile.php">Vorteile</a></li>
                             <li style="margin: -10px !important;" class="has-dropdown">
                                 <a href="hardware.html">Hardware</a>
                                 <ul class="dropdown">
@@ -184,7 +184,7 @@
                                 <h3>Support</h3>
                                 <p>In all unseren Abo's ist unser Business IT-Support inklusive. Sie kommen so in den
                                     Genuss unserer modernen Supportplattform mit IT-Helpdesk.</p>
-                                <p><a href="vorteile.html#fh5co-slider">Weitere Informationen <i
+                                <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i
                                         class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                                 <h3>System Management</h3>
                                 <p>Durch unser zentrales Flottenmanagement können Updates automatisiert aufgespielt und
                                     Einstellungen einfach von PC zu PC übertragen werden.</p>
-                                <p><a href="vorteile.html#fh5co-slider">Weitere Informationen <i
+                                <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i
                                         class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
@@ -279,8 +279,8 @@
                 <div class="col-md-2 col-md-push-1 fh5co-widget">
                     <h4>Navigation</h4>
                     <ul class="fh5co-footer-links">
-                        <li><a href="index.html">Start</a></li>
-                        <li><a href="vorteile.html">Vorteile</a></li>
+                        <li><a href="index.php">Start</a></li>
+                        <li><a href="vorteile.php">Vorteile</a></li>
                         <li><a href="hardware.html">Hardware</a></li>
                         <li><a href="software.html">Software</a></li>
                         <li><a href="swissmade.html">Swiss Made</a></li>
