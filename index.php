@@ -69,7 +69,7 @@
                             <h1>Senken Sie IT-Kosten und verbessern Sie Ihre Infrastruktur!</h1>
                             <h2>Mit TEQLY | Rental können Sie Hard- & Software sowie Support zu einem Fixpreis
                                 einkaufen. Dank unserem All-Inclusive Angebot müssen Sie sich nicht mehr um Ihre
-                                IT-Ifrastruktur kümmen. </h2>
+                                IT-Infrastruktur kümmern. </h2>
                             <p> <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="#fh5co-features"></i>Vorteile</a>
                                 <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="hardware.php"></i>Hardware</a>
                                 <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="pr_jahr.php">Preisrechner</a>
