@@ -380,10 +380,10 @@ if (!$errors) {
         $order->addItem($selected_shp_title, 'Server High Performance', $shp_qty, "7.7%", $selected_shp_price, false);
     }
     if (isset($selected_tcs)) {
-        $order->addItem($selected_tcs_title, '', $tcs_qty, "7.7%", $selected_tcs_price, false);
+        $order->addItem($selected_tcs_title, 'TEQLY | Cloud Standard', $tcs_qty, "7.7%", $selected_tcs_price, false);
     }
     if (isset($selected_tcp)) {
-        $order->addItem($selected_tcp_title, '', $tcp_qty, "7.7%", $selected_tcp_price, false);
+        $order->addItem($selected_tcp_title, 'TEQLY | Cloud Premium', $tcp_qty, "7.7%", $selected_tcp_price, false);
     }
     if (isset($selected_mba)) {
         $order->addItem($selected_mba_title, 'Microsoft365 Apps', $mba_qty, "7.7%", $selected_mba_price, false);

@@ -333,7 +333,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tcsTitle">TEQLY | Cloud <strong>"Standard"</strong> | 75.-</span>
+                                        <span id="tcsTitle">T|C <strong>"Standard"</strong> | 75.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -359,7 +359,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tcpTitle">TEQLY | Cloud <strong>"Premium"</strong> | 120.-</span>
+                                        <span id="tcpTitle">T|C <strong>"Premium"</strong> | 120.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -421,7 +421,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="mbsTitle">MS365 <strong>"Business Standard"</strong> | 16.-</span>
+                                        <span id="mbsTitle">MS365 <strong>"Standard"</strong> | 16.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -447,7 +447,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="mbpTitle">MS365 <strong>"Business Premium"</strong> | 25.-</span>
+                                        <span id="mbpTitle">MS365 <strong>"Premium"</strong> | 25.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -501,7 +501,7 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <label for="phone">Telefon: +41 56 678 91 01</label>
+                                        <label for="phone">Telefon</label>
                                         <input id="phone" class="form-control" name="phone" type="text"/>
                                     </div>
                                 </div>
