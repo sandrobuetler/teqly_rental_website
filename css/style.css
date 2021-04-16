@@ -891,7 +891,6 @@ ul#faqNav li a:hover, ul#faqNav li a#active, ul#faqNav li a.active {
 	margin-bottom: 30px;
 	padding: 30px !important;
 	border: 1px solid #ddd;
-	min-width: 420px;
 }
 
 #faqNavContainer {
