@@ -84,7 +84,7 @@
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="images/teqly_sm_primecomputer_mood.png"
+                    <p><img src="images/swissmade/primecomputer/teqly_sm_primecomputer_mood.png"
                             alt="Bild aus der Montage der Prime Computer AG" class="img-responsive img-rounded"
                             width="100%"></p>
                 </div>

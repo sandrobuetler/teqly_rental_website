@@ -71,11 +71,11 @@
 
 
             <div class="col-md-6 text-center animate-box">
-                <p><img src="images/teqly_ps_front_2.png" alt="Front unseres Servers"
+                <p><img src="images/products/hardware/server/teqly_ps_front_2.png" alt="Front unseres Servers"
                         class="img-responsive img-rounded"></p>
             </div>
             <div class="col-md-6 text-center animate-box">
-                <p><img src="images/teqly_ps_back.png" alt="Rückseite unseres Servers"
+                <p><img src="images/products/hardware/server/teqly_ps_back.png" alt="Rückseite unseres Servers"
                         class="img-responsive img-rounded"></p>
             </div>
 
@@ -96,7 +96,7 @@
                     <aside id="fh5co-hero">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li style="background-image: url(images/teqly_ps_people.png);">
+                                <li style="background-image: url(images/products/hardware/server/teqly_ps_people.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -116,7 +116,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/teqly_ps_palet.png);">
+                                <li style="background-image: url(images/products/hardware/server/teqly_ps_palet.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -134,7 +134,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/teqly_ps_rack.png);">
+                                <li style="background-image: url(images/products/hardware/server/teqly_ps_rack.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -234,7 +234,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_ps_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/server/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Server S<br>(Standard Performance)</h3>
                                 <p style="color: #0b0b0b">
@@ -252,7 +252,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_ps_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/server/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Server M<br>(Medium Performance)</h3>
                                 <p style="color: #0b0b0b">
@@ -270,7 +270,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_ps_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/server/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Server H<br>(High Performance)</h3>
                                 <p style="color: #0b0b0b">

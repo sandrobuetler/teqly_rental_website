@@ -83,7 +83,7 @@
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="images/teqly_sm_axxiv_mood.png" alt="Blick in das Logistikzentrum von axxiv"
+                    <p><img src="images/swissmade/axxiv/teqly_sm_axxiv_mood.png" alt="Blick in das Logistikzentrum von axxiv"
                             class="img-responsive img-rounded" width="100%"></p>
                 </div>
             </div>

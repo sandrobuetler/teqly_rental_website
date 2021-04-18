@@ -78,7 +78,7 @@
                     </ul>
                 </div>
                 <div class="col-md-7 col-md-push-1 animate-box">
-                    <img src="images/teqly_team.jpg" width="100%" class="img-responsive img-rounded">
+                    <img src="images/swissmade/teqly/teqly_team.jpg" width="100%" class="img-responsive img-rounded">
                 </div>
             </div>
         </div>

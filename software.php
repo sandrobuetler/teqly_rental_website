@@ -76,7 +76,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="sw_teqlycloud.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_cloud.png);"></div>
+                                 style="background-image: url(images/products/software/teqly/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud</h3>
                                 <p style="color: #0b0b0b">Wieso sich bei einem Cloudanbieter einmieten, wenn Sie auch
@@ -90,7 +90,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="sw_microsoft.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_microsoft.png);"></div>
+                                 style="background-image: url(images/products/software/microsoft/teqly_microsoft.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Microsoft365</h3>
                                 <p style="color: #0b0b0b">Word, Excel & Powerpoint kennen uns schätzen wir alle, aber

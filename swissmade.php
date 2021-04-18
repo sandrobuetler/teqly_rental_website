@@ -73,7 +73,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="swiss_teqly.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_sm_teqly.png);"></div>
+                                 style="background-image: url(images/swissmade/teqly/teqly_sm_teqly.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY</h3>
                                 <p style="color: #0b0b0b">Wir sind Ihr innovativer IT-Partner aus dem Kanton Aargau.
@@ -87,7 +87,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="swiss_primecomputer.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_sm_primecomputer.png);"></div>
+                                 style="background-image: url(images/swissmade/primecomputer/teqly_sm_primecomputer.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Prime Computer</h3>
                                 <p style="color: #0b0b0b">Die Prime Computer AG entwickelt und assembliert ihre Produkte
@@ -101,7 +101,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="swiss_axxiv.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_sm_axxiv.png);"></div>
+                                 style="background-image: url(images/swissmade/axxiv/teqly_sm_axxiv.png);"></div>
                             <div class="portfolio-text">
                                 <h3>axxiv</h3>
                                 <p style="color: #0b0b0b">axxiv ist die Eigenmarke der Littlebit Technology AG aus Zug.

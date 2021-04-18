@@ -361,7 +361,7 @@ if (!$errors) {
     ==================================== */
 
     // Header Settings
-    $order->setLogo('phpinvoice/templates/purple/logo_teqly.png');
+    $order->setLogo('phpinvoice/templates/purple/teqly_rental_logo.png');
     $order->setReference('ANFRAGE-' . $timestamp);
     $order->setDate(date('M dS, Y', time()));
 

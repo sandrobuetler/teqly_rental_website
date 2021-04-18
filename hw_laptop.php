@@ -69,11 +69,11 @@
 
 
             <div class="col-md-6 text-center animate-box">
-                <p><img src="images/teqly_axxiv_front.png" alt="Front unseres mini Desktop PC's"
+                <p><img src="images/products/hardware/laptops/teqly_axxiv_front.png" alt="Front unseres mini Desktop PC's"
                         class="img-responsive img-rounded"></p>
             </div>
             <div class="col-md-6 text-center animate-box">
-                <p><img src="images/teqly_axxiv_back.png" alt="Rückseite unseres mini Desktop PC's"
+                <p><img src="images/products/hardware/laptops/teqly_axxiv_back.png" alt="Rückseite unseres mini Desktop PC's"
                         class="img-responsive img-rounded"></p>
             </div>
 
@@ -94,7 +94,7 @@
                     <aside id="fh5co-hero">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li style="background-image: url(images/teqly_axxiv_keyboard.png);">
+                                <li style="background-image: url(images/products/hardware/laptops/teqly_axxiv_keyboard.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/teqly_axxiv_backlight.png);">
+                                <li style="background-image: url(images/products/hardware/laptops/teqly_axxiv_backlight.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -129,7 +129,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/teqly_axxiv_usb.png);">
+                                <li style="background-image: url(images/products/hardware/laptops/teqly_axxiv_usb.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -244,7 +244,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
+                                 style="background-image: url(images/products/hardware/laptops/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Laptop M<br>(Medium Performance)</h3>
                                 <p style="color: #0b0b0b">
@@ -262,7 +262,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
+                                 style="background-image: url(images/products/hardware/laptops/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Laptop H<br>(High Performance)</h3>
                                 <p style="color: #0b0b0b">
@@ -280,7 +280,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_axxiv_docking.png);"></div>
+                                 style="background-image: url(images/products/hardware/laptops/teqly_axxiv_docking.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Laptop <br>Peripherie Paket</h3>
                                 <p style="color: #0b0b0b">

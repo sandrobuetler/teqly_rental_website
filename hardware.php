@@ -74,7 +74,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="hw_desktop.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_pm_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/desktops/teqly_pm_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Desktop's</h3>
                                 <p style="color: #0b0b0b">Sie werden unsere leisen und kompakten Desktop Setups in Ihrem
@@ -87,7 +87,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="hw_laptop.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_axxiv_laptop_top.png);"></div>
+                                 style="background-image: url(images/products/hardware/laptops/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Laptop's</h3>
                                 <p style="color: #0b0b0b">Unsere 15.4" Laptops kommen Standardmässig mit einem grossen
@@ -100,7 +100,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a href="hw_server.php">
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_ps_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/server/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Server</h3>
                                 <p style="color: #0b0b0b">Zuverlässigkeit, Leistungsstärke und ruhiger Betrieb, das sind

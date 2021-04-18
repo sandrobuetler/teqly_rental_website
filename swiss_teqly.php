@@ -80,7 +80,7 @@
 
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
-                    <p><img src="images/teqly_team.jpg"
+                    <p><img src="images/swissmade/teqly/teqly_team.jpg"
                             alt="Teamfoto TEQLY: Jannik Frei, Sandro Bütler, Andreas Rohr"
                             class="img-responsive img-rounded"></p>
                 </div>

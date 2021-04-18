@@ -71,11 +71,11 @@
 
 
             <div class="col-md-6 text-center animate-box">
-                <p><img src="images/teqly_pm_front_top.png" alt="Front unseres mini Desktop PC's"
+                <p><img src="images/products/hardware/desktops/teqly_pm_front_top.png" alt="Front unseres mini Desktop PC's"
                         class="img-responsive img-rounded"></p>
             </div>
             <div class="col-md-6 text-center animate-box">
-                <p><img src="images/teqly_pm_back.png" alt="Rückseite unseres mini Desktop PC's"
+                <p><img src="images/products/hardware/desktops/teqly_pm_back.png" alt="Rückseite unseres mini Desktop PC's"
                         class="img-responsive img-rounded"></p>
             </div>
 
@@ -96,7 +96,7 @@
                     <aside id="fh5co-hero">
                         <div class="flexslider">
                             <ul class="slides">
-                                <li style="background-image: url(images/teqly_pm_doctor.png);">
+                                <li style="background-image: url(images/products/hardware/desktops/teqly_pm_doctor.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -116,7 +116,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/teqly_pm_mount.png);">
+                                <li style="background-image: url(images/products/hardware/desktops/teqly_pm_mount.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -134,7 +134,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li style="background-image: url(images/teqly_pm_office.png);">
+                                <li style="background-image: url(images/products/hardware/desktops/teqly_pm_office.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
                                         <div class="row">
@@ -247,7 +247,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_pm_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/desktops/teqly_pm_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Desktop M<br>(Medium Performance)</h3>
                                 <p style="color: #0b0b0b">
@@ -265,7 +265,7 @@
                     <div class="fh5co-portfolio animate-box">
                         <a>
                             <div class="portfolio-entry"
-                                 style="background-image: url(images/teqly_pm_front.png);"></div>
+                                 style="background-image: url(images/products/hardware/desktops/teqly_pm_front.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Desktop H<br>(High Performance)</h3>
                                 <p style="color: #0b0b0b">
