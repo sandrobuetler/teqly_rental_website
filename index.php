@@ -173,13 +173,12 @@
                     <div class="col-md-4 animate-box">
                         <div class="feature-left">
 							<span class="icon">
-								<i class="icon-man-woman"></i>
+								<i class="icon-coin-dollar"></i>
 							</span>
                             <div class="feature-copy">
-                                <h3>Persönlich</h3>
-                                <p>Wir wachsen und skalieren mit Ihnen zusammen! Wir beraten Sie gerne unverbindlich und
-                                    suchen die beste Lösung für Ihre Anforderungen. Kontaktieren Sie uns noch heute!</p>
-                                <p><a href="kontakt.php">Kontaktieren Sie uns <i class="icon-arrow-right22"></i></a>
+                                <h3>All Inclusive Preise</h3>
+                                <p>Dank unseres Supportteams werden Probleme während des Betriebs so schnell wie möglich behoben, bei Gerätedefekten erhalten Sie umgehend einen Ersatz. Dieser Service kostet Sie nichts zusätzlich, er ist in all unseren Mietpaketen dabei!</p>
+                                <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i class="icon-arrow-right22"></i></a>
                                 </p>
                             </div>
                         </div>
