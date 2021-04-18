@@ -114,7 +114,7 @@
 
 <?php
 include('shared/zammadchat.php')
-?>>
+?>
 
 </body>
 </html>
