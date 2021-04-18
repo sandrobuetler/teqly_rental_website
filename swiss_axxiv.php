@@ -67,7 +67,7 @@
                         der unermüdliche Geist motivierter Mitarbeiter, viel Leidenschaft und jahrelang angeeignetes
                         Know-How.</p>
                     <p><a class="btn btn-primary btn-lg btn-demo" href="https://axxiv.ch" target="_blank"></i>
-                        Website</a></p>
+                            Website</a></p>
                 </div>
             </div>
             <div class="row animate-box">

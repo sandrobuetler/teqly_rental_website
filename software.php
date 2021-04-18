@@ -62,9 +62,13 @@
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>Zusätzliche Software</h2>
-                    <p>Zwar kommen alle unsere Client Geräte mit vorinstalliertem Office, wenn Sie aber zusätzlich weitere Microsoft Programme oder eine sichere Schweizer Cloud Lösung suchen, können wir Ihnen auch diese Wünsche erfüllen.<br>Falls Sie spezielle Anforderungen an Ihre Software haben, kontaktieren Sie uns gerne
+                    <p>Zwar kommen alle unsere Client Geräte mit vorinstalliertem Office, wenn Sie aber zusätzlich
+                        weitere Microsoft Programme oder eine sichere Schweizer Cloud Lösung suchen, können wir Ihnen
+                        auch diese Wünsche erfüllen.<br>Falls Sie spezielle Anforderungen an Ihre Software haben,
+                        kontaktieren Sie uns gerne
                         unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard
-                        Sortiments. Gerne unterstützen wir Sie auch bei der Implementation von komplexeren Programmen wie z.B. CAD-Software oder OnPremise ERP- und Buchhaltungssystemen.</p>
+                        Sortiments. Gerne unterstützen wir Sie auch bei der Implementation von komplexeren Programmen
+                        wie z.B. CAD-Software oder OnPremise ERP- und Buchhaltungssystemen.</p>
                 </div>
             </div>
             <div class="row">
@@ -75,7 +79,9 @@
                                  style="background-image: url(images/teqly_cloud.png);"></div>
                             <div class="portfolio-text">
                                 <h3>TEQLY | Cloud</h3>
-                                <p style="color: #0b0b0b">Wieso sich bei einem Cloudanbieter einmieten, wenn Sie auch Ihre eigene Cloud haben können? Mit TEQLY | Cloud bieten wir Ihnen die Möglichkeit günstig, sicher & effizient eine eigene Cloudinfrastruktur zu betreiben.</p>
+                                <p style="color: #0b0b0b">Wieso sich bei einem Cloudanbieter einmieten, wenn Sie auch
+                                    Ihre eigene Cloud haben können? Mit TEQLY | Cloud bieten wir Ihnen die Möglichkeit
+                                    günstig, sicher & effizient eine eigene Cloudinfrastruktur zu betreiben.</p>
                             </div>
                         </a>
                     </div>
@@ -87,7 +93,9 @@
                                  style="background-image: url(images/teqly_microsoft.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Microsoft365</h3>
-                                <p style="color: #0b0b0b">Word, Excel & Powerpoint kennen uns schätzen wir alle, aber Microsoft365 hat viel mehr zu bieten: Entdecken Sie Teams, Publisher, SharePoint oder OneDrive. Arbeiten Sie und Ihr Team dezentraler und effizienter.</p>
+                                <p style="color: #0b0b0b">Word, Excel & Powerpoint kennen uns schätzen wir alle, aber
+                                    Microsoft365 hat viel mehr zu bieten: Entdecken Sie Teams, Publisher, SharePoint
+                                    oder OneDrive. Arbeiten Sie und Ihr Team dezentraler und effizienter.</p>
                             </div>
                         </a>
                     </div>

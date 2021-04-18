@@ -217,7 +217,10 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>Optional:<br> Peripherie Paket</h3>
-                                <p>Mit dem Peripherie Paket sind Sie am Arbeitsplatz noch produktiver und trotzdem unglaublich flexibel. Das Paket enthält folgende Artikel: Eine <strong>Docking Station</strong> für Ihren Laptop, dazu einen <strong>27" Screen</strong> sowie ein Set mit kabelloser <strong>Maus & Tastatur</strong>.</p>
+                                <p>Mit dem Peripherie Paket sind Sie am Arbeitsplatz noch produktiver und trotzdem
+                                    unglaublich flexibel. Das Paket enthält folgende Artikel: Eine <strong>Docking
+                                        Station</strong> für Ihren Laptop, dazu einen <strong>27" Screen</strong> sowie
+                                    ein Set mit kabelloser <strong>Maus & Tastatur</strong>.</p>
                             </div>
                         </div>
                     </div>

@@ -67,7 +67,7 @@
                         übernehmen auch Realisation, sowie Bewirtschaftung und Support kleiner und grosser
                         Unternehmen.</p>
                     <p><a class="btn btn-primary btn-lg btn-demo" href="https://teqly.ch" target="_blank"></i>
-                        Website</a></p>
+                            Website</a></p>
                 </div>
             </div>
             <div class="row animate-box">

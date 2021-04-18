@@ -70,8 +70,10 @@
                             <h2>Mit TEQLY | Rental können Sie Hard- & Software sowie Support zu einem Fixpreis
                                 einkaufen. Dank unserem All-Inclusive Angebot müssen Sie sich nicht mehr um Ihre
                                 IT-Infrastruktur kümmern. </h2>
-                            <p> <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="#fh5co-features"></i>Vorteile</a>
-                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="hardware.php"></i>Hardware</a>
+                            <p><a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo"
+                                  href="#fh5co-features"></i>Vorteile</a>
+                                <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo"
+                                   href="hardware.php"></i>Hardware</a>
                                 <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="pr_jahr.php">Preisrechner</a>
                             </p>
                         </div>
@@ -115,7 +117,7 @@
                                 <p>Vom Mini PC aus St. Gallen bis zur Maus aus Lausanne: Wenn immer möglich verwenden
                                     wir Hard- & Software von Schweizer Herstellern!</p>
                                 <p><a href="swissmade.php">Zu unseren Lieferanten <i
-                                        class="icon-arrow-right22"></i></a></p>
+                                                class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
 
@@ -149,7 +151,7 @@
                                 <p>In all unseren Abo's ist unser Business IT-Support inklusive. Sie kommen so in den
                                     Genuss unserer modernen Supportplattform mit IT-Helpdesk.</p>
                                 <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i
-                                        class="icon-arrow-right22"></i></a></p>
+                                                class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
 
@@ -165,7 +167,7 @@
                                 <p>Durch unser zentrales Flottenmanagement können Updates automatisiert aufgespielt und
                                     Einstellungen einfach von PC zu PC übertragen werden.</p>
                                 <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i
-                                        class="icon-arrow-right22"></i></a></p>
+                                                class="icon-arrow-right22"></i></a></p>
                             </div>
                         </div>
 
@@ -177,8 +179,11 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>All Inclusive Preise</h3>
-                                <p>Dank unseres Supportteams werden Probleme während des Betriebs so schnell wie möglich behoben, bei Gerätedefekten erhalten Sie umgehend einen Ersatz. Dieser Service kostet Sie nichts zusätzlich, er ist in all unseren Mietpaketen dabei!</p>
-                                <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i class="icon-arrow-right22"></i></a>
+                                <p>Dank unseres Supportteams werden Probleme während des Betriebs so schnell wie möglich
+                                    behoben, bei Gerätedefekten erhalten Sie umgehend einen Ersatz. Dieser Service
+                                    kostet Sie nichts zusätzlich, er ist in all unseren Mietpaketen dabei!</p>
+                                <p><a href="vorteile.php#fh5co-slider">Weitere Informationen <i
+                                                class="icon-arrow-right22"></i></a>
                                 </p>
                             </div>
                         </div>

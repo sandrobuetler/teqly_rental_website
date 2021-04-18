@@ -69,7 +69,7 @@
                         Einsatz von hochwertigen und exakt aufeinander abgestimmten Komponenten, erlaubt eine besonders
                         kompakte Bauweise und verleiht ihren PCs und Servern höchste Zuverlässigkeit.</p>
                     <p><a class="btn btn-primary btn-lg btn-demo" href="https://primecomputer.ch" target="_blank"></i>
-                        Website</a></p>
+                            Website</a></p>
                 </div>
             </div>
             <div class="row animate-box">
@@ -85,7 +85,8 @@
             <div class="row row-bottom-padded-md">
                 <div class="col-md-12 text-center animate-box">
                     <p><img src="images/teqly_sm_primecomputer_mood.png"
-                            alt="Bild aus der Montage der Prime Computer AG" class="img-responsive img-rounded" width="100%"></p>
+                            alt="Bild aus der Montage der Prime Computer AG" class="img-responsive img-rounded"
+                            width="100%"></p>
                 </div>
             </div>
         </div>

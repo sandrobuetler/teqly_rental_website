@@ -1,4 +1,3 @@
-
 <footer id="fh5co-footer" role="contentinfo">
     <div class="container">
         <div class="row row-pb-md">
@@ -48,8 +47,8 @@
                     <small class="block">&copy; 2021 gebaut und gehostet von TEQLY</small>
                     <small class="block"><a href="https://teqly.ch/legal.html#impressum"
                                             target="_blank">Impressum</a> <a
-                            href="https://teqly.ch/legal.html#datenschutz" target="_blank">Datenschutz</a> <a
-                            href="https://teqly.ch/legal.html#agb" target="_blank">AGB's</a> </small>
+                                href="https://teqly.ch/legal.html#datenschutz" target="_blank">Datenschutz</a> <a
+                                href="https://teqly.ch/legal.html#agb" target="_blank">AGB's</a> </small>
                 </p>
                 <p>
                 <ul class="fh5co-social-icons">
@@ -62,6 +61,5 @@
                 </p>
             </div>
         </div>
-
     </div>
 </footer>

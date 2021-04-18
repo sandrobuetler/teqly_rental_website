@@ -3,7 +3,7 @@
 <script src="https://support.teqly.app/assets/chat/chat.min.js"></script>
 <link rel="stylesheet" href="css/chat.css">
 <script>
-    $(function() {
+    $(function () {
         new ZammadChat({
             title: '<strong>Wir beantworten Ihre Fragen gerne im Chat!</strong>',
             background: '#DD356E',

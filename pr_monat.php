@@ -70,18 +70,19 @@
         <div class="order">
             <div class="container">
                 <h1 style="text-align: center">Preisrechner</h1>
-                <p style="text-align: center">Rechnen Sie hier einfach die Jahres- oder Monatskosten für Ihre IT-Infrastruktur aus. Profitieren
+                <p style="text-align: center">Rechnen Sie hier einfach die Jahres- oder Monatskosten für Ihre
+                    IT-Infrastruktur aus. Profitieren
                     auch Sie von moderner, schweizer Hardware, vorinstalliertem Office und professionellem Support zum
                     Fixpreis. Zögern Sie nicht eine Konfiguration anzufragen. Gerne gehen wir auch auf spezifische
                     Anforderungen ein, senden Sie uns einfach unverbindlich eine Nachricht.</p>
                 <div class="row">
                     <div class="col-lg-12" align="center">
                         <a href="pr_jahr.php">
-                        <button type="button" name="clacChange" id="clacChange"
-                                class="btn-form-func btn-form-func-alt-color">
-                            <span class="btn-form-func-content">Jahrespreise anzeigen</span>
-                            <span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-                        </button>
+                            <button type="button" name="clacChange" id="clacChange"
+                                    class="btn-form-func btn-form-func-alt-color">
+                                <span class="btn-form-func-content">Jahrespreise anzeigen</span>
+                                <span class="icon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -98,7 +99,8 @@
                                         die Anforderungen von 90% aller Office Software abdecken. Falls Sie spezielle
                                         Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen, unterbreiten wir
                                         Ihnen gerne ein passendes Angebot mit entsprechender Hardware.<br>
-                                        <a href="hw_desktop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
+                                        <a href="hw_desktop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
+                                            heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
@@ -164,7 +166,8 @@
                                         spezielle Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen,
                                         unterbreiten wir Ihnen gerne ein passendes Angebot mit entsprechender
                                         Hardware.<br>
-                                        <a href="hw_laptop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
+                                        <a href="hw_laptop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
+                                            heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
@@ -256,7 +259,8 @@
                                         abdecken. Falls Sie spezielle Anforderungen (z.B. CAD- oder
                                         Grafik-Arbeitsplätze) benötigen, unterbreiten wir Ihnen gerne ein passendes
                                         Angebot mit entsprechender Hardware.<br>
-                                        <a href="hw_server.php#fh5co-portfolio" class="option-box-link">Finden Sie hier heraus
+                                        <a href="hw_server.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
+                                            heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
@@ -343,9 +347,17 @@
                                 <div class="option-box-header">
                                     <h3>TEQLY | Cloud</h3>
                                     <p>
-                                        TEQLY | Cloud ist eine einfache, mit allen gängigen Betriebssystemen (Windows, MacOS, Linux, iOS & Android) komaptible, Cloud Lösung. Alle Daten werden verschlüsselt auf einem Server in der Schweiz gespeichert. Neben dem klassischen Datenspeicher bietet TEQLY | Cloud die Möglichkeit für einen Firemeninternen Chat (Text, Sprache & Video), Online Dokumentbearbeitung, Klender & Mail - kurz gesagt: Es ist eine Gesamtlösung für Ihr digitales Büro.<br>
-                                        Die Preise verstehen sich immer pro Instanz, also pro Domain. Die Anzahl User ist jeweils unbeschränkt & jede Instanz läuft auf einem eigenen virtuellen Server.<br>
-                                        <a href="sw_teqlycloud.php#fh5co-portfolio" class="option-box-link">Erfahren Sie mehr über die Funktionen & Pakete von TEQLY | Cloud.</a>
+                                        TEQLY | Cloud ist eine einfache, mit allen gängigen Betriebssystemen (Windows,
+                                        MacOS, Linux, iOS & Android) komaptible, Cloud Lösung. Alle Daten werden
+                                        verschlüsselt auf einem Server in der Schweiz gespeichert. Neben dem klassischen
+                                        Datenspeicher bietet TEQLY | Cloud die Möglichkeit für einen Firemeninternen
+                                        Chat (Text, Sprache & Video), Online Dokumentbearbeitung, Klender & Mail - kurz
+                                        gesagt: Es ist eine Gesamtlösung für Ihr digitales Büro.<br>
+                                        Die Preise verstehen sich immer pro Instanz, also pro Domain. Die Anzahl User
+                                        ist jeweils unbeschränkt & jede Instanz läuft auf einem eigenen virtuellen
+                                        Server.<br>
+                                        <a href="sw_teqlycloud.php#fh5co-portfolio" class="option-box-link">Erfahren Sie
+                                            mehr über die Funktionen & Pakete von TEQLY | Cloud.</a>
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -405,9 +417,16 @@
                                 <div class="option-box-header">
                                     <h3>Microsoft</h3>
                                     <p>
-                                        Alle unsere Geräte werde mit einer vorinstallierten Version von Office 2019 ausgeliefert, die Sie ohne Aufpreis nutzen können. Falls Sie die Cloud Dienste von Microsoft wie zum Beispiel OneDrive, MS Teams, SharePoint oder Exchange nutzen möchten bieten wir Ihnen hier die Entsprechenden Lizenzen an. Als Microsoft Partner können wir Ihnen auf Wunsch die Cloud Produkte des Windows Konzerns direkt auf der von uns gemieteten Hardware installieren und einrichten.<br>
-                                        Die Preise verstehen sich pro Account/User, also Sie benötigen pro Person eine Lizenz.<br>
-                                        <a href="sw_microsoft.php#fh5co-portfolio" class="option-box-link">Erfahren Sie hier was alles mit Microsoft365 möglich ist.</a>
+                                        Alle unsere Geräte werde mit einer vorinstallierten Version von Office 2019
+                                        ausgeliefert, die Sie ohne Aufpreis nutzen können. Falls Sie die Cloud Dienste
+                                        von Microsoft wie zum Beispiel OneDrive, MS Teams, SharePoint oder Exchange
+                                        nutzen möchten bieten wir Ihnen hier die Entsprechenden Lizenzen an. Als
+                                        Microsoft Partner können wir Ihnen auf Wunsch die Cloud Produkte des Windows
+                                        Konzerns direkt auf der von uns gemieteten Hardware installieren und einrichten.<br>
+                                        Die Preise verstehen sich pro Account/User, also Sie benötigen pro Person eine
+                                        Lizenz.<br>
+                                        <a href="sw_microsoft.php#fh5co-portfolio" class="option-box-link">Erfahren Sie
+                                            hier was alles mit Microsoft365 möglich ist.</a>
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
