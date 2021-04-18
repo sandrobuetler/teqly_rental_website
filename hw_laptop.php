@@ -210,6 +210,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="feature-left">
+							<span class="icon">
+								<i class="icon-add-to-list"></i>
+							</span>
+                            <div class="feature-copy">
+                                <h3>Optional:<br> Peripherie Paket</h3>
+                                <p>Mit dem Peripherie Paket sind Sie am Arbeitsplatz noch produktiver und trotzdem unglaublich flexibel. Das Paket enthält folgende Artikel: Eine <strong>Docking Station</strong> für Ihren Laptop, dazu einen <strong>27" Screen</strong> sowie ein Set mit kabelloser <strong>Maus & Tastatur</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,6 +268,23 @@
                                     <strong>Prozessor:</strong> Intel i7<br>
                                     <strong>RAM:</strong> 16 GB<br>
                                     <strong>Speicher:</strong> 1 TB
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fh5co-portfolio animate-box">
+                        <a>
+                            <div class="portfolio-entry"
+                                 style="background-image: url(images/teqly_axxiv_docking.png);"></div>
+                            <div class="portfolio-text">
+                                <h3>Laptop <br>Peripherie Paket</h3>
+                                <p style="color: #0b0b0b">
+                                    <strong>Enthält:</strong><br>
+                                    1x Docking Station für Laptop<br>
+                                    1x 27" Full-HD Screen<br>
+                                    1x Maus & Tastatur (kabellos)
                                 </p>
                             </div>
                         </a>

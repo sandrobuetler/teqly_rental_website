@@ -212,6 +212,11 @@ $errors .= sanitizePostTitle('lhpTitle', 'Fehler beim Namen! (LHP)');
 $errors .= validatePostValue('lhpPrice', 'Fehler beim Preis! (LHP)');
 $errors .= validatePostValue('lhpGroupQty', 'Fehler bei der Anzahl! (LHP)');
 
+// LPP
+$errors .= sanitizePostTitle('lppTitle', 'Fehler beim Namen! (LPP)');
+$errors .= validatePostValue('lppPrice', 'Fehler beim Preis! (LPP)');
+$errors .= validatePostValue('lppGroupQty', 'Fehler bei der Anzahl! (LPP)');
+
 // SSP
 $errors .= sanitizePostTitle('sspTitle', 'Fehler beim Namen! (SSP)');
 $errors .= validatePostValue('sspPrice', 'Fehler beim Preis! (SSP)');
@@ -298,6 +303,12 @@ if (!$errors) {
     $selected_lhp_price = $_POST['lhpPrice'];
     $lhp_qty = $_POST['lhpGroupQty'];
 
+    // LPP
+    $selected_lpp = $_POST['lpp'];
+    $selected_lpp_title = $_POST['lppTitle'];
+    $selected_lpp_price = $_POST['lppPrice'];
+    $lpp_qty = $_POST['lppGroupQty'];
+
     // SSP
     $selected_ssp = $_POST['ssp'];
     $selected_ssp_title = $_POST['sspTitle'];
@@ -369,6 +380,9 @@ if (!$errors) {
     }
     if (isset($selected_lhp)) {
         $order->addItem($selected_lhp_title, 'Laptop High Performance', $lhp_qty, "7.7%", $selected_lhp_price, false);
+    }
+    if (isset($selected_lpp)) {
+        $order->addItem($selected_lpp_title, 'Laptop Peripherie Paket', $lpp_qty, "7.7%", $selected_lpp_price, false);
     }
     if (isset($selected_ssp)) {
         $order->addItem($selected_ssp_title, 'Server Standard Performance', $ssp_qty, "7.7%", $selected_ssp_price, false);

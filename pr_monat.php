@@ -220,6 +220,32 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="hidden" id="lppTitleHidden" name="lppTitle"
+                                           value="Laptop Peripherie Paket"/>
+                                    <input type="hidden" id="lppPriceHidden" name="lppPrice" value="0"/>
+                                    <input type="checkbox" id="lpp" class="inp-cbx" name="lpp" value="620.00"/>
+                                    <label class="cbx" for="lpp">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+                                        <span id="lppTitle"><strong>Peripherie Paket</strong>  | 620.-</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input id="lppRangeSlider" type="text" value=""/>
+                                        </div>
+                                        <div class="col-4">
+                                            <input id="lppQty" type="text" class="qty-input form-control"
+                                                   name="lppGroupQty"
+                                                   value="0"/>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div id="serverGroup" class="row option-box">
                                 <div class="option-box-header">
@@ -529,6 +555,7 @@
                                         <input type="hidden" id="dhpSum" name="dmpSumHidden" value="0"/>
                                         <input type="hidden" id="lmpSum" name="lmpSumHidden" value="0"/>
                                         <input type="hidden" id="lhpSum" name="lhpSumHidden" value="0"/>
+                                        <input type="hidden" id="lppSum" name="lppSumHidden" value="0"/>
                                         <input type="hidden" id="sspSum" name="sspSumHidden" value="0"/>
                                         <input type="hidden" id="smpSum" name="smpSumHidden" value="0"/>
                                         <input type="hidden" id="shpSum" name="shpSumHidden" value="0"/>
@@ -544,6 +571,7 @@
                                             <li id="dhpSumTot"></li>
                                             <li id="lmpSumTot"></li>
                                             <li id="lhpSumTot"></li>
+                                            <li id="lppSumTot"></li>
                                             <li id="sspSumTot"></li>
                                             <li id="smpSumTot"></li>
                                             <li id="shpSumTot"></li>

@@ -125,6 +125,12 @@
 	var lhpQuantity = 0;
 	var lhpSum = 0;
 
+	var lppIsChecked = false;
+	var lppTitle = '';
+	var lppPrice = 0;
+	var lppQuantity = 0;
+	var lppSum = 0;
+
 	var sspIsChecked = false;
 	var sspTitle = '';
 	var sspPrice = 0;
@@ -241,6 +247,22 @@
 		} else {
 			lhpSum = 0;
 			clearSummaryLine('lhpSumTot');
+		}
+
+		//Get the current data from Laptop Peripherie Paket elements
+		lppIsChecked = $('#lpp').is(':checked');
+		lppTitle = $('#lppTitle').text();
+		lppPrice = $('#lpp').val();
+		lppQuantity = $('#lppQty').val();
+
+		//Update order summary with Laptop Peripherie Paket details
+		if (lppIsChecked && (lppQuantity != 0)){
+			lppSum = (lppPrice * 1) * (lppQuantity * 1);
+			$('#lppSumTot').html('<a href="javascript:;" id="lppSumTotReset"><i class="fa fa-times-circle"></i></a> ' + lppTitle + ' x ' + lppQuantity + '<span class="price">' + lppSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			lppSum = 0;
+			clearSummaryLine('lppSumTot');
 		}
 
 		//Get the current data from Server Standard Performance elements
@@ -373,8 +395,8 @@
 
 
 		// Update total in order summary
-		total = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
-		total2 = dmpSum + dhpSum + lmpSum + lhpSum + sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
+		total = dmpSum + dhpSum + lmpSum + lhpSum +lppSum + sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
+		total2 = dmpSum + dhpSum + lmpSum + lhpSum + lppSum+ sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
 
 		$('#total').val(total.toFixed(2));
 		formatTotalPrice();
@@ -405,6 +427,11 @@
 		$('#lhpTitleHidden').val(lhpTitle);
 		$('#lhpPriceHidden').val(lhpPrice);
 		$('#lhpSum').val(lhpSum);
+
+		// Update hidden fields with Laptop Peripherie Paket details
+		$('#lppTitleHidden').val(lppTitle);
+		$('#lppPriceHidden').val(lppPrice);
+		$('#lppSum').val(lppSum);
 
 		// Update hidden fields with Server Standard Performance details
 		$('#sspTitleHidden').val(sspTitle);
@@ -460,6 +487,7 @@
 			$('#dhpSumTot').html('');
 			$('#lmpSumTot').html('');
 			$('#lhpSumTot').html('');
+			$('#lppSumTot').html('');
 			$('#sspSumTot').html('');
 			$('#smpSumTot').html('');
 			$('#shpSumTot').html('');
@@ -480,6 +508,9 @@
 		}
 		if (summaryLineName == 'lhpSumTot') {
 			$('#lhpSumTot').html('');
+		}
+		if (summaryLineName == 'lppSumTot') {
+			$('#lppSumTot').html('');
 		}
 		if (summaryLineName == 'sspSumTot') {
 			$('#sspSumTot').html('');
@@ -526,6 +557,10 @@
 			$('#lhp').prop('checked', true);
 		}
 
+		if (singleOptionName == 'lpp'){
+			$('#lpp').prop('checked', true);
+		}
+
 		if (singleOptionName == 'ssp'){
 			$('#ssp').prop('checked', true);
 		}
@@ -567,6 +602,7 @@
 			$('#dhp').prop('checked', false);
 			$('#lmp').prop('checked', false);
 			$('#lhp').prop('checked', false);
+			$('#lpp').prop('checked', false);
 			$('#ssp').prop('checked', false);
 			$('#smp').prop('checked', false);
 			$('#shp').prop('checked', false);
@@ -587,6 +623,9 @@
 		}
 		if (optionName == 'lhp') {
 			$('#lhp').prop('checked', false);
+		}
+		if (optionName == 'lpp') {
+			$('#lpp').prop('checked', false);
 		}
 		if (optionName == 'ssp') {
 			$('#ssp').prop('checked', false);
@@ -649,6 +688,13 @@
 
 	// When Laptop High Performance is clicked
 	$('#lhp').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// When Laptop Peripherie Paket is clicked
+	$('#lpp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -741,6 +787,15 @@
 	$('#lhpSumTot').delegate('#lhpSumTotReset', 'click', function () {
 		clearSummaryLine('lhpSumTot');
 		resetCheckbox('lhp');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
+	// Delete Laptop Peripherie Paket in summary list
+	$('#lppSumTot').delegate('#lppSumTotReset', 'click', function () {
+		clearSummaryLine('lppSumTot');
+		resetCheckbox('lpp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -1050,6 +1105,64 @@
 
 		if (!lhpIsChecked) {
 			activateSingleOption('lhp');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
+	//      RANGE SLIDER Laptop Peripherie Paket
+	// =====================================================
+	var $rangeLPP = $('#lppRangeSlider'),
+		$inputLPP = $('#lppQty'),
+		instanceLPP,
+		min = 1,
+		max = 50;
+
+	$rangeLPP.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: min,
+		max: max,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputLPP.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputLPP.prop('value', data.from);
+			if (!lppIsChecked) {
+				activateSingleOption('lpp');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceLPP = $rangeLPP.data("ionRangeSlider");
+
+	$inputLPP.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < min) {
+			val = min;
+			$inputLPP.val(min);
+		} else if (val > max) {
+			val = max;
+			$inputLPP.val(max);
+		}
+
+		instanceLPP.update({
+			from: val
+		});
+
+		if (!lppIsChecked) {
+			activateSingleOption('lpp');
 		}
 
 		updateSummary();
