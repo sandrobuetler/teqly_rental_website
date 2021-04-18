@@ -164,6 +164,10 @@
                                         spezielle Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen,
                                         unterbreiten wir Ihnen gerne ein passendes Angebot mit entsprechender
                                         Hardware.<br>
+                                        Optional bieten wir Ihnen noch das Peripherie Paket an, damit Sie mit Ihrem
+                                        Laptop noch produktiver sein können. Pro gebuchtes Peripherie Paket erhalten
+                                        Sie: Eine Docking Station für den Laptop, einen zusätzlichen Bildschirm und ein
+                                        kabelloses Maus & Tastatur Set.<br>
                                         <a href="hw_laptop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
                                             heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
