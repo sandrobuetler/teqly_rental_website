@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Wieso mieten?</title>
+    <title>TEQLY | Rental - Vorteile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Lehnen Sie sich zurück und konzentrieren Sie sich auf Ihr Kerngeschäft. Mit TEQLY | Rental halten wir Ihnen den Rücken frei!"/>
@@ -75,6 +75,49 @@
             </div>
         </div>
     </header>
+
+    <div id="fh5co-features">
+        <div class="container">
+            <div class="services-padding">
+                <h2><strong>3 gute Gründe</strong> für die Umstellung auf TEQLY | Rental</h2>
+                <p>Vor allem für kleine und mittelgrosse Unternehmen kann sich der Wechsel auf ein All Inclusive Mietmodel im IT-Bereich lohnen. Drei der vielen guten Gründe haben wir hier aufgelistet:</p>
+                <div class="row">
+                    <div class="col-md-4 animate-box">
+                        <div class="feature-left">
+							<span class="icon">
+								<i class="icon-wallet2"></i>
+							</span>
+                            <div class="feature-copy">
+                                <h3>Finanzielle Flexibilität</h3>
+                                <p>Mit TEQLY | Rental entstehen Ihnen keine Investitionskosten. Sie können Ihre Infrastruktur flexibel erweitern oder verkleinern um so Spitzen abzudecken. Unsere Mietverträge sind entweder monatlich oder jährlich kündbar, so haben Sie jederzeit Ihre Finanzen im Griff.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="feature-left">
+							<span class="icon">
+								<i class="icon-rocket"></i>
+							</span>
+                            <div class="feature-copy">
+                                <h3>Zukunftsgerichtet</h3>
+                                <p>Wir setzen auf moderne Hard- & Software, davon profitieren Sie und Ihre Mitarbeitenden jeden Tag! Schnelle Ladezeiten, niedrige Ausfallzeiten und die Freude am Arbeiten mit modernen Geräten erhöht die Produktivität.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-box">
+                        <div class="feature-left">
+							<span class="icon">
+								<i class="icon-happy22"></i>
+							</span>
+                            <div class="feature-copy">
+                                <h3>100% Service</h3>
+                                <p>Wir kümmern ums um Ihre komplette IT: Wir kaufen moderne Hardware ein, liefern & installieren sie und unterstützen Sie mit unserem Business Support beim Betrieb. Regelmässig tauschen wir die aktuellen Geräte gegen neue aus und stellen somit eine hochzuverlässige Infrastruktur für Sie bereit.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
 
     <div id="fh5co-slider">
         <div class="container">
