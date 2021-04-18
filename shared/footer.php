@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row row-pb-md">
             <div class="col-md-4 fh5co-widget">
-                <h4>TEQLY | Rental</h4>
+                <img src="../images/teqly_rental_logo.png" width="70%">
                 <p>Dieses Angebot ist eine Dienstleistung der TEQLY GmbH, dem innovativen KMU IT-Partner aus dem
                     Aargau</p>
             </div>
