@@ -69,7 +69,7 @@
         <!-- Order  -->
         <div class="order">
             <div class="container">
-                <h1 style="text-align: center">TEQLY | Rental - Kostenrechner</h1>
+                <h1 style="text-align: center">Preisrechner</h1>
                 <p style="text-align: center">Rechnen Sie hier einfach die Jahres- oder Monatskosten für Ihre IT-Infrastruktur aus. Profitieren
                     auch Sie von moderner, schweizer Hardware, vorinstalliertem Office und professionellem Support zum
                     Fixpreis. Zögern Sie nicht eine Konfiguration anzufragen. Gerne gehen wir auch auf spezifische
