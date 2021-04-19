@@ -108,14 +108,14 @@
                                     <input type="hidden" id="dmpTitleHidden" name="dmpTitle"
                                            value="Desktop Medium Performance"/>
                                     <input type="hidden" id="dmpPriceHidden" name="dmpPrice" value="0"/>
-                                    <input type="checkbox" id="dmp" class="inp-cbx" name="dmp" value="82.00"/>
+                                    <input type="checkbox" id="dmp" class="inp-cbx" name="dmp" value="99.00"/>
                                     <label class="cbx" for="dmp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="dmpTitle">Desktop <strong>"M"</strong> | 82.-</span>
+                                        <span id="dmpTitle">Desktop <strong>"M"</strong> | 99.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -134,14 +134,14 @@
                                     <input type="hidden" id="dhpTitleHidden" name="dhpTitle"
                                            value="Desktop High Performance"/>
                                     <input type="hidden" id="dhpPriceHidden" name="dhpPrice" value="0"/>
-                                    <input type="checkbox" id="dhp" class="inp-cbx" name="dhp" value="89.00"/>
+                                    <input type="checkbox" id="dhp" class="inp-cbx" name="dhp" value="109.00"/>
                                     <label class="cbx" for="dhp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="dhpTitle">Desktop <strong>"H"</strong> | 89.-</span>
+                                        <span id="dhpTitle">Desktop <strong>"H"</strong> | 109.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -179,14 +179,14 @@
                                     <input type="hidden" id="lmpTitleHidden" name="lmpTitle"
                                            value="Laptop Medium Performance"/>
                                     <input type="hidden" id="lmpPriceHidden" name="lmpPrice" value="0"/>
-                                    <input type="checkbox" id="lmp" class="inp-cbx" name="lmp" value="64.00"/>
+                                    <input type="checkbox" id="lmp" class="inp-cbx" name="lmp" value="79.00"/>
                                     <label class="cbx" for="lmp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="lmpTitle">Laptop <strong>"M"</strong> | 64.-</span>
+                                        <span id="lmpTitle">Laptop <strong>"M"</strong> | 79.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -205,14 +205,14 @@
                                     <input type="hidden" id="lhpTitleHidden" name="lhpTitle"
                                            value="Laptop High Performance"/>
                                     <input type="hidden" id="lhpPriceHidden" name="lhpPrice" value="0"/>
-                                    <input type="checkbox" id="lhp" class="inp-cbx" name="lhp" value="71.00"/>
+                                    <input type="checkbox" id="lhp" class="inp-cbx" name="lhp" value="89.00"/>
                                     <label class="cbx" for="lhp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="lhpTitle">Laptop <strong>"H"</strong> | 71.-</span>
+                                        <span id="lhpTitle">Laptop <strong>"H"</strong> | 89.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -231,14 +231,14 @@
                                     <input type="hidden" id="lppTitleHidden" name="lppTitle"
                                            value="Laptop Peripherie Paket"/>
                                     <input type="hidden" id="lppPriceHidden" name="lppPrice" value="0"/>
-                                    <input type="checkbox" id="lpp" class="inp-cbx" name="lpp" value="620.00"/>
+                                    <input type="checkbox" id="lpp" class="inp-cbx" name="lpp" value="45.00"/>
                                     <label class="cbx" for="lpp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="lppTitle"><strong>Peripherie Paket</strong>  | 620.-</span>
+                                        <span id="lppTitle"><strong>Peripherie Paket</strong>  | 45.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -272,14 +272,14 @@
                                     <input type="hidden" id="sspTitleHidden" name="sspTitle"
                                            value="Server Standard Performance"/>
                                     <input type="hidden" id="sspPriceHidden" name="sspPrice" value="0"/>
-                                    <input type="checkbox" id="ssp" class="inp-cbx" name="ssp" value="175.00"/>
+                                    <input type="checkbox" id="ssp" class="inp-cbx" name="ssp" value="209.00"/>
                                     <label class="cbx" for="ssp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="sspTitle">Server <strong>"S"</strong> | 175.-</span>
+                                        <span id="sspTitle">Server <strong>"S"</strong> | 209.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -298,14 +298,14 @@
                                     <input type="hidden" id="smpTitleHidden" name="smpTitle"
                                            value="Server Medium Performance"/>
                                     <input type="hidden" id="smpPriceHidden" name="smpPrice" value="0"/>
-                                    <input type="checkbox" id="smp" class="inp-cbx" name="smp" value="220.00"/>
+                                    <input type="checkbox" id="smp" class="inp-cbx" name="smp" value="259.00"/>
                                     <label class="cbx" for="smp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="smpTitle">Server <strong>"M"</strong> | 220.-</span>
+                                        <span id="smpTitle">Server <strong>"M"</strong> | 259.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -324,14 +324,14 @@
                                     <input type="hidden" id="shpTitleHidden" name="shpTitle"
                                            value="Server High Performance"/>
                                     <input type="hidden" id="shpPriceHidden" name="shpPrice" value="0"/>
-                                    <input type="checkbox" id="shp" class="inp-cbx" name="shp" value="280.00"/>
+                                    <input type="checkbox" id="shp" class="inp-cbx" name="shp" value="309.00"/>
                                     <label class="cbx" for="shp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="shpTitle">Server <strong>"H"</strong> | 280.-</span>
+                                        <span id="shpTitle">Server <strong>"H"</strong> | 309.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -368,14 +368,14 @@
                                     <input type="hidden" id="tcsTitleHidden" name="tcsTitle"
                                            value="TEQLY | Cloud Standard"/>
                                     <input type="hidden" id="tcsPriceHidden" name="tcsPrice" value="0"/>
-                                    <input type="checkbox" id="tcs" class="inp-cbx" name="tcs" value="75.00"/>
+                                    <input type="checkbox" id="tcs" class="inp-cbx" name="tcs" value="79.00"/>
                                     <label class="cbx" for="tcs">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tcsTitle">T|C <strong>"Standard"</strong> | 75.-</span>
+                                        <span id="tcsTitle">T|C <strong>"Standard"</strong> | 79.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -394,14 +394,14 @@
                                     <input type="hidden" id="tcpTitleHidden" name="tcpTitle"
                                            value="TEQLY | Cloud Premium"/>
                                     <input type="hidden" id="tcpPriceHidden" name="tcpPrice" value="0"/>
-                                    <input type="checkbox" id="tcp" class="inp-cbx" name="tcp" value="120.00"/>
+                                    <input type="checkbox" id="tcp" class="inp-cbx" name="tcp" value="119.00"/>
                                     <label class="cbx" for="tcp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tcpTitle">T|C <strong>"Premium"</strong> | 120.-</span>
+                                        <span id="tcpTitle">T|C <strong>"Premium"</strong> | 119.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
