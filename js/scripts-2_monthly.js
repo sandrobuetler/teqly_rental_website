@@ -887,14 +887,14 @@
 	var $rangeDMP = $('#dmpRangeSlider'),
 		$inputDMP = $('#dmpQty'),
 		instanceDMP,
-		min = 1,
-		max = 50;
+		dmpMin = 1,
+		dmpMax = 50;
 
 	$rangeDMP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: dmpMin,
+		max: dmpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -917,12 +917,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputDMP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputDMP.val(max);
+		if (val < dmpMin) {
+			val = dmpMin;
+			$inputDMP.val(dmpMin);
+		} else if (val > dmpMax) {
+			val = dmpMax;
+			$inputDMP.val(dmpMax);
 		}
 
 		instanceDMP.update({
@@ -945,14 +945,14 @@
 	var $rangeDHP = $('#dhpRangeSlider'),
 		$inputDHP = $('#dhpQty'),
 		instanceDHP,
-		min = 1,
-		max = 50;
+		dhpMin = 1,
+		dhpMax = 50;
 
 	$rangeDHP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: dhpMin,
+		max: dhpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -975,12 +975,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputDHP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputDHP.val(max);
+		if (val < dhpMin) {
+			val = dhpMin;
+			$inputDHP.val(dhpMin);
+		} else if (val > dhpMax) {
+			val = dhpMax;
+			$inputDHP.val(dhpMax);
 		}
 
 		instanceDHP.update({
@@ -1003,14 +1003,14 @@
 	var $rangeLMP = $('#lmpRangeSlider'),
 		$inputLMP = $('#lmpQty'),
 		instanceLMP,
-		min = 1,
-		max = 50;
+		lmpMin = 1,
+		lmpMax = 50;
 
 	$rangeLMP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: lmpMin,
+		max: lmpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1033,12 +1033,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputLMP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputLMP.val(max);
+		if (val < lmpMin) {
+			val = lmpMin;
+			$inputLMP.val(lmpMin);
+		} else if (val > lmpMax) {
+			val = lmpMax;
+			$inputLMP.val(lmpMax);
 		}
 
 		instanceLMP.update({
@@ -1061,14 +1061,14 @@
 	var $rangeLHP = $('#lhpRangeSlider'),
 		$inputLHP = $('#lhpQty'),
 		instanceLHP,
-		min = 1,
-		max = 50;
+		lhpMin = 1,
+		lhpMax = 50;
 
 	$rangeLHP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: lhpMin,
+		max: lhpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1091,12 +1091,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputLHP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputLHP.val(max);
+		if (val < lhpMin) {
+			val = lhpMin;
+			$inputLHP.val(lhpMin);
+		} else if (val > lhpMax) {
+			val = lhpMax;
+			$inputLHP.val(lhpMax);
 		}
 
 		instanceLHP.update({
@@ -1119,14 +1119,14 @@
 	var $rangeLPP = $('#lppRangeSlider'),
 		$inputLPP = $('#lppQty'),
 		instanceLPP,
-		min = 1,
-		max = 50;
+		lppMin = 1,
+		lppMax = 100;
 
 	$rangeLPP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: lppMin,
+		max: lppMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1149,12 +1149,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputLPP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputLPP.val(max);
+		if (val < lppMin) {
+			val = lppMin;
+			$inputLPP.val(lppMin);
+		} else if (val > lppMax) {
+			val = lppMax;
+			$inputLPP.val(lppMax);
 		}
 
 		instanceLPP.update({
@@ -1177,14 +1177,14 @@
 	var $rangeSSP = $('#sspRangeSlider'),
 		$inputSSP = $('#sspQty'),
 		instanceSSP,
-		min = 1,
-		max = 10;
+		sspMin = 1,
+		sspMax = 5;
 
 	$rangeSSP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: sspMin,
+		max: sspMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1207,12 +1207,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputSSP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputSSP.val(max);
+		if (val < sspMin) {
+			val = sspMin;
+			$inputSSP.val(sspMin);
+		} else if (val > sspMax) {
+			val = sspMax;
+			$inputSSP.val(sspMax);
 		}
 
 		instanceSSP.update({
@@ -1235,14 +1235,14 @@
 	var $rangeSMP = $('#smpRangeSlider'),
 		$inputSMP = $('#smpQty'),
 		instanceSMP,
-		min = 1,
-		max = 10;
+		smpMin = 1,
+		smpMax = 5;
 
 	$rangeSMP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: smpMin,
+		max: smpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1265,12 +1265,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputSMP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputSMP.val(max);
+		if (val < smpMin) {
+			val = smpMin;
+			$inputSMP.val(smpMin);
+		} else if (val > smpMax) {
+			val = smpMax;
+			$inputSMP.val(smpMax);
 		}
 
 		instanceSMP.update({
@@ -1293,14 +1293,14 @@
 	var $rangeSHP = $('#shpRangeSlider'),
 		$inputSHP = $('#shpQty'),
 		instanceSHP,
-		min = 1,
-		max = 10;
+		shpMin = 1,
+		shpMax = 5;
 
 	$rangeSHP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: shpMin,
+		max: shpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1323,12 +1323,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputSHP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputSHP.val(max);
+		if (val < shpMin) {
+			val = shpMin;
+			$inputSHP.val(shpMin);
+		} else if (val > shpMax) {
+			val = shpMax;
+			$inputSHP.val(shpMax);
 		}
 
 		instanceSHP.update({
@@ -1351,14 +1351,14 @@
 	var $rangeTCS = $('#tcsRangeSlider'),
 		$inputTCS = $('#tcsQty'),
 		instanceTCS,
-		min = 1,
-		max = 5;
+		tcsMin = 1,
+		tcsMax = 5;
 
 	$rangeTCS.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: tcsMin,
+		max: tcsMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1381,12 +1381,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputTCS.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputTCS.val(max);
+		if (val < tcsMin) {
+			val = tcsMin;
+			$inputTCS.val(tcsMin);
+		} else if (val > tcsMax) {
+			val = tcsMax;
+			$inputTCS.val(tcsMax);
 		}
 
 		instanceTCS.update({
@@ -1409,14 +1409,14 @@
 	var $rangeTCP = $('#tcpRangeSlider'),
 		$inputTCP = $('#tcpQty'),
 		instanceTCP,
-		min = 1,
-		max = 10;
+		tcpMin = 1,
+		tcpMax = 5;
 
 	$rangeTCP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: tcpMin,
+		max: tcpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1439,12 +1439,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputTCP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputTCP.val(max);
+		if (val < tcpMin) {
+			val = tcpMin;
+			$inputTCP.val(tcpMin);
+		} else if (val > tcpMax) {
+			val = tcpMax;
+			$inputTCP.val(tcpMax);
 		}
 
 		instanceTCP.update({
@@ -1467,14 +1467,14 @@
 	var $rangeMBA = $('#mbaRangeSlider'),
 		$inputMBA = $('#mbaQty'),
 		instanceMBA,
-		min = 1,
-		max = 10;
+		mbaMin = 1,
+		mbaMax = dmpMax+dhpMax+lmpMax+lhpMax;
 
 	$rangeMBA.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: mbaMin,
+		max: mbaMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1497,12 +1497,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputMBA.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputMBA.val(max);
+		if (val < mbaMin) {
+			val = mbaMin;
+			$inputMBA.val(mbaMin);
+		} else if (val > mbaMax) {
+			val = mbaMax;
+			$inputMBA.val(mbaMax);
 		}
 
 		instanceMBA.update({
@@ -1525,14 +1525,14 @@
 	var $rangeMBS = $('#mbsRangeSlider'),
 		$inputMBS = $('#mbsQty'),
 		instanceMBS,
-		min = 1,
-		max = 10;
+		mbsMin = 1,
+		mbsMax = dmpMax+dhpMax+lmpMax+lhpMax;
 
 	$rangeMBS.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: mbsMin,
+		max: mbsMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1555,12 +1555,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputMBS.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputMBS.val(max);
+		if (val < mbsMin) {
+			val = mbsMin;
+			$inputMBS.val(mbsMin);
+		} else if (val > mbsMax) {
+			val = mbsMax;
+			$inputMBS.val(mbsMax);
 		}
 
 		instanceMBS.update({
@@ -1583,14 +1583,14 @@
 	var $rangeMBP = $('#mbpRangeSlider'),
 		$inputMBP = $('#mbpQty'),
 		instanceMBP,
-		min = 1,
-		max = 10;
+		mbpMin = 1,
+		mbpMax = dmpMax+dhpMax+lmpMax+lhpMax;
 
 	$rangeMBP.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: min,
-		max: max,
+		min: mbpMin,
+		max: mbpMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
@@ -1613,12 +1613,12 @@
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < min) {
-			val = min;
-			$inputMBP.val(min);
-		} else if (val > max) {
-			val = max;
-			$inputMBP.val(max);
+		if (val < mbpMin) {
+			val = mbpMin;
+			$inputMBP.val(mbpMin);
+		} else if (val > mbpMax) {
+			val = mbpMax;
+			$inputMBP.val(mbpMax);
 		}
 
 		instanceMBP.update({
