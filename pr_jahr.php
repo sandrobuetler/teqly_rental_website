@@ -605,7 +605,7 @@
                                         </ul>
                                         <div class="row total-container">
                                             <div class="col-6 p-0">
-                                                <input type="text" id="totalTitle" class="summaryInput"
+                                                <input type="text" id="totalTitle" class="summaryInput1"
                                                        name="totallabel" value="" disabled/>
                                             </div>
                                             <div class="col-6 p-0">
