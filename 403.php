@@ -67,7 +67,7 @@
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
                             <h1>403 - Forbidden!</h1>
-                            <img src="images/error/teqly_403_403.gif" style="padding-bottom: 20px">
+                            <img src="images/error/teqly_401_403.gif" style="padding-bottom: 20px">
                             <h2>Sie haben keinen Zugriff auf diese Seite, aber probieren Sie's mal auf der Startseite (da lassen wir normalerweise alle rein).</h2>
                             <p><a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="/"></i>
                                     Startseite</a>

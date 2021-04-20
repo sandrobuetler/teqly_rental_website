@@ -67,7 +67,7 @@
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
                             <h1>404 - Seite nicht gefunden!</h1>
-                            <img src="images/error/teqly_404_comp.gif" style="padding-bottom: 20px">
+                            <img src="images/error/teqly_404.gif" style="padding-bottom: 20px">
                             <h2>Sie tappen aktuell im dunkeln, die gesucht Seite existiert nicht. Wir sind aber sicher,
                                 dass die anderen Seiten Licht ins dunkle bringen können!</h2>
                             <p><a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="/"></i>
