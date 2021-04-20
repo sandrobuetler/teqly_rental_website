@@ -87,7 +87,7 @@
         <div class="container">
             <div class="services-padding">
                 <h2>Wieso TEQLY | Rental?</h2>
-                <p>Wenn Sie sich mehr um Ihr Kengeschäft kümmern und Kostensicherheit für Ihre IT-Infrastruktur haben
+                <p>Wenn Sie sich mehr um Ihr Kerngeschäft kümmern und Kostensicherheit für Ihre IT-Infrastruktur haben
                     möchten, dann sind Sie hier richtig. Mit unserem Mietmodel profitieren Sie von einem umfassenden
                     Service zum Fixpreis. Teure Investitionen fallen weg und Ausfallzeiten sinken, da die Systeme durch
                     TEQLY automatisch gewartet werden und bei einem Hardwaredefekt wird das betroffene Gerät umgehend
