@@ -63,7 +63,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>Hardware Konfigurationen</h2>
                     <p>Entdecken Sie hier unsere verschiedenen Standard Hardware Konfigurationen. Aus unserer Erfahrung
-                        können wir sagen, dass 90% aller Businessanwendungen mit dieser Hardware problemlos Kompatibel
+                        können wir sagen, dass 90% aller Businessanwendungen mit dieser Hardware problemlos kompatibel
                         sind.<br>Falls Sie spezielle Anforderungen an Ihre Hardware haben, kontaktieren Sie uns gerne
                         unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard
                         Sortiments.</p>
@@ -90,7 +90,7 @@
                                  style="background-image: url(images/products/hardware/laptops/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
                                 <h3>Laptop's</h3>
-                                <p style="color: #0b0b0b">Unsere 15.4" Laptops kommen Standardmässig mit einem grossen
+                                <p style="color: #0b0b0b">Unsere 15.4" Laptops kommen standardmässig mit einem grossen
                                     Akku, so dass auch das Arbeiten von Unterwegs problemlos möglich ist.</p>
                             </div>
                         </a>

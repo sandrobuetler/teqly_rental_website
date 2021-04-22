@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Ooops 404</title>
+    <title>TEQLY | Rental - Ooops 502</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Bei TEQLY | Rental finden Sie was Sie brauchen! Ausser hier, dass ist unsere HTML 404 Error Seite..."/>
+          content="Bei TEQLY | Rental finden Sie was Sie brauchen! Ausser hier, dass ist unsere HTML 502 Error Seite..."/>
     <meta name="keywords"
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service, mieten, Aargau Infrmatik, KMU, Laptop mieten, Server mieten"/>
     <meta name="author" content="TEQLY GmbH"/>
@@ -66,10 +66,9 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                            <h1>404 - Seite nicht gefunden!</h1>
-                            <img src="images/error/teqly_404_comp.gif" style="padding-bottom: 20px">
-                            <h2>Sie tappen aktuell im dunkeln, die gesucht Seite existiert nicht. Wir sind aber sicher,
-                                dass die anderen Seiten Licht ins dunkle bringen können!</h2>
+                            <h1>502 - Bad Gateway!</h1>
+                            <img src="images/error/teqly_502.gif" style="padding-bottom: 20px">
+                            <h2>Irgendwas scheint mit der Kommuniktion mit unserem Webserver schief gegangen zu sein. Probieren Sies doch einfach auf der Startseite nochmals!</h2>
                             <p><a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="/"></i>
                                     Startseite</a>
                                 <a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo" href="pr_jahr.php">Preisrechner</a>
