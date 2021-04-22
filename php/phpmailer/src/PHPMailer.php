@@ -279,14 +279,14 @@ class PHPMailer
      *
      * @var string
      */
-    public $Host = 'asmtp.mail.hostpoint.ch';
+    public $Host = 'localhost';
 
     /**
      * The default SMTP server port.
      *
      * @var int
      */
-    public $Port = 465;
+    public $Port = 25;
 
     /**
      * The SMTP HELO/EHLO name used for the SMTP connection.
@@ -339,14 +339,14 @@ class PHPMailer
      *
      * @var string
      */
-    public $Username = '';
+    public $Username = 'info@teqly.ch';
 
     /**
      * SMTP password.
      *
      * @var string
      */
-    public $Password = '';
+    public $Password = 'Teqly_2020!';
 
     /**
      * SMTP auth type.
