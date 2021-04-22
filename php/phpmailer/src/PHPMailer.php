@@ -339,14 +339,14 @@ class PHPMailer
      *
      * @var string
      */
-    public $Username = 'info@teqly.ch';
+    public $Username = '';
 
     /**
      * SMTP password.
      *
      * @var string
      */
-    public $Password = 'Teqly_2020!';
+    public $Password = '';
 
     /**
      * SMTP auth type.
