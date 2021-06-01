@@ -194,9 +194,11 @@
     </div>
 
     <?php
+    include('shared/video.php');
     include('shared/calltoaction.php');
     include('shared/footer.php');
     ?>
+
 </div>
 
 <div class="gototop js-top">
