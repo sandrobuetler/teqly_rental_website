@@ -72,7 +72,7 @@
                     <h3>Kontaktmöglichkeiten</h3>
                     <ul class="contact-info">
                         <li><i class="icon-location"></i>TECHNOPARK© Aargau<br> Badenerstrasse 13<br> 5200 Brugg</li>
-                        <li><i class="icon-old-phone"></i><a href="tel://+41625614002">+41 62 561 40 02</a></li>
+                        <li><i class="icon-old-phone"></i><a href="tel://+41565111133">+41 56 511 11 33</a></li>
                         <li><i class="icon-mail22"></i><a href="mailto:info@teqly.ch">info@teqly.ch</a></li>
                         <li><i class="icon-globe2"></i><a href="https://teqly.ch">www.teqly.ch</a></li>
                     </ul>
