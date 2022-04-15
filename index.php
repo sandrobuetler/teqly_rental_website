@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental</title>
+    <title>EASIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Mit TEQLY | Rental können Sie Ihre gesamte IT Infrastruktur mieten anstatt sie zu kaufen. Erhalten Sie zum Fixpreis moderne Hardware, die passende Software und erstklassigen Support. "/>
+          content="Mit EASIT.rent können Sie Ihre gesamte IT Infrastruktur mieten anstatt sie zu kaufen. Erhalten Sie zum Fixpreis moderne Hardware, die passende Software und erstklassigen Support. "/>
     <meta name="keywords"
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service, mieten, Aargau Infrmatik, KMU, Laptop mieten, Server mieten"/>
     <meta name="author" content="TEQLY GmbH"/>
@@ -67,7 +67,7 @@
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
                             <h1>Senken Sie IT-Kosten und verbessern Sie Ihre Infrastruktur!</h1>
-                            <h2>Mit TEQLY | Rental können Sie Hard- & Software sowie Support zu einem Fixpreis
+                            <h2>Mit EASIT.rent können Sie Hard- & Software sowie Support zu einem Fixpreis
                                 einkaufen. Dank unserem All-Inclusive Angebot müssen Sie sich nicht mehr um Ihre
                                 IT-Infrastruktur kümmern. </h2>
                             <p><a style="margin-top: 5px" class="btn btn-primary btn-lg btn-demo"
@@ -86,11 +86,11 @@
     <div id="fh5co-features">
         <div class="container">
             <div class="services-padding">
-                <h2>Wieso TEQLY | Rental?</h2>
+                <h2>Wieso EASIT.rent?</h2>
                 <p>Wenn Sie sich mehr um Ihr Kerngeschäft kümmern und Kostensicherheit für Ihre IT-Infrastruktur haben
                     möchten, dann sind Sie hier richtig. Mit unserem Mietmodel profitieren Sie von einem umfassenden
                     Service zum Fixpreis. Teure Investitionen fallen weg und Ausfallzeiten sinken, da die Systeme durch
-                    TEQLY automatisch gewartet werden und bei einem Hardwaredefekt wird das betroffene Gerät umgehend
+                    EASIT automatisch gewartet werden und bei einem Hardwaredefekt wird das betroffene Gerät umgehend
                     ausgetauscht.</p>
                 <div class="row">
                     <div class="col-md-4 animate-box">
@@ -129,7 +129,7 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>Kostentransparenz</h3>
-                                <p>Dank der einfachen und skalierbaren Kostenstruktur ist TEQLY | Rental eine
+                                <p>Dank der einfachen und skalierbaren Kostenstruktur ist EASIT.rent eine
                                     Alternative zur traditionellen Beschaffung von IT-Systemen in KMU's.</p>
                                 <p><a href="pr_jahr.php">Zum Preisrechner <i class="icon-arrow-right22"></i></a>
                                 </p>

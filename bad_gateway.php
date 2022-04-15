@@ -7,7 +7,7 @@
     <title>TEQLY | Rental - Ooops 502</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Bei TEQLY | Rental finden Sie was Sie brauchen! Ausser hier, dass ist unsere HTML 502 Error Seite..."/>
+          content="Bei EASIT.rent finden Sie was Sie brauchen! Ausser hier, dass ist unsere HTML 502 Error Seite..."/>
     <meta name="keywords"
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service, mieten, Aargau Infrmatik, KMU, Laptop mieten, Server mieten"/>
     <meta name="author" content="TEQLY GmbH"/>

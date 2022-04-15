@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Kontakt</title>
+    <title>EASIT - Kontakt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Kontaktieren Sie uns direkt hier, um ein persönliches Angebot zu erhalten."/>
@@ -73,8 +73,7 @@
                     <ul class="contact-info">
                         <li><i class="icon-location"></i>TECHNOPARK© Aargau<br> Badenerstrasse 13<br> 5200 Brugg</li>
                         <li><i class="icon-old-phone"></i><a href="tel://+41565111133">+41 56 511 11 33</a></li>
-                        <li><i class="icon-mail22"></i><a href="mailto:info@teqly.ch">info@teqly.ch</a></li>
-                        <li><i class="icon-globe2"></i><a href="https://teqly.ch">www.teqly.ch</a></li>
+                        <li><i class="icon-mail22"></i><a href="mailto:info@easit.rent">info@easit.rent</a></li>
                     </ul>
                 </div>
                 <div class="col-md-7 col-md-push-1 animate-box">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Prime Computer</title>
+    <title>EASIT - Prime Computer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Prime Computer ist ein St. Galler Mini PC und Server Produzent."/>
     <meta name="keywords"

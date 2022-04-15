@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Hardware</title>
+    <title>EASIT - Hardware</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Wir setzen auf Top Hardware von Schweizer Herstellern, erfahren Sie hier mehr über die verfügbaren Konfigurationen."/>

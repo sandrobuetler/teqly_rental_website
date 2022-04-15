@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - TEQLY</title>
+    <title>EASIT - TEQLY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Wir sind TEQLY, Ihr innovativer IT-Partner aus dem Freiamt."/>
     <meta name="keywords"
@@ -62,8 +62,8 @@
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>TEQLY</h2>
                     <p>Die TEQLY GmbH ist Ihr kompetenter IT-Partner. Mit unseren Dienstleistungen decken wir alle
-                        Bereiche der IT eines KMU ab. Wir verfügen über ein breites Netz an Zulieferern und Parntern
-                        (z.B. PrimeComputer oder Microsoft). Gerne beraten wir auch Sie wenn es um Ihre IT geht, wir
+                        Bereiche der IT eines KMU ab. Wir verfügen über ein breites Netz an Zulieferern und Partnern
+                        (z.B. PrimeComputer oder Microsoft). Gerne beraten wir auch Sie, wenn es um Ihre IT geht, wir
                         übernehmen auch Realisation, sowie Bewirtschaftung und Support kleiner und grosser
                         Unternehmen.</p>
                     <p><a class="btn btn-primary btn-lg btn-demo" href="https://teqly.ch" target="_blank"></i>

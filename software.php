@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Software</title>
+    <title>EASIT - Software</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Wenn die Grundausstattung unserer Konfigurationen nicht Ihren Anforderungen entspricht, bieten wir Ihnen verschiede Zusatzlösungen an."/>

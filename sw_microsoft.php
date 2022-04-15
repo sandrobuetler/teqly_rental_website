@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Microsoft</title>
+    <title>EASIT - Microsoft</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Microsoft365 ist nach wie vor der Standard wenn es um Office Software geht. Gepaart mit den Cloud Funktionen schafft es Microsoft365 eine hybride Arbeitswelt zu schaffen."/>

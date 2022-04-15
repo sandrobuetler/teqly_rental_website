@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Preisrechner (Monat)</title>
+    <title>EASIT - Preisrechner (Monat)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Transparenz ist uns wichtig, auch beim Preis! Stellen Sie sich hier im Preisrechner Ihr Wunschsetup zusammen und erhalten gleich eine erste Preisschätzung. In diesem Rechner werden die Preise bei monatlicher Verrechnung angezeigt."/>
@@ -661,7 +661,7 @@
                                 </div>
                                 <div class="row footer">
                                     <div class="col-lg-12 text-center">
-                                        <small>&copy; 2021 TEQLY GmbH</small>
+                                        <small>&copy; <?= date("Y"); ?> TEQLY GmbH</small>
                                     </div>
                                 </div>
                             </div>

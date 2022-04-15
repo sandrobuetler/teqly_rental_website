@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEQLY | Rental - Vorteile</title>
+    <title>EASIT - Vorteile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Lehnen Sie sich zurück und konzentrieren Sie sich auf Ihr Kerngeschäft. Mit TEQLY | Rental halten wir Ihnen den Rücken frei!"/>
+          content="Lehnen Sie sich zurück und konzentrieren Sie sich auf Ihr Kerngeschäft. Mit EASIT.rent halten wir Ihnen den Rücken frei!"/>
     <meta name="keywords"
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service"/>
     <meta name="author" content="TEQLY GmbH"/>
@@ -65,7 +65,7 @@
                     <div class="display-t js-fullheight">
                         <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
                             <h1>Ihr Kerngeschäft sollte im Fokus stehen & nicht Ihre IT-Infrastruktur</h1>
-                            <h2>Mit TEQLY | Rental halten wir Ihnen den Rücken frei, damit Sie sich auf Ihr Kerngeschäft
+                            <h2>Mit EASIT.rent halten wir Ihnen den Rücken frei, damit Sie sich auf Ihr Kerngeschäft
                                 fokussieren können. Wir kümmern uns um alle nötigen Wartungen, tauschen alte oder
                                 defekte Geräte aus und leisten Support wenn etwas mal nicht so läuft wie Sie es
                                 wünschen.</h2>
@@ -79,7 +79,7 @@
     <div id="fh5co-features">
         <div class="container">
             <div class="services-padding">
-                <h2><strong>3 gute Gründe</strong> für die Umstellung auf TEQLY | Rental</h2>
+                <h2><strong>3 gute Gründe</strong> für die Umstellung auf EASIT.rent</h2>
                 <p>Vor allem für kleine und mittelgrosse Unternehmen kann sich der Wechsel auf ein All Inclusive
                     Mietmodel im IT-Bereich lohnen. Drei der vielen guten Gründe haben wir hier aufgelistet:</p>
                 <div class="row">
@@ -90,7 +90,7 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>Finanzielle Flexibilität</h3>
-                                <p>Mit TEQLY | Rental entstehen Ihnen keine Investitionskosten. Sie können Ihre
+                                <p>Mit EASIT.rent entstehen Ihnen keine Investitionskosten. Sie können Ihre
                                     Infrastruktur flexibel erweitern oder verkleinern um so Spitzen abzudecken. Unsere
                                     Mietverträge sind entweder monatlich oder jährlich kündbar, so haben Sie jederzeit
                                     Ihre Finanzen im Griff.</p>
@@ -139,7 +139,7 @@
                 <div class="col-md-6 animate-box">
                     <div class="heading">
                         <h2>Lehnen Sie sich zurück!</h2>
-                        <p>Mit TEQLY | Rental funktioniert Ihre IT wie von Geisterhand: Immer aktuell und schnell
+                        <p>Mit EASIT.rent funktioniert Ihre IT wie von Geisterhand: Immer aktuell und schnell
                             zur
                             Stelle.</p>
                     </div>
@@ -213,7 +213,7 @@
                                                     <div class="desc">
                                                         <h2>Skalierbarkeit</h2>
                                                         <p>Bedürfnisse und Anforderungen ändern sich im dynamischen
-                                                            Geschäftsumfeld laufend. Mit TEQLY | Rental sind Sie für
+                                                            Geschäftsumfeld laufend. Mit EASIT.rent sind Sie für
                                                             jede Veränderung gewappnet. Sie können innert kürzester
                                                             Zeit
                                                             zusätzliche Arbeitsplätze in Betrieb nehmen und dank der
@@ -242,7 +242,7 @@
                                                         <h2>Kostentransparenz</h2>
                                                         <p>Unsere klar strukturierten "All-Inclusive"-Preise
                                                             ermöglichen
-                                                            Ihnen Kosten- und Planungssicherheit. Mit TEQLY | Rental
+                                                            Ihnen Kosten- und Planungssicherheit. Mit EASIT.rent
                                                             lassen sich Ihre Fixkosten reduzieren und
                                                             Investitionskosten
                                                             fallen komplett weg. Wie das geht? Die Kosten für unsere
@@ -274,12 +274,12 @@
     <div id="fh5co-features">
         <div class="container">
             <div class="services-padding">
-                <h2>Wie kommen Sie zu TEQLY | Rental?</h2>
+                <h2>Wie kommen Sie zu EASIT.rent?</h2>
                 <p>Wir versuchen Ihre Anforderungen optimal zu erfassen und alle Ihre Bedürfnisse zu erfüllen.
                     Zeitlich
-                    richten wir uns nach Ihnen, auf Wunsch können wir innert kürzester Zeit TEQLY | Rental in Ihrem
+                    richten wir uns nach Ihnen, auf Wunsch können wir innert kürzester Zeit EASIT.rent in Ihrem
                     Unternehmen implementieren. Nachfolgen finden sie die 6 Phasen, von der Kontaktaufnahme bis zum
-                    Betrieb, in der Beschaffung von TEQLY | Rental:</p>
+                    Betrieb, in der Beschaffung von EASIT.rent:</p>
                 <div class="row">
                     <div class="col-md-4 animate-box">
                         <div class="feature-copy">
