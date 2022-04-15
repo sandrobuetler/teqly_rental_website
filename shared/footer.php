@@ -3,8 +3,8 @@
         <div class="row row-pb-md">
             <div class="col-md-4 fh5co-widget">
                 <img src="../images/teqly_rental_logo.png" width="70%">
-                <p>Dieses Angebot ist eine Dienstleistung der TEQLY GmbH, dem innovativen KMU IT-Partner aus dem
-                    Aargau</p>
+                <p>EASIT.rent ist eine Dienstleistung der TEQLY GmbH, dem innovativen IT-StartUp aus dem
+                    Aargau.</p>
             </div>
             <div class="col-md-2 col-md-push-1 fh5co-widget">
                 <h4>Navigation</h4>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="col-md-2 col-md-push-1 fh5co-widget">
-                <h4>Mehr TEQLY</h4>
+                <h4>Mehr von TEQLY</h4>
                 <ul class="fh5co-footer-links">
                     <li><a href="https://teqly.ch/">Website</a></li>
                     <li><a href="https://teqly.ch/blog.html">Blog</a></li>
@@ -35,7 +35,7 @@
                 <ul class="fh5co-footer-links">
                     <li>TEQLY GmbH <br> TECHNOPARK&copy; Aargau <br> Badenerstrasse 13 <br> 5200 Brugg</li>
                     <li><a href="tel://+41565111133">+41 56 511 11 33</a></li>
-                    <li><a href="mailto:info@teqly.ch">info@teqly.ch</a></li>
+                    <li><a href="mailto:info@easit.rent">info@easit.rent</a></li>
                 </ul>
             </div>
 
@@ -44,7 +44,7 @@
         <div class="row copyright">
             <div class="col-md-12 text-center">
                 <p>
-                    <small class="block">&copy; 2021 gebaut und gehostet von TEQLY</small>
+                    <small class="block">&copy; <?= date("Y"); ?> gebaut und gehostet von TEQLY</small>
                     <small class="block"><a href="https://teqly.ch/legal.html#impressum"
                                             target="_blank">Impressum</a> <a
                                 href="https://teqly.ch/legal.html#datenschutz" target="_blank">Datenschutz</a> <a
