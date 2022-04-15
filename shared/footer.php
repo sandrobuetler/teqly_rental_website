@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row row-pb-md">
             <div class="col-md-4 fh5co-widget">
-                <img src="../images/teqly_rental_logo.png" width="70%">
+                <img src="../images/easit_logo.png" width="70%">
                 <p>EASIT.rent ist eine Dienstleistung der TEQLY GmbH, dem innovativen IT-StartUp aus dem
                     Aargau.</p>
             </div>
@@ -33,7 +33,7 @@
             <div class="col-md-4 col-md-push-1 fh5co-widget">
                 <h4>Kontakt</h4>
                 <ul class="fh5co-footer-links">
-                    <li>TEQLY GmbH <br> TECHNOPARK&copy; Aargau <br> Badenerstrasse 13 <br> 5200 Brugg</li>
+                    <li>EASIT.rent<br> c/o TEQLY GmbH <br> TECHNOPARK&copy; Aargau <br> Badenerstrasse 13 <br> 5200 Brugg</li>
                     <li><a href="tel://+41565111133">+41 56 511 11 33</a></li>
                     <li><a href="mailto:info@easit.rent">info@easit.rent</a></li>
                 </ul>
