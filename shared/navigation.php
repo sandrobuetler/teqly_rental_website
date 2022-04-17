@@ -3,7 +3,7 @@
     <div class="top-menu">
         <div class="container">
             <div class="row">
-                <IMG SRC="../images/easit_logo.png" ALT="EASIT.rent Logo" HEIGHT=50 align="left">
+                <IMG SRC="../images/easit_logo.png" ALT="EASIT.rent Logo" HEIGHT=50 align="left" style="margin-left: auto">
                 <div class="col-xs-10 text-right menu-1">
                     <ul style="font-family: 'Inconsolata' !important;">
                         <li style="margin: -10px" class="<?php $r = ($uri == "/") ? 'active' : '';
