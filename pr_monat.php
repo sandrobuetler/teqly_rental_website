@@ -108,7 +108,7 @@
                                     <input type="hidden" id="dmpTitleHidden" name="dmpTitle"
                                            value="Desktop Medium Performance"/>
                                     <input type="hidden" id="dmpPriceHidden" name="dmpPrice" value="0"/>
-                                    <input type="checkbox" id="dmp" class="inp-cbx" name="dmp" value="147.63"/>
+                                    <input type="checkbox" id="dmp" class="inp-cbx" name="dmp" value="159.00"/>
                                     <label class="cbx" for="dmp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
