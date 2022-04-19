@@ -191,7 +191,7 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>Windows 11 PRO</h3>
-                                <p>Alle Geräte haben Standardmässig die aktuellste Version von Windows 11 PRO installiert.</p>
+                                <p>Alle Geräte haben standardmässig die aktuellste Version von Windows 11 PRO installiert.</p>
                             </div>
                         </div>
                     </div>
@@ -233,8 +233,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>Laptop Konfigurationen</h2>
                     <p>Falls Sie spezielle Anforderungen an Ihre Hardware haben, kontaktieren Sie uns gerne
-                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard
-                        Sortiments.</p>
+                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard-Sortiments.</p>
                 </div>
             </div>
             <div class="row">
@@ -266,7 +265,7 @@
                                 <h3>Laptop M Touch<br>(Medium Performance)</h3>
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
-                                    Office, Webapplikationen, Buchhaltung, HR-Software<br>
+                                    Office, Webapplikationen, Buchhaltung, HR-Software, Zeichnungen<br>
                                     <strong>Mindestspezifikation:</strong><br>
                                     <strong>Bildschirm:</strong> Touch-Screen<br>
                                     <strong>Prozessor:</strong> Intel i5<br>
