@@ -190,10 +190,8 @@
 								<i class="icon-windows8"></i>
 							</span>
                             <div class="feature-copy">
-                                <h3>Office 2019</h3>
-                                <p>Alle Geräte verfügen Standardmässig über ein Office 2019 Software Paket. Sie können
-                                    also ab Inbetriebnahme des Gerätes die Office Klassiker: Outlook, Word, Excel &
-                                    PowerPoint nutzen.</p>
+                                <h3>Windows 11 PRO</h3>
+                                <p>Alle Geräte haben Standardmässig die aktuellste Version von Windows 11 PRO installiert.</p>
                             </div>
                         </div>
                     </div>
@@ -206,7 +204,7 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>Kabel</h3>
-                                <p>Alle für den Betrieb nötigen Kabel, wie z.B. Stromkabel.</p>
+                                <p>Alle für den Betrieb nötigen Kabel, wie z.B. Stromkabel. Wenn Sie das Peripherie-Paket dazubuchen, erhalten Sie zusätzlich noch Display-Kabel und weitere Verbindungskabel.</p>
                             </div>
                         </div>
                     </div>
@@ -250,7 +248,28 @@
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Office, Webapplikationen, Buchhaltung, HR-Software<br>
-                                    <strong>Prozessor:</strong> Intel i7<br>
+                                    <strong>Mindestspezifikation:</strong><br>
+                                    <strong>Prozessor:</strong> Ryzen5 5500U<br>
+                                    <strong>RAM:</strong> 8 GB<br>
+                                    <strong>Speicher:</strong> 500 GB
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fh5co-portfolio animate-box">
+                        <a>
+                            <div class="portfolio-entry"
+                                 style="background-image: url(images/products/hardware/laptops/teqly_axxiv_laptop_top_touch.png);"></div>
+                            <div class="portfolio-text">
+                                <h3>Laptop M Touch<br>(Medium Performance)</h3>
+                                <p style="color: #0b0b0b">
+                                    <strong>Anwendungsbereiche:</strong><br>
+                                    Office, Webapplikationen, Buchhaltung, HR-Software<br>
+                                    <strong>Mindestspezifikation:</strong><br>
+                                    <strong>Bildschirm:</strong> Touch-Screen<br>
+                                    <strong>Prozessor:</strong> Intel i5<br>
                                     <strong>RAM:</strong> 8 GB<br>
                                     <strong>Speicher:</strong> 500 GB
                                 </p>
@@ -268,7 +287,9 @@
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Laptop "M", Ressourcen intensivere Anwendungen, grafiklastige Anwendungen<br>
-                                    <strong>Prozessor:</strong> Intel i7<br>
+                                    <strong>Mindestspezifikation:</strong><br>
+                                    <strong>Prozessor:</strong> Intel i9<br>
+                                    <strong>Grafikkarte:</strong> RTX2070 8GB<br>
                                     <strong>RAM:</strong> 16 GB<br>
                                     <strong>Speicher:</strong> 1 TB
                                 </p>
