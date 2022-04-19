@@ -654,14 +654,6 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <button type="submit" name="submit" class="btn-form-func">
-                                            <span class="btn-form-func-content">GRATIS Testmonat anfragen</span>
-                                            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <button type="submit" name="submit" class="btn-form-func">
                                             <span class="btn-form-func-content">Anfrage senden</span>
                                             <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
                                         </button>

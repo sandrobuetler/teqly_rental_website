@@ -72,7 +72,7 @@
                 <h1 style="text-align: center">Preisrechner</h1>
                 <p style="text-align: center">Rechnen Sie hier einfach die Jahres- oder Monatskosten für Ihre
                     IT-Infrastruktur aus. Profitieren
-                    auch Sie von moderner, schweizer Hardware, vorinstalliertem Office und professionellem Support zum
+                    auch Sie von moderner, schweizer Hardware und professionellem Support zum
                     Fixpreis. Zögern Sie nicht eine Konfiguration anzufragen. Gerne gehen wir auch auf spezifische
                     Anforderungen ein, senden Sie uns einfach unverbindlich eine Nachricht.</p>
                 <div class="row">
@@ -97,7 +97,7 @@
                                     <p>
                                         Mit unseren Standard Kondigurationen "Medium" ("M") und "High" ("H") können Sie
                                         die Anforderungen von 90% aller Office Software abdecken. Falls Sie spezielle
-                                        Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen, unterbreiten wir
+                                        Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) haben, unterbreiten wir
                                         Ihnen gerne ein passendes Angebot mit entsprechender Hardware.<br>
                                         <a href="hw_desktop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
                                             heraus
@@ -108,14 +108,14 @@
                                     <input type="hidden" id="dmpTitleHidden" name="dmpTitle"
                                            value="Desktop Medium Performance"/>
                                     <input type="hidden" id="dmpPriceHidden" name="dmpPrice" value="0"/>
-                                    <input type="checkbox" id="dmp" class="inp-cbx" name="dmp" value="99.00"/>
+                                    <input type="checkbox" id="dmp" class="inp-cbx" name="dmp" value="159.00"/>
                                     <label class="cbx" for="dmp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="dmpTitle">Desktop <strong>"M"</strong> | 99.-</span>
+                                        <span id="dmpTitle">Desktop <strong>"M"</strong> | 159.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -134,14 +134,14 @@
                                     <input type="hidden" id="dhpTitleHidden" name="dhpTitle"
                                            value="Desktop High Performance"/>
                                     <input type="hidden" id="dhpPriceHidden" name="dhpPrice" value="0"/>
-                                    <input type="checkbox" id="dhp" class="inp-cbx" name="dhp" value="109.00"/>
+                                    <input type="checkbox" id="dhp" class="inp-cbx" name="dhp" value="179.00"/>
                                     <label class="cbx" for="dhp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="dhpTitle">Desktop <strong>"H"</strong> | 109.-</span>
+                                        <span id="dhpTitle">Desktop <strong>"H"</strong> | 179.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -161,15 +161,15 @@
                                 <div class="option-box-header">
                                     <h3>Laptops's</h3>
                                     <p>
-                                        Mit unseren Standard Laptopkonfigurationen "Medium" ("M") und "High" ("H")
+                                        Mit unseren Standard Laptopkonfigurationen "Medium" ("M"), "Medium Touch" ("MT") und "High" ("H")
                                         können Sie die Anforderungen von 90% aller Office Software abdecken. Falls Sie
-                                        spezielle Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) benötigen,
+                                        spezielle Anforderungen (z.B. CAD- oder Grafik-Arbeitsplätze) haben,
                                         unterbreiten wir Ihnen gerne ein passendes Angebot mit entsprechender
                                         Hardware.<br>
                                         Optional bieten wir Ihnen noch das Peripherie Paket an, damit Sie mit Ihrem
                                         Laptop noch produktiver sein können. Pro gebuchtes Peripherie Paket erhalten
                                         Sie: Eine Docking Station für den Laptop, einen zusätzlichen Bildschirm und ein
-                                        kabelloses Maus & Tastatur Set.<br>
+                                        kabelloses Maus & Tastatur-Set.<br>
                                         <a href="hw_laptop.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
                                             heraus
                                             welche Ausführung die Richtige für Sie ist.</a>
@@ -179,14 +179,14 @@
                                     <input type="hidden" id="lmpTitleHidden" name="lmpTitle"
                                            value="Laptop Medium Performance"/>
                                     <input type="hidden" id="lmpPriceHidden" name="lmpPrice" value="0"/>
-                                    <input type="checkbox" id="lmp" class="inp-cbx" name="lmp" value="79.00"/>
+                                    <input type="checkbox" id="lmp" class="inp-cbx" name="lmp" value="109.00"/>
                                     <label class="cbx" for="lmp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="lmpTitle">Laptop <strong>"M"</strong> | 79.-</span>
+                                        <span id="lmpTitle">Laptop <strong>"M"</strong> | 109.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -202,17 +202,43 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
+                                    <input type="hidden" id="lmtTitleHidden" name="lmtTitle"
+                                           value="Laptop Medium Performance Touch"/>
+                                    <input type="hidden" id="lmtPriceHidden" name="lmtPrice" value="0"/>
+                                    <input type="checkbox" id="lmt" class="inp-cbx" name="lmt" value="149.00"/>
+                                    <label class="cbx" for="lmt">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+                                        <span id="lmtTitle">Laptop <strong>"MT"</strong> | 149.-</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input id="lmtRangeSlider" type="text" value=""/>
+                                        </div>
+                                        <div class="col-4">
+                                            <input id="lmtQty" type="text" class="qty-input form-control"
+                                                   name="lmtGroupQty"
+                                                   value="0"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
                                     <input type="hidden" id="lhpTitleHidden" name="lhpTitle"
                                            value="Laptop High Performance"/>
                                     <input type="hidden" id="lhpPriceHidden" name="lhpPrice" value="0"/>
-                                    <input type="checkbox" id="lhp" class="inp-cbx" name="lhp" value="89.00"/>
+                                    <input type="checkbox" id="lhp" class="inp-cbx" name="lhp" value="219.00"/>
                                     <label class="cbx" for="lhp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="lhpTitle">Laptop <strong>"H"</strong> | 89.-</span>
+                                        <span id="lhpTitle">Laptop <strong>"H"</strong> | 219.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -231,14 +257,14 @@
                                     <input type="hidden" id="lppTitleHidden" name="lppTitle"
                                            value="Laptop Peripherie Paket"/>
                                     <input type="hidden" id="lppPriceHidden" name="lppPrice" value="0"/>
-                                    <input type="checkbox" id="lpp" class="inp-cbx" name="lpp" value="45.00"/>
+                                    <input type="checkbox" id="lpp" class="inp-cbx" name="lpp" value="49.00"/>
                                     <label class="cbx" for="lpp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="lppTitle"><strong>Peripherie Paket</strong>  | 45.-</span>
+                                        <span id="lppTitle"><strong>Peripherie Paket</strong>  | 49.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -258,10 +284,9 @@
                                 <div class="option-box-header">
                                     <h3>Server</h3>
                                     <p>
-                                        Mit unseren Standard Serverkonfigurationen "Standard" ("S"), "Medium" ("M") und
-                                        "High" ("H") können Sie die Anforderungen von 90% aller Office Software
-                                        abdecken. Falls Sie spezielle Anforderungen (z.B. CAD- oder
-                                        Grafik-Arbeitsplätze) benötigen, unterbreiten wir Ihnen gerne ein passendes
+                                        Mit unseren Standard Serverkonfigurationen "Medium" ("M") und
+                                        "High" ("H") können Sie die Anforderungen von 90% aller KMU
+                                        abdecken. Falls Sie spezielle Anforderungen haben, unterbreiten wir Ihnen gerne ein passendes
                                         Angebot mit entsprechender Hardware.<br>
                                         <a href="hw_server.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
                                             heraus
@@ -269,43 +294,17 @@
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input type="hidden" id="sspTitleHidden" name="sspTitle"
-                                           value="Server Standard Performance"/>
-                                    <input type="hidden" id="sspPriceHidden" name="sspPrice" value="0"/>
-                                    <input type="checkbox" id="ssp" class="inp-cbx" name="ssp" value="209.00"/>
-                                    <label class="cbx" for="ssp">
-											<span>
-												<svg width="12px" height="10px" viewbox="0 0 12 10">
-													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-												</svg>
-											</span>
-                                        <span id="sspTitle">Server <strong>"S"</strong> | 209.-</span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <input id="sspRangeSlider" type="text" value=""/>
-                                        </div>
-                                        <div class="col-4">
-                                            <input id="sspQty" type="text" class="qty-input form-control"
-                                                   name="sspGroupQty"
-                                                   value="0"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
                                     <input type="hidden" id="smpTitleHidden" name="smpTitle"
                                            value="Server Medium Performance"/>
                                     <input type="hidden" id="smpPriceHidden" name="smpPrice" value="0"/>
-                                    <input type="checkbox" id="smp" class="inp-cbx" name="smp" value="259.00"/>
+                                    <input type="checkbox" id="smp" class="inp-cbx" name="smp" value="319.00"/>
                                     <label class="cbx" for="smp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="smpTitle">Server <strong>"M"</strong> | 259.-</span>
+                                        <span id="smpTitle">Server <strong>"M"</strong> | 319.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -324,14 +323,14 @@
                                     <input type="hidden" id="shpTitleHidden" name="shpTitle"
                                            value="Server High Performance"/>
                                     <input type="hidden" id="shpPriceHidden" name="shpPrice" value="0"/>
-                                    <input type="checkbox" id="shp" class="inp-cbx" name="shp" value="309.00"/>
+                                    <input type="checkbox" id="shp" class="inp-cbx" name="shp" value="399.00"/>
                                     <label class="cbx" for="shp">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="shpTitle">Server <strong>"H"</strong> | 309.-</span>
+                                        <span id="shpTitle">Server <strong>"H"</strong> | 399.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -347,71 +346,66 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="teqlyGroup" class="row option-box">
+                            <div id="tabletGroup" class="row option-box">
                                 <div class="option-box-header">
-                                    <h3>TEQLY | Cloud</h3>
+                                    <h3>Tablets</h3>
                                     <p>
-                                        TEQLY | Cloud ist eine einfache, mit allen gängigen Betriebssystemen (Windows,
-                                        MacOS, Linux, iOS & Android) komaptible, Cloud Lösung. Alle Daten werden
-                                        verschlüsselt auf einem Server in der Schweiz gespeichert. Neben dem klassischen
-                                        Datenspeicher bietet TEQLY | Cloud die Möglichkeit für einen Firemeninternen
-                                        Chat (Text, Sprache & Video), Online Dokumentbearbeitung, Klender & Mail - kurz
-                                        gesagt: Es ist eine Gesamtlösung für Ihr digitales Büro.<br>
-                                        Die Preise verstehen sich immer pro Instanz, also pro Domain. Die Anzahl User
-                                        ist jeweils unbeschränkt & jede Instanz läuft auf einem eigenen virtuellen
-                                        Server.<br>
-                                        <a href="sw_teqlycloud.php#fh5co-portfolio" class="option-box-link">Erfahren Sie
-                                            mehr über die Funktionen & Pakete von TEQLY | Cloud.</a>
+                                        Mit unseren Standard Tabletkonfigurationen "Tablet ohne 4G" und
+                                        "Tablet mit 4G" haben Sie Ihr mobiles Büro immer dabei. Falls Sie spezielle Anforderungen haben, unterbreiten wir Ihnen gerne ein passendes
+                                        Angebot mit entsprechender Hardware.<br>
+                                        <a href="hw_tablet.php#fh5co-portfolio" class="option-box-link">Finden Sie hier
+                                            heraus
+                                            welche Ausführung die Richtige für Sie ist.</a>
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input type="hidden" id="tcsTitleHidden" name="tcsTitle"
-                                           value="TEQLY | Cloud Standard"/>
-                                    <input type="hidden" id="tcsPriceHidden" name="tcsPrice" value="0"/>
-                                    <input type="checkbox" id="tcs" class="inp-cbx" name="tcs" value="79.00"/>
-                                    <label class="cbx" for="tcs">
+                                    <input type="hidden" id="tcsTitleHidden" name="tncTitle"
+                                           value="Tablet ohne 4G"/>
+                                    <input type="hidden" id="tncPriceHidden" name="tncPrice" value="0"/>
+                                    <input type="checkbox" id="tnc" class="inp-cbx" name="tnc" value="79.00"/>
+                                    <label class="cbx" for="tnc">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tcsTitle">T|C <strong>"Standard"</strong> | 79.-</span>
+                                        <span id="tncTitle">Tablet <strong>ohne 4G</strong> | 79.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="row">
                                         <div class="col-8">
-                                            <input id="tcsRangeSlider" type="text" value=""/>
+                                            <input id="tncRangeSlider" type="text" value=""/>
                                         </div>
                                         <div class="col-4">
-                                            <input id="tcsQty" type="text" class="qty-input form-control"
-                                                   name="tcsGroupQty"
+                                            <input id="tncQty" type="text" class="qty-input form-control"
+                                                   name="tncGroupQty"
                                                    value="0"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input type="hidden" id="tcpTitleHidden" name="tcpTitle"
-                                           value="TEQLY | Cloud Premium"/>
-                                    <input type="hidden" id="tcpPriceHidden" name="tcpPrice" value="0"/>
-                                    <input type="checkbox" id="tcp" class="inp-cbx" name="tcp" value="119.00"/>
-                                    <label class="cbx" for="tcp">
+                                    <input type="hidden" id="twcTitleHidden" name="twcTitle"
+                                           value="Tablet mit 4G"/>
+                                    <input type="hidden" id="twcPriceHidden" name="twcPrice" value="0"/>
+                                    <input type="checkbox" id="twc" class="inp-cbx" name="twc" value="119.00"/>
+                                    <label class="cbx" for="twc">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tcpTitle">T|C <strong>"Premium"</strong> | 119.-</span>
+                                        <span id="twcTitle">Tablet <strong>mit 4G</strong> | 119.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="row">
                                         <div class="col-8">
-                                            <input id="tcpRangeSlider" type="text" value=""/>
+                                            <input id="twcRangeSlider" type="text" value=""/>
                                         </div>
                                         <div class="col-4">
-                                            <input id="tcpQty" type="text" class="qty-input form-control"
-                                                   name="tcpGroupQty"
+                                            <input id="twcQty" type="text" class="qty-input form-control"
+                                                   name="twcGroupQty"
                                                    value="0"/>
                                         </div>
                                     </div>
@@ -424,7 +418,7 @@
                                         Alle unsere Geräte werde mit einer vorinstallierten Version von Office 2019
                                         ausgeliefert, die Sie ohne Aufpreis nutzen können. Falls Sie die Cloud Dienste
                                         von Microsoft wie zum Beispiel OneDrive, MS Teams, SharePoint oder Exchange
-                                        nutzen möchten bieten wir Ihnen hier die Entsprechenden Lizenzen an. Als
+                                        nutzen möchten bieten wir Ihnen hier die entsprechenden Lizenzen an. Als
                                         Microsoft Partner können wir Ihnen auf Wunsch die Cloud Produkte des Windows
                                         Konzerns direkt auf der von uns gemieteten Hardware installieren und einrichten.<br>
                                         Die Preise verstehen sich pro Account/User, also Sie benötigen pro Person eine
@@ -532,7 +526,7 @@
                             <div id="personalDetails" class="row contact-box">
                                 <div class="contact-box-header">
                                     <h3>Kontaktdaten</h3>
-                                    <p>Sie sind nurnoch wenige Klicks von Ihrem Persönlichen Angebot entfernt.
+                                    <p>Sie sind nur noch wenige Klicks von Ihrem Persönlichen Angebot entfernt.
                                         Übermitteln Sie uns Ihre Kontaktdaten und wir werden uns so schnell wie möglich
                                         bei Ihnen melden und Ihnen ein Angebot unterbreiten.</p>
                                 </div>
@@ -551,12 +545,12 @@
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="phone">Telefon</label>
-                                        <input id="phone" class="form-control" name="phone" type="text"/>
+                                        <input id="phone" class="form-control" name="phone" type="text" required/>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <label for="address">Adresse</label>
+                                        <label for="address">Firma</label>
                                         <input id="address" class="form-control" name="address" type="text"/>
                                     </div>
                                 </div>
@@ -577,29 +571,29 @@
                                         <input type="hidden" id="dmpSum" name="dmpSumHidden" value="0"/>
                                         <input type="hidden" id="dhpSum" name="dmpSumHidden" value="0"/>
                                         <input type="hidden" id="lmpSum" name="lmpSumHidden" value="0"/>
+                                        <input type="hidden" id="lmtSum" name="lmtSumHidden" value="0"/>
                                         <input type="hidden" id="lhpSum" name="lhpSumHidden" value="0"/>
                                         <input type="hidden" id="lppSum" name="lppSumHidden" value="0"/>
-                                        <input type="hidden" id="sspSum" name="sspSumHidden" value="0"/>
                                         <input type="hidden" id="smpSum" name="smpSumHidden" value="0"/>
                                         <input type="hidden" id="shpSum" name="shpSumHidden" value="0"/>
-                                        <input type="hidden" id="tcsSum" name="lmpSumHidden" value="0"/>
-                                        <input type="hidden" id="tcpSum" name="lhpSumHidden" value="0"/>
-                                        <input type="hidden" id="mbaSum" name="sspSumHidden" value="0"/>
-                                        <input type="hidden" id="mbsSum" name="smpSumHidden" value="0"/>
-                                        <input type="hidden" id="mbpSum" name="shpSumHidden" value="0"/>
+                                        <input type="hidden" id="tncSum" name="tncSumHidden" value="0"/>
+                                        <input type="hidden" id="twcSum" name="twcSumHidden" value="0"/>
+                                        <input type="hidden" id="mbaSum" name="mbaSumHidden" value="0"/>
+                                        <input type="hidden" id="mbsSum" name="mbsSumHidden" value="0"/>
+                                        <input type="hidden" id="mbpSum" name="mbpSumHidden" value="0"/>
 
                                         <h3>Kostenschätzung:</h3>
                                         <ul id="orderSumList">
                                             <li id="dmpSumTot"></li>
                                             <li id="dhpSumTot"></li>
                                             <li id="lmpSumTot"></li>
+                                            <li id="lmtSumTot"></li>
                                             <li id="lhpSumTot"></li>
                                             <li id="lppSumTot"></li>
-                                            <li id="sspSumTot"></li>
                                             <li id="smpSumTot"></li>
                                             <li id="shpSumTot"></li>
-                                            <li id="tcsSumTot"></li>
-                                            <li id="tcpSumTot"></li>
+                                            <li id="tncSumTot"></li>
+                                            <li id="twcSumTot"></li>
                                             <li id="mbaSumTot"></li>
                                             <li id="mbsSumTot"></li>
                                             <li id="mbpSumTot"></li>
@@ -622,7 +616,7 @@
                                 </div>
                                 <div class="row footer">
                                     <div class="col-lg-12 text-center">
-                                        <small>Alle Preise unverbindlich & exkl. MwSt.</small>
+                                        <small>Alle Preise unverbindlich & inkl. 7.7% MwSt.</small>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -645,6 +639,14 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <button type="submit" name="submit" class="btn-form-func">
+                                            <span class="btn-form-func-content">GRATIS Testmonat anfragen</span>
+                                            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit" class="btn-form-func">
                                             <span class="btn-form-func-content">Anfrage senden</span>
                                             <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
                                         </button>
@@ -661,7 +663,7 @@
                                 </div>
                                 <div class="row footer">
                                     <div class="col-lg-12 text-center">
-                                        <small>&copy; <?= date("Y"); ?> TEQLY GmbH</small>
+                                        <small>&copy; <?= date("Y"); ?> by TEQLY GmbH</small>
                                     </div>
                                 </div>
                             </div>
