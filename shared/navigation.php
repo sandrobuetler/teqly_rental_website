@@ -18,11 +18,11 @@
                                 <li><a href="../hw_desktop.php">Desktops</a></li>
                                 <li><a href="../hw_laptop.php">Laptops</a></li>
                                 <li><a href="../hw_server.php">Server</a></li>
-                                <li><a href="../hw_server.php">Tablets</a></li>
+                                <li><a href="../hw_tablet.php">Tablets</a></li>
                             </ul>
                         </li>
                         <li style="margin: -10px !important;"
-                            class="has-dropdown <?php $r = ($uri == "/software.php" || $uri == "/sw_teqlycloud.php" || $uri == "/sw_microsoft.php") ? 'active' : '';
+                            class="has-dropdown <?php $r = ($uri == "/software.php" || $uri == "/sw_microsoft.php") ? 'active' : '';
                             echo $r ?>">
                             <a href="../software.php">Software</a>
                             <ul class="dropdown">
