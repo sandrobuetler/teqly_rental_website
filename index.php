@@ -196,6 +196,7 @@
     <?php
     include('shared/video.php');
     include('shared/calltoaction.php');
+    include('shared/calltoaction_testmonth.php');
     include('shared/footer.php');
     ?>
 
