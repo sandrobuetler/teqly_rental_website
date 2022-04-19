@@ -109,6 +109,18 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="fh5co-portfolio animate-box">
+                        <a href="hw_tablet.php">
+                            <div class="portfolio-entry"
+                                 style="background-image: url(images/products/hardware/tablets/teqly_apple_ipad_full.png);"></div>
+                            <div class="portfolio-text">
+                                <h3>Tablets</h3>
+                                <p style="color: #0b0b0b">Mobiles Arbeiten in seiner elegantesten Form! Mit unseren Tablet-Konfigurationen ist Ihr Büro immer dort wo Sie sind.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

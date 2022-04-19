@@ -210,7 +210,7 @@
 							</span>
                             <div class="feature-copy">
                                 <h3>Kabel</h3>
-                                <p>Alle für den Betrieb nötigen Kabel, wie z.B. Strom-, LAN- oder HDMI-Kabel.</p>
+                                <p>Alle für den Betrieb nötigen Kabel, wie z.B. Strom- oder LAN-Kabel.</p>
                             </div>
                         </div>
                     </div>
@@ -225,8 +225,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>Server Konfigurationen</h2>
                     <p>Falls Sie spezielle Anforderungen an Ihre Hardware haben, kontaktieren Sie uns gerne
-                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard
-                        Sortiments.</p>
+                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard-Sortiments.</p>
                 </div>
             </div>
             <div class="row">
@@ -236,31 +235,14 @@
                             <div class="portfolio-entry"
                                  style="background-image: url(images/products/hardware/server/teqly_ps_front.png);"></div>
                             <div class="portfolio-text">
-                                <h3>Server S<br>(Standard Performance)</h3>
-                                <p style="color: #0b0b0b">
-                                    <strong>Anwendungsbereiche:</strong><br>
-                                    Active Directory, Dateiserver, Exchange<br>
-                                    <strong>Prozessor:</strong> 4-Core Intel Xenon<br>
-                                    <strong>RAM:</strong> 16 GB<br>
-                                    <strong>Speicher:</strong> ab 500 GB SSD
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="fh5co-portfolio animate-box">
-                        <a>
-                            <div class="portfolio-entry"
-                                 style="background-image: url(images/products/hardware/server/teqly_ps_front.png);"></div>
-                            <div class="portfolio-text">
                                 <h3>Server M<br>(Medium Performance)</h3>
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
-                                    Server "S", Webserver, Netzwerkcontroller<br>
+                                    Active Directory, Dateiserver, Exchange, Netzwerkcontroller<br>
+                                    <strong>Mindestspezifikation:</strong><br>
                                     <strong>Prozessor:</strong> 8-Core Intel Xenon<br>
-                                    <strong>RAM:</strong> 32 GB<br>
-                                    <strong>Speicher:</strong> ab 500 GB SSD
+                                    <strong>RAM:</strong> 16 GB<br>
+                                    <strong>Speicher:</strong> ab 1000 GB SSD
                                 </p>
                             </div>
                         </a>
@@ -276,9 +258,10 @@
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Server "M", anspruchsvolle Applikationen<br>
+                                    <strong>Mindestspezifikation:</strong><br>
                                     <strong>Prozessor:</strong> 12-Core Intel Xenon<br>
                                     <strong>RAM:</strong> 64 GB<br>
-                                    <strong>Speicher:</strong> ab 1 TB SSD
+                                    <strong>Speicher:</strong> ab 1000 GB SSD
                                 </p>
                             </div>
                         </a>

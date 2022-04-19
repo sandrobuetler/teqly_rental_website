@@ -209,10 +209,8 @@
 								<i class="icon-windows8"></i>
 							</span>
                             <div class="feature-copy">
-                                <h3>Office 2019</h3>
-                                <p>Alle Geräte verfügen Standardmässig über ein Office 2019 Software Paket. Sie können
-                                    also ab Inbetriebnahme des Gerätes die Office Klassiker: Outlook, Word, Excel &
-                                    PowerPoint nutzen.</p>
+                                <h3>Windows 11 PRO</h3>
+                                <p>Alle Geräte haben standardmässig die aktuellste Version von Windows 11 PRO installiert.</p>
                             </div>
                         </div>
                     </div>
@@ -253,8 +251,9 @@
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Office, Webapplikationen, Buchhaltung, HR-Software<br>
+                                    <strong>Mindestspezifikation:</strong><br>
                                     <strong>Prozessor:</strong> Intel i5<br>
-                                    <strong>RAM:</strong> 8 GB<br>
+                                    <strong>RAM:</strong> 16 GB<br>
                                     <strong>Speicher:</strong> 500 GB
                                 </p>
                             </div>
@@ -271,9 +270,10 @@
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Wie Desktop "M", Ressourcen intensivere Anwendungen, grafiklastige Anwendungen<br>
+                                    <strong>Mindestspezifikation:</strong><br>
                                     <strong>Prozessor:</strong> Intel i7<br>
                                     <strong>RAM:</strong> 16 GB<br>
-                                    <strong>Speicher:</strong> 500 GB
+                                    <strong>Speicher:</strong> 1000 GB
                                 </p>
                             </div>
                         </a>

@@ -102,9 +102,9 @@
                                                 <div class="slider-text-inner">
                                                     <div class="desc">
                                                         <h2>Zahlen jonglieren leicht gemacht</h2>
-                                                        <p>Alle unsere Laptops verfügen über einen, in der Tastatur
+                                                        <p>Alle unsere Business-Laptops verfügen über einen, in der Tastatur
                                                             integrierten, Zahlenblock. Das steigert die Produktivität
-                                                            und vereinfacht die Bedienung vieler Office Applikationen
+                                                            und vereinfacht die Bedienung vieler Office-Applikationen
                                                             enorm.</p>
                                                     </div>
                                                 </div>
@@ -290,7 +290,7 @@
                                     <strong>Prozessor:</strong> Intel i9<br>
                                     <strong>Grafikkarte:</strong> RTX2070 8GB<br>
                                     <strong>RAM:</strong> 16 GB<br>
-                                    <strong>Speicher:</strong> 1 TB
+                                    <strong>Speicher:</strong> 1000 GB
                                 </p>
                             </div>
                         </a>

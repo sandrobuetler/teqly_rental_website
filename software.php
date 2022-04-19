@@ -62,30 +62,13 @@
             <div class="row animate-box">
                 <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
                     <h2>Zusätzliche Software</h2>
-                    <p>Zwar kommen alle unsere Client Geräte mit vorinstalliertem Office, wenn Sie aber zusätzlich
-                        weitere Microsoft Programme oder eine sichere Schweizer Cloud Lösung suchen, können wir Ihnen
-                        auch diese Wünsche erfüllen.<br>Falls Sie spezielle Anforderungen an Ihre Software haben,
+                    <p>Entfalten Sie das volle Potential Ihrer EASIT.rent Geräte mit Microsoft 365. Buchen Sie die komplette Office-Suite inkl. Cloud-Services einfach dazu.<br>Falls Sie spezielle Anforderungen an Ihre Software haben,
                         kontaktieren Sie uns gerne
-                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard
-                        Sortiments. Gerne unterstützen wir Sie auch bei der Implementation von komplexeren Programmen
+                        unverbindlich. Wir unterbreiten Ihnen gerne auch ein Angebot ausserhalb unseres Standard-Sortiments. Gerne unterstützen wir Sie auch bei der Implementation von komplexeren Programmen
                         wie z.B. CAD-Software oder OnPremise ERP- und Buchhaltungssystemen.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="fh5co-portfolio animate-box">
-                        <a href="sw_teqlycloud.php">
-                            <div class="portfolio-entry"
-                                 style="background-image: url(images/products/software/teqly/teqly_cloud.png);"></div>
-                            <div class="portfolio-text">
-                                <h3>TEQLY | Cloud</h3>
-                                <p style="color: #0b0b0b">Wieso sich bei einem Cloudanbieter einmieten, wenn Sie auch
-                                    Ihre eigene Cloud haben können? Mit TEQLY | Cloud bieten wir Ihnen die Möglichkeit
-                                    günstig, sicher & effizient eine eigene Cloudinfrastruktur zu betreiben.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="col-md-4">
                     <div class="fh5co-portfolio animate-box">
                         <a href="sw_microsoft.php">
