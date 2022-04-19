@@ -64,8 +64,8 @@ $default_option = 'Select';
 $errors = '';
 
 // Setup Seller Details
-$seller_name = 'TEQLY GmbH';
-$seller_address = 'TECHNOPARK Aargau' . '<br/>' . 'Badenerstrasse 13' . '<br/>' . '5200 Brugg';
+$seller_name = 'EASIT.rent';
+$seller_address = 'c/o TEQLY GmbH' . '<br/>' . 'TECHNOPARK Aargau' . '<br/>' . 'Badenerstrasse 13' . '<br/>' . '5200 Brugg';
 $seller_notice = 'Alle Preise unverbindlich & exkl. Setup-/Konfigurations-/Zusatzkosten';
 
 /* Validate User Inputs
@@ -207,6 +207,11 @@ $errors .= sanitizePostTitle('lmpTitle', 'Fehler beim Namen! (LMP)');
 $errors .= validatePostValue('lmpPrice', 'Fehler beim Preis! (LMP)');
 $errors .= validatePostValue('lmpGroupQty', 'Fehler bei der Anzahl! (LMP)');
 
+// LMT
+$errors .= sanitizePostTitle('lmtTitle', 'Fehler beim Namen! (LMT)');
+$errors .= validatePostValue('lmtPrice', 'Fehler beim Preis! (LMT)');
+$errors .= validatePostValue('lmtGroupQty', 'Fehler bei der Anzahl! (LMT)');
+
 // LHP
 $errors .= sanitizePostTitle('lhpTitle', 'Fehler beim Namen! (LHP)');
 $errors .= validatePostValue('lhpPrice', 'Fehler beim Preis! (LHP)');
@@ -216,11 +221,6 @@ $errors .= validatePostValue('lhpGroupQty', 'Fehler bei der Anzahl! (LHP)');
 $errors .= sanitizePostTitle('lppTitle', 'Fehler beim Namen! (LPP)');
 $errors .= validatePostValue('lppPrice', 'Fehler beim Preis! (LPP)');
 $errors .= validatePostValue('lppGroupQty', 'Fehler bei der Anzahl! (LPP)');
-
-// SSP
-$errors .= sanitizePostTitle('sspTitle', 'Fehler beim Namen! (SSP)');
-$errors .= validatePostValue('sspPrice', 'Fehler beim Preis! (SSP)');
-$errors .= validatePostValue('sspGroupQty', 'Fehler bei der Anzahl! (SSP)');
 
 // SMP
 $errors .= sanitizePostTitle('smpTitle', 'Fehler beim Namen! (SMP)');
@@ -232,15 +232,15 @@ $errors .= sanitizePostTitle('shpTitle', 'Fehler beim Namen! (SHP)');
 $errors .= validatePostValue('shpPrice', 'Fehler beim Preis! (SHP)');
 $errors .= validatePostValue('shpGroupQty', 'Fehler bei der Anzahl! (SHP)');
 
-// TCS
-$errors .= sanitizePostTitle('tcsTitle', 'Fehler beim Namen! (TCS)');
-$errors .= validatePostValue('tcsPrice', 'Fehler beim Preis! (TCS)');
-$errors .= validatePostValue('tcsGroupQty', 'Fehler bei der Anzahl! (TCS)');
+// TNC
+$errors .= sanitizePostTitle('tncTitle', 'Fehler beim Namen! (TNC)');
+$errors .= validatePostValue('tncPrice', 'Fehler beim Preis! (TNC)');
+$errors .= validatePostValue('tncGroupQty', 'Fehler bei der Anzahl! (TNC)');
 
-// TCP
-$errors .= sanitizePostTitle('tcpTitle', 'Fehler beim Namen! (TCP)');
-$errors .= validatePostValue('tcpPrice', 'Fehler beim Preis! (TCP)');
-$errors .= validatePostValue('tcpGroupQty', 'Fehler bei der Anzahl! (TCP)');
+// TWC
+$errors .= sanitizePostTitle('twcTitle', 'Fehler beim Namen! (TWC)');
+$errors .= validatePostValue('twcPrice', 'Fehler beim Preis! (TWC)');
+$errors .= validatePostValue('twcGroupQty', 'Fehler bei der Anzahl! (TWC)');
 
 // MBA
 $errors .= sanitizePostTitle('mbaTitle', 'Fehler beim Namen! (MBA)');
@@ -273,7 +273,7 @@ if (!$errors) {
         $customer_phone = 'Telefonnummer n.v.';
     }
     if (empty($customer_address)) {
-        $customer_address = 'Telefonnummer n.v.';
+        $customer_address = 'Firma n.v.';
     }
     if (empty($customer_message)) {
         $customer_message = 'Es wurden keine Bemerkungen hinterlasssen.';
@@ -297,6 +297,12 @@ if (!$errors) {
     $selected_lmp_price = $_POST['lmpPrice'];
     $lmp_qty = $_POST['lmpGroupQty'];
 
+    // LMT
+    $selected_lmt = $_POST['lmt'];
+    $selected_lmt_title = $_POST['lmtTitle'];
+    $selected_lmt_price = $_POST['lmtPrice'];
+    $lmt_qty = $_POST['lmtGroupQty'];
+
     // LHP
     $selected_lhp = $_POST['lhp'];
     $selected_lhp_title = $_POST['lhpTitle'];
@@ -308,12 +314,6 @@ if (!$errors) {
     $selected_lpp_title = $_POST['lppTitle'];
     $selected_lpp_price = $_POST['lppPrice'];
     $lpp_qty = $_POST['lppGroupQty'];
-
-    // SSP
-    $selected_ssp = $_POST['ssp'];
-    $selected_ssp_title = $_POST['sspTitle'];
-    $selected_ssp_price = $_POST['sspPrice'];
-    $ssp_qty = $_POST['sspGroupQty'];
 
     // SMP
     $selected_smp = $_POST['smp'];
@@ -327,17 +327,17 @@ if (!$errors) {
     $selected_shp_price = $_POST['shpPrice'];
     $shp_qty = $_POST['shpGroupQty'];
 
-    // TCS
-    $selected_tcs = $_POST['tcs'];
-    $selected_tcs_title = $_POST['tcsTitle'];
-    $selected_tcs_price = $_POST['tcsPrice'];
-    $tcs_qty = $_POST['tcsGroupQty'];
+    // TNC
+    $selected_tnc = $_POST['tnc'];
+    $selected_tnc_title = $_POST['tncTitle'];
+    $selected_tnc_price = $_POST['tncPrice'];
+    $tnc_qty = $_POST['tncGroupQty'];
 
-    // TCP
-    $selected_tcp = $_POST['tcp'];
-    $selected_tcp_title = $_POST['tcpTitle'];
-    $selected_tcp_price = $_POST['tcpPrice'];
-    $tcp_qty = $_POST['tcpGroupQty'];
+    // TWC
+    $selected_twc = $_POST['twc'];
+    $selected_twc_title = $_POST['twcTitle'];
+    $selected_twc_price = $_POST['twcPrice'];
+    $twc_qty = $_POST['twcGroupQty'];
 
     // MBA
     $selected_mba = $_POST['mba'];
@@ -363,7 +363,7 @@ if (!$errors) {
     // Header Settings
     $order->setLogo('phpinvoice/templates/purple/teqly_rental_logo.png');
     $order->setReference('ANFRAGE-' . $timestamp);
-    $order->setDate(date('M dS, Y', time()));
+    $order->setDate(date('d, M, Y', time()));
 
     $order->setFrom(array($seller_name, $seller_address));
     $order->setTo(array($customer_name, $customer_address));
@@ -378,14 +378,14 @@ if (!$errors) {
     if (isset($selected_lmp)) {
         $order->addItem($selected_lmp_title, 'Laptop Medium Performance', $lmp_qty, "7.7%", $selected_lmp_price, false);
     }
+    if (isset($selected_lmt)) {
+        $order->addItem($selected_lmt_title, 'Laptop Medium Performance Touch', $lmt_qty, "7.7%", $selected_lmt_price, false);
+    }
     if (isset($selected_lhp)) {
         $order->addItem($selected_lhp_title, 'Laptop High Performance', $lhp_qty, "7.7%", $selected_lhp_price, false);
     }
     if (isset($selected_lpp)) {
         $order->addItem($selected_lpp_title, 'Laptop Peripherie Paket', $lpp_qty, "7.7%", $selected_lpp_price, false);
-    }
-    if (isset($selected_ssp)) {
-        $order->addItem($selected_ssp_title, 'Server Standard Performance', $ssp_qty, "7.7%", $selected_ssp_price, false);
     }
     if (isset($selected_smp)) {
         $order->addItem($selected_smp_title, 'Server Medium Performance', $smp_qty, "7.7%", $selected_smp_price, false);
@@ -393,11 +393,11 @@ if (!$errors) {
     if (isset($selected_shp)) {
         $order->addItem($selected_shp_title, 'Server High Performance', $shp_qty, "7.7%", $selected_shp_price, false);
     }
-    if (isset($selected_tcs)) {
-        $order->addItem($selected_tcs_title, 'TEQLY | Cloud Standard', $tcs_qty, "7.7%", $selected_tcs_price, false);
+    if (isset($selected_tnc)) {
+        $order->addItem($selected_tnc_title, 'Tablet ohne 4G', $tnc_qty, "7.7%", $selected_tnc_price, false);
     }
-    if (isset($selected_tcp)) {
-        $order->addItem($selected_tcp_title, 'TEQLY | Cloud Premium', $tcp_qty, "7.7%", $selected_tcp_price, false);
+    if (isset($selected_twc)) {
+        $order->addItem($selected_twc_title, 'Tablet mit 4G', $twc_qty, "7.7%", $selected_twc_price, false);
     }
     if (isset($selected_mba)) {
         $order->addItem($selected_mba_title, 'Microsoft365 Apps', $mba_qty, "7.7%", $selected_mba_price, false);
@@ -433,17 +433,17 @@ if (!$errors) {
     try {
 
         // Set Sender
-        $mail->setFrom('noreply@teqly.ch', 'TEQLY | Rental');
+        $mail->setFrom('noreply@easit.rent', 'EASIT.rent');
 
         // Set Reply-to Address
-        $mail->addReplyTo('info@teqly.ch', 'TEQLY GmbH');
+        $mail->addReplyTo('info@easit.rent', 'EASIT.rent');
 
         // Set Recipients
-        $mail->addAddress('info@teqly.ch', 'TEQLY GmbH');
+        $mail->addAddress('info@easit.rent', 'TEAM EASIT');
         $mail->addAddress($customer_mail, $customer_name_formatted);
 
         // Set Subject
-        $mail->Subject = 'Ihre Anfrage via TEQLY | Rental';
+        $mail->Subject = 'Ihre Anfrage bei EASIT.rent';
 
         // Get HTML Mail Template
         $email_html = file_get_contents('phpmailer/email.html');
