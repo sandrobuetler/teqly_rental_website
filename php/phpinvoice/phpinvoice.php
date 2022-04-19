@@ -118,7 +118,7 @@ class phpinvoice extends Mpdf  {
         $p['item'] 			= $item;
 		$p['description'] 	= $description;
 		$total_amount		= 0;
-		$total_amount 		= (((float)$quantity)*((float)$price/1.077);
+		$total_amount 		= (((float)$quantity)*((float)$price/1.077));
 
 		if($vat !== false) {
 		  $p['vat']			= $vat;
