@@ -1352,7 +1352,7 @@
 		$inputTNC = $('#tncQty'),
 		instanceTNC,
 		tncMin = 1,
-		tncMax = 5;
+		tncMax = 10;
 
 	$rangeTNC.ionRangeSlider({
 		skin: 'round',
@@ -1410,7 +1410,7 @@
 		$inputTWC = $('#twcQty'),
 		instanceTWC,
 		twcMin = 1,
-		twcMax = 5;
+		twcMax = 10;
 
 	$rangeTWC.ionRangeSlider({
 		skin: 'round',
