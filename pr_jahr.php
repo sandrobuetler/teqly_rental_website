@@ -358,7 +358,7 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <input type="hidden" id="tcsTitleHidden" name="tncTitle"
-                                           value="Tablet ohne 4G"/>
+                                           value="Tablet ohne 4G X4"/>
                                     <input type="hidden" id="tncPriceHidden" name="tncPrice" value="0"/>
                                     <input type="checkbox" id="tnc" class="inp-cbx" name="tnc" value="799.00"/>
                                     <label class="cbx" for="tnc">
@@ -367,7 +367,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tncTitle">Tablet <strong>ohne 4G</strong> | 799.-</span>
+                                        <span id="tncTitle">Tablet x1 <strong>ohne 4G x2</strong> | 799.- x3</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -393,7 +393,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="twcTitle">Tablet <strong>mit 4G</strong> | 1'159.- XXXXXXXXX</span>
+                                        <span id="twcTitle">Tablet <strong>mit 4G</strong> | 1'159.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
