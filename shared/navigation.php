@@ -11,14 +11,14 @@
                         <li style="margin: -10px" class="<?php $r = ($uri == "/vorteile.php") ? 'active' : '';
                         echo $r ?>"><a href="../vorteile.php">Vorteile</a></li>
                         <li style="margin: -10px"
-                            class="has-dropdown <?php $r = ($uri == "/hardware.php" || $uri == "/hw_desktop.php" || $uri == "/hw_laptop.php" || $uri == "/hw_server.php" || $uri == "/hw_tablet.php") ? 'active' : '';
+                            class="has-dropdown <?php $r = ($uri == "/hardware.php" || $uri == "/hw_desktop.php" || $uri == "/hw_laptop.php" || $uri == "/hw_tablet.php" || $uri == "/hw_server.php") ? 'active' : '';
                             echo $r ?>">
                             <a href="../hardware.php">Hardware</a>
                             <ul class="dropdown">
                                 <li><a href="../hw_desktop.php">Desktops</a></li>
                                 <li><a href="../hw_laptop.php">Laptops</a></li>
-                                <li><a href="../hw_server.php">Server</a></li>
                                 <li><a href="../hw_tablet.php">Tablets</a></li>
+                                <li><a href="../hw_server.php">Server</a></li>
                             </ul>
                         </li>
                         <li style="margin: -10px !important;"

@@ -220,7 +220,7 @@
                             <div class="portfolio-entry"
                                  style="background-image: url(images/products/hardware/tablets/teqly_apple_ipad_full.png);"></div>
                             <div class="portfolio-text">
-                                <h3>Tablet<br></h3>
+                                <h3>Tablet ohne 4G<br></h3>
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Office, Webapplikationen<br>
@@ -239,14 +239,15 @@
                             <div class="portfolio-entry"
                                  style="background-image: url(images/products/hardware/tablets/teqly_apple_ipad_full.png);"></div>
                             <div class="portfolio-text">
-                                <h3>Tablet inkl. 4G<br></h3>
+                                <h3>Tablet mit 4G<br></h3>
                                 <p style="color: #0b0b0b">
                                     <strong>Anwendungsbereiche:</strong><br>
                                     Office, Webapplikationen, Mobile Office<br>
                                     <strong>Mindestspezifikation:</strong><br>
                                     <strong>Hersteller:</strong> APPLE<br>
                                     <strong>Bildschirm:</strong> 10.9"<br>
-                                    <strong>Speicher:</strong> ab 64 GB
+                                    <strong>Speicher:</strong> ab 64 GB<br>
+                                    <strong>Datenflatrate:</strong> im Preis inklusive
                                 </p>
                             </div>
                         </a>
