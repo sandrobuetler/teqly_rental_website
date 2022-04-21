@@ -179,6 +179,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                <!--
                                 <li style="background-image: url(images/teqly_code.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
@@ -207,6 +208,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                -->
                                 <li style="background-image: url(images/teqly_server.png);">
                                     <div class="overlay-gradient"></div>
                                     <div class="container-fluid">
