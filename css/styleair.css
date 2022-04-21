@@ -1496,3 +1496,50 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* COOKIES */
+.termsfeed-com---palette-light.termsfeed-com---nb {
+  background-color: white!important;
+  font-family: 'Poppins', sans-serif;
+  border: solid 1px;
+}
+
+.termsfeed-com---palette-light .cc-nb-okagree {
+  background-color: #DD356E!important;
+  color: white!important;
+  border: solid #DD356E 1px;
+  border-radius: 0px!important;
+}
+.termsfeed-com---palette-light .cc-nb-reject {
+  background-color: #DD356E!important;
+  color: white!important;
+  border: solid #DD356E 1px;
+  border-radius: 0px!important;
+}
+
+.termsfeed-com---palette-light .cc-nb-changep {
+  background-color: #DD356E!important;
+  color: white!important;
+  border: solid #DD356E 1px;
+  border-radius: 0px!important;
+}
+
+.termsfeed-com---palette-light .cc-pc-container{
+  ont-family: 'Poppins', sans-serif;
+}
+
+.termsfeed-com---palette-light .cc-cp-body-tabs{
+  ont-family: 'Poppins', sans-serif;
+}
+
+.termsfeed-com---pc-dialog input[type="checkbox"].cc-custom-checkbox:checked+label:before{
+  background: #DD356E!important;
+}
+
+.termsfeed-com---palette-light .cc-cp-foot-save{
+  background-color: #DD356E!important;
+  color: white!important;
+  border: solid #DD356E 1px;
+  border-radius: 0px!important;
+}
