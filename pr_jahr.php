@@ -357,7 +357,7 @@
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input type="hidden" id="tnsTitleHidden" name="tncTitle"
+                                    <input type="hidden" id="tncTitleHidden" name="tncTitle"
                                            value="Tablet ohne 4G X4"/>
                                     <input type="hidden" id="tncPriceHidden" name="tncPrice" value="0"/>
                                     <input type="checkbox" id="tnc" class="inp-cbx" name="tnc" value="799.00"/>
