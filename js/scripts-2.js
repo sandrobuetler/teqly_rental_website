@@ -99,7 +99,7 @@
 		 */
 	}
 
-	// Variables for calculation
+// Variables for calculation
 
 	var dmpIsChecked = false;
 	var dmpTitle = '';
@@ -119,6 +119,12 @@
 	var lmpQuantity = 0;
 	var lmpSum = 0;
 
+	var lmtIsChecked = false;
+	var lmtTitle = '';
+	var lmtPrice = 0;
+	var lmtQuantity = 0;
+	var lmtSum = 0;
+
 	var lhpIsChecked = false;
 	var lhpTitle = '';
 	var lhpPrice = 0;
@@ -130,12 +136,6 @@
 	var lppPrice = 0;
 	var lppQuantity = 0;
 	var lppSum = 0;
-
-	var sspIsChecked = false;
-	var sspTitle = '';
-	var sspPrice = 0;
-	var sspQuantity = 0;
-	var sspSum = 0;
 
 	var smpIsChecked = false;
 	var smpTitle = '';
@@ -149,17 +149,17 @@
 	var shpQuantity = 0;
 	var shpSum = 0;
 
-	var tcsIsChecked = false;
-	var tcsTitle = '';
-	var tcsPrice = 0;
-	var tcsQuantity = 0;
-	var tcsSum = 0;
+	var tncIsChecked = false;
+	var tncTitle = '';
+	var tncPrice = 0;
+	var tncQuantity = 0;
+	var tncSum = 0;
 
-	var tcpIsChecked = false;
-	var tcpTitle = '';
-	var tcpPrice = 0;
-	var tcpQuantity = 0;
-	var tcpSum = 0;
+	var twcIsChecked = false;
+	var twcTitle = '';
+	var twcPrice = 0;
+	var twcQuantity = 0;
+	var twcSum = 0;
 
 	var mbaIsChecked = false;
 	var mbaTitle = '';
@@ -233,6 +233,22 @@
 			clearSummaryLine('lmpSumTot');
 		}
 
+		//Get the current data from Laptop Medium Performance Touch elements
+		lmtIsChecked = $('#lmt').is(':checked');
+		lmtTitle = $('#lmtTitle').text();
+		lmtPrice = $('#lmt').val();
+		lmtQuantity = $('#lmtQty').val();
+
+		//Update order summary with Laptop Medium Performance Touch details
+		if (lmtIsChecked && (lmtQuantity != 0)){
+			lmtSum = (lmtPrice * 1) * (lmtQuantity * 1);
+			$('#lmtSumTot').html('<a href="javascript:;" id="lmtSumTotReset"><i class="fa fa-times-circle"></i></a> ' + lmtTitle + ' x ' + lmtQuantity + '<span class="price">' + lmtSum.toFixed(2) + '</span>')
+			formatItemPrice()
+		} else {
+			lmtSum = 0;
+			clearSummaryLine('lmtSumTot');
+		}
+
 		//Get the current data from Laptop High Performance elements
 		lhpIsChecked = $('#lhp').is(':checked');
 		lhpTitle = $('#lhpTitle').text();
@@ -263,22 +279,6 @@
 		} else {
 			lppSum = 0;
 			clearSummaryLine('lppSumTot');
-		}
-
-		//Get the current data from Server Standard Performance elements
-		sspIsChecked = $('#ssp').is(':checked');
-		sspTitle = $('#sspTitle').text();
-		sspPrice = $('#ssp').val();
-		sspQuantity = $('#sspQty').val();
-
-		//Update order summary with Server Standard Performance details
-		if (sspIsChecked && (sspQuantity != 0)){
-			sspSum = (sspPrice * 1) * (sspQuantity * 1);
-			$('#sspSumTot').html('<a href="javascript:;" id="sspSumTotReset"><i class="fa fa-times-circle"></i></a> ' + sspTitle + ' x ' + sspQuantity + '<span class="price">' + sspSum.toFixed(2) + '</span>')
-			formatItemPrice()
-		} else {
-			sspSum = 0;
-			clearSummaryLine('sspSumTot');
 		}
 
 		//Get the current data from Server Medium Performance elements
@@ -313,36 +313,36 @@
 			clearSummaryLine('shpSumTot');
 		}
 
-		//Get the current data from TEQLY Cloud Standard elements
-		tcsIsChecked = $('#tcs').is(':checked');
-		tcsTitle = $('#tcsTitle').text();
-		tcsPrice = $('#tcs').val();
-		tcsQuantity = $('#tcsQty').val();
+		//Get the current data from Tablet ohne 4G elements
+		tncIsChecked = $('#tnc').is(':checked');
+		tncTitle = $('#tncTitle').text();
+		tncPrice = $('#tnc').val();
+		tncQuantity = $('#tncQty').val();
 
-		//Update order summary with TEQLY Cloud Standard details
-		if (tcsIsChecked && (tcsQuantity != 0)){
-			tcsSum = (tcsPrice * 1) * (tcsQuantity * 1);
-			$('#tcsSumTot').html('<a href="javascript:;" id="tcsSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tcsTitle + ' x ' + tcsQuantity + '<span class="price">' + tcsSum.toFixed(2) + '</span>')
+		//Update order summary with Tablet ohne 4G details
+		if (tncIsChecked && (tncQuantity != 0)){
+			tncSum = (tncPrice * 1) * (tncQuantity * 1);
+			$('#tncSumTot').html('<a href="javascript:;" id="tncSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tncTitle + ' x ' + tncQuantity + '<span class="price">' + tncSum.toFixed(2) + '</span>')
 			formatItemPrice()
 		} else {
-			tcsSum = 0;
-			clearSummaryLine('tcsSumTot');
+			tncSum = 0;
+			clearSummaryLine('tncSumTot');
 		}
 
-		//Get the current data from TEQLY Cloud Premium elements
-		tcpIsChecked = $('#tcp').is(':checked');
-		tcpTitle = $('#tcpTitle').text();
-		tcpPrice = $('#tcp').val();
-		tcpQuantity = $('#tcpQty').val();
+		//Get the current data from Tablet mit 4G elements
+		twcIsChecked = $('#twc').is(':checked');
+		twcTitle = $('#twcTitle').text();
+		twcPrice = $('#twc').val();
+		twcQuantity = $('#twcQty').val();
 
-		//Update order summary with TEQLY Cloud Premium details
-		if (tcpIsChecked && (tcpQuantity != 0)){
-			tcpSum = (tcpPrice * 1) * (tcpQuantity * 1);
-			$('#tcpSumTot').html('<a href="javascript:;" id="tcpSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tcpTitle + ' x ' + tcpQuantity + '<span class="price">' + tcpSum.toFixed(2) + '</span>')
+		//Update order summary with Tablet mit 4G details
+		if (twcIsChecked && (twcQuantity != 0)){
+			twcSum = (twcPrice * 1) * (twcQuantity * 1);
+			$('#twcSumTot').html('<a href="javascript:;" id="twcSumTotReset"><i class="fa fa-times-circle"></i></a> ' + twcTitle + ' x ' + twcQuantity + '<span class="price">' + twcSum.toFixed(2) + '</span>')
 			formatItemPrice()
 		} else {
-			tcpSum = 0;
-			clearSummaryLine('tcpSumTot');
+			twcSum = 0;
+			clearSummaryLine('twcSumTot');
 		}
 
 		//Get the current data from M365 Apps elements
@@ -395,8 +395,8 @@
 
 
 		// Update total in order summary
-		total = dmpSum + dhpSum + lmpSum + lhpSum + lppSum+ sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
-		total2 = dmpSum + dhpSum + lmpSum + lhpSum + lppSum+ sspSum + smpSum +shpSum +tcsSum + tcpSum + mbsSum + mbaSum +mbpSum;
+		total = dmpSum + dhpSum + lmpSum + lmtSum +lhpSum +lppSum + smpSum +shpSum +tncSum + twcSum + mbsSum + mbaSum +mbpSum;
+		total2 = dmpSum + dhpSum + lmpSum + lmtSum + lhpSum + lppSum+ smpSum +shpSum +tncSum + twcSum + mbsSum + mbaSum +mbpSum;
 
 		$('#total').val(total.toFixed(2));
 		formatTotalPrice();
@@ -423,6 +423,11 @@
 		$('#lmpPriceHidden').val(lmpPrice);
 		$('#lmpSum').val(lmpSum);
 
+		// Update hidden fields with Laptop Medium Performance Touch details
+		$('#lmtTitleHidden').val(lmtTitle);
+		$('#lmtPriceHidden').val(lmtPrice);
+		$('#lmtSum').val(lmtSum);
+
 		// Update hidden fields with Laptop High Performance details
 		$('#lhpTitleHidden').val(lhpTitle);
 		$('#lhpPriceHidden').val(lhpPrice);
@@ -432,11 +437,6 @@
 		$('#lppTitleHidden').val(lppTitle);
 		$('#lppPriceHidden').val(lppPrice);
 		$('#lppSum').val(lppSum);
-
-		// Update hidden fields with Server Standard Performance details
-		$('#sspTitleHidden').val(sspTitle);
-		$('#sspPriceHidden').val(sspPrice);
-		$('#sspSum').val(sspSum);
 
 		// Update hidden fields with Server Medium Performance details
 		$('#smpTitleHidden').val(smpTitle);
@@ -448,15 +448,15 @@
 		$('#shpPriceHidden').val(shpPrice);
 		$('#shpSum').val(shpSum);
 
-		// Update hidden fields with TEQLY Cloud Standard details
-		$('#tcsTitleHidden').val(tcsTitle);
-		$('#tcsPriceHidden').val(tcsPrice);
-		$('#tcsSum').val(tcsSum);
+		// Update hidden fields with Tablet ohne 4G details
+		$('#tncTitleHidden').val(tncTitle);
+		$('#tncPriceHidden').val(tncPrice);
+		$('#tncSum').val(tncSum);
 
-		// Update hidden fields with TEQLY Cloud Premium details
-		$('#tcpTitleHidden').val(tcpTitle);
-		$('#tcpPriceHidden').val(tcpPrice);
-		$('#tcpSum').val(tcpSum);
+		// Update hidden fields with Tablet ohne 4G details
+		$('#twcTitleHidden').val(twcTitle);
+		$('#twcPriceHidden').val(twcPrice);
+		$('#twcSum').val(twcSum);
 
 		// Update hidden fields with M365 Apps details
 		$('#mbaTitleHidden').val(mbaTitle);
@@ -486,13 +486,13 @@
 			$('#dmpSumTot').html('');
 			$('#dhpSumTot').html('');
 			$('#lmpSumTot').html('');
+			$('#lmtSumTot').html('');
 			$('#lhpSumTot').html('');
 			$('#lppSumTot').html('');
-			$('#sspSumTot').html('');
 			$('#smpSumTot').html('');
 			$('#shpSumTot').html('');
-			$('#tcsSumTot').html('');
-			$('#tcpSumTot').html('');
+			$('#tncSumTot').html('');
+			$('#twcSumTot').html('');
 			$('#mbaSumTot').html('');
 			$('#mbsSumTot').html('');
 			$('#mbpSumTot').html('');
@@ -506,14 +506,14 @@
 		if (summaryLineName == 'lmpSumTot') {
 			$('#lmpSumTot').html('');
 		}
+		if (summaryLineName == 'lmtSumTot') {
+			$('#lmtSumTot').html('');
+		}
 		if (summaryLineName == 'lhpSumTot') {
 			$('#lhpSumTot').html('');
 		}
 		if (summaryLineName == 'lppSumTot') {
 			$('#lppSumTot').html('');
-		}
-		if (summaryLineName == 'sspSumTot') {
-			$('#sspSumTot').html('');
 		}
 		if (summaryLineName == 'smpSumTot') {
 			$('#smpSumTot').html('');
@@ -521,11 +521,11 @@
 		if (summaryLineName == 'shpSumTot') {
 			$('#shpSumTot').html('');
 		}
-		if (summaryLineName == 'tcsSumTot') {
-			$('#tcsSumTot').html('');
+		if (summaryLineName == 'tncSumTot') {
+			$('#tncSumTot').html('');
 		}
-		if (summaryLineName == 'tcpSumTot') {
-			$('#tcpSumTot').html('');
+		if (summaryLineName == 'twcSumTot') {
+			$('#twcSumTot').html('');
 		}
 		if (summaryLineName == 'mbaSumTot') {
 			$('#mbaSumTot').html('');
@@ -536,7 +536,7 @@
 		if (summaryLineName == 'mbpSumTot') {
 			$('#mbpSumTot').html('');
 		}
-			}
+	}
 
 	// Function to activate a given checkbox
 	function activateSingleOption(singleOptionName) {
@@ -553,16 +553,16 @@
 			$('#lmp').prop('checked', true);
 		}
 
+		if (singleOptionName == 'lmt'){
+			$('#lmt').prop('checked', true);
+		}
+
 		if (singleOptionName == 'lhp'){
 			$('#lhp').prop('checked', true);
 		}
 
 		if (singleOptionName == 'lpp'){
 			$('#lpp').prop('checked', true);
-		}
-
-		if (singleOptionName == 'ssp'){
-			$('#ssp').prop('checked', true);
 		}
 
 		if (singleOptionName == 'smp'){
@@ -573,12 +573,12 @@
 			$('#shp').prop('checked', true);
 		}
 
-		if (singleOptionName == 'tcs'){
-			$('#tcs').prop('checked', true);
+		if (singleOptionName == 'tnc'){
+			$('#tnc').prop('checked', true);
 		}
 
-		if (singleOptionName == 'tcp'){
-			$('#tcp').prop('checked', true);
+		if (singleOptionName == 'twc'){
+			$('#twc').prop('checked', true);
 		}
 
 		if (singleOptionName == 'mba'){
@@ -601,13 +601,13 @@
 			$('#dmp').prop('checked', false);
 			$('#dhp').prop('checked', false);
 			$('#lmp').prop('checked', false);
+			$('#lmt').prop('checked', false);
 			$('#lhp').prop('checked', false);
 			$('#lpp').prop('checked', false);
-			$('#ssp').prop('checked', false);
 			$('#smp').prop('checked', false);
 			$('#shp').prop('checked', false);
-			$('#tcs').prop('checked', false);
-			$('#tcp').prop('checked', false);
+			$('#tnc').prop('checked', false);
+			$('#twc').prop('checked', false);
 			$('#mba').prop('checked', false);
 			$('#mbs').prop('checked', false);
 			$('#mbp').prop('checked', false);
@@ -621,14 +621,14 @@
 		if (optionName == 'lmp') {
 			$('#lmp').prop('checked', false);
 		}
+		if (optionName == 'lmt') {
+			$('#lmt').prop('checked', false);
+		}
 		if (optionName == 'lhp') {
 			$('#lhp').prop('checked', false);
 		}
 		if (optionName == 'lpp') {
 			$('#lpp').prop('checked', false);
-		}
-		if (optionName == 'ssp') {
-			$('#ssp').prop('checked', false);
 		}
 		if (optionName == 'smp') {
 			$('#smp').prop('checked', false);
@@ -636,11 +636,11 @@
 		if (optionName == 'shp') {
 			$('#shp').prop('checked', false);
 		}
-		if (optionName == 'tcs') {
-			$('#tcs').prop('checked', false);
+		if (optionName == 'tnc') {
+			$('#tnc').prop('checked', false);
 		}
-		if (optionName == 'tcp') {
-			$('#tcp').prop('checked', false);
+		if (optionName == 'twc') {
+			$('#twc').prop('checked', false);
 		}
 		if (optionName == 'mba') {
 			$('#mba').prop('checked', false);
@@ -686,6 +686,13 @@
 		reValidateTotal();
 	});
 
+	// When Laptop Medium Performance Touch is clicked
+	$('#lmt').on('click', function () {
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
 	// When Laptop High Performance is clicked
 	$('#lhp').on('click', function () {
 		updateSummary();
@@ -695,13 +702,6 @@
 
 	// When Laptop Peripherie Paket is clicked
 	$('#lpp').on('click', function () {
-		updateSummary();
-		saveState();
-		reValidateTotal();
-	});
-
-	// When Server Standard Performance is clicked
-	$('#ssp').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -721,15 +721,15 @@
 		reValidateTotal();
 	});
 
-	// When TEQLY Cloud Standard is clicked
-	$('#tcs').on('click', function () {
+	// When Tablet ohne 4G is clicked
+	$('#tnc').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// When TEQLY Cloud Standard is clicked
-	$('#tcp').on('click', function () {
+	// When Tablet mit 4G is clicked
+	$('#twc').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -783,6 +783,15 @@
 		reValidateTotal();
 	});
 
+	// Delete Laptop Medium Performance Touch in summary list
+	$('#lmtSumTot').delegate('#lmtSumTotReset', 'click', function () {
+		clearSummaryLine('lmtSumTot');
+		resetCheckbox('lmt');
+		updateSummary();
+		saveState();
+		reValidateTotal();
+	});
+
 	// Delete Laptop High Performance in summary list
 	$('#lhpSumTot').delegate('#lhpSumTotReset', 'click', function () {
 		clearSummaryLine('lhpSumTot');
@@ -796,15 +805,6 @@
 	$('#lppSumTot').delegate('#lppSumTotReset', 'click', function () {
 		clearSummaryLine('lppSumTot');
 		resetCheckbox('lpp');
-		updateSummary();
-		saveState();
-		reValidateTotal();
-	});
-
-	// Delete Server Standard Performance in summary list
-	$('#sspSumTot').delegate('#sspSumTotReset', 'click', function () {
-		clearSummaryLine('sspSumTot');
-		resetCheckbox('ssp');
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -828,19 +828,19 @@
 		reValidateTotal();
 	});
 
-	// Delete TEQLY Cloud Standard  in summary list
-	$('#tcsSumTot').delegate('#tcsSumTotReset', 'click', function () {
-		clearSummaryLine('tcsSumTot');
-		resetCheckbox('tcs');
+	// Delete Tablet ohne 4G  in summary list
+	$('#tncSumTot').delegate('#tncSumTotReset', 'click', function () {
+		clearSummaryLine('tncSumTot');
+		resetCheckbox('tnc');
 		updateSummary();
 		saveState();
 		reValidateTotal();
 	});
 
-	// Delete TEQLY Cloud Premium in summary list
-	$('#tcpSumTot').delegate('#tcpSumTotReset', 'click', function () {
-		clearSummaryLine('tcpSumTot');
-		resetCheckbox('tcp');
+	// Delete Tablet mit 4G in summary list
+	$('#twcSumTot').delegate('#twcSumTotReset', 'click', function () {
+		clearSummaryLine('twcSumTot');
+		resetCheckbox('twc');
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -1056,6 +1056,64 @@
 	});
 
 	// =====================================================
+	//      RANGE SLIDER Laptop Medium Performance Touch
+	// =====================================================
+	var $rangeLMT = $('#lmtRangeSlider'),
+		$inputLMT = $('#lmtQty'),
+		instanceLMT,
+		lmtMin = 1,
+		lmtMax = 50;
+
+	$rangeLMT.ionRangeSlider({
+		skin: 'round',
+		type: 'single',
+		min: lmtMin,
+		max: lmtMax,
+		from: 1,
+		hide_min_max: true,
+		onStart: function (data) {
+			$inputLMT.prop('value', data.from);
+		},
+		onChange: function (data) {
+			$inputLMT.prop('value', data.from);
+			if (!lmtIsChecked) {
+				activateSingleOption('lmt');
+			}
+			updateSummary();
+			reValidateTotal();
+			saveState();
+		}
+	});
+
+	instanceLMT = $rangeLMT.data("ionRangeSlider");
+
+	$inputLMT.on('input', function () {
+		var val = $(this).prop('value');
+
+		// Validate
+		if (val < lmtMin) {
+			val = lmtMin;
+			$inputLMT.val(lmtMin);
+		} else if (val > lmtMax) {
+			val = lmtMax;
+			$inputLMT.val(lmtMax);
+		}
+
+		instanceLMT.update({
+			from: val
+		});
+
+		if (!lmtIsChecked) {
+			activateSingleOption('lmt');
+		}
+
+		updateSummary();
+		reValidateTotal();
+		saveState();
+
+	});
+
+	// =====================================================
 	//      RANGE SLIDER Laptop High Performance
 	// =====================================================
 	var $rangeLHP = $('#lhpRangeSlider'),
@@ -1163,64 +1221,6 @@
 
 		if (!lppIsChecked) {
 			activateSingleOption('lpp');
-		}
-
-		updateSummary();
-		reValidateTotal();
-		saveState();
-
-	});
-
-	// =====================================================
-	//      RANGE SLIDER Server Standard Performance
-	// =====================================================
-	var $rangeSSP = $('#sspRangeSlider'),
-		$inputSSP = $('#sspQty'),
-		instanceSSP,
-		sspMin = 1,
-		sspMax = 5;
-
-	$rangeSSP.ionRangeSlider({
-		skin: 'round',
-		type: 'single',
-		min: sspMin,
-		max: sspMax,
-		from: 1,
-		hide_min_max: true,
-		onStart: function (data) {
-			$inputSSP.prop('value', data.from);
-		},
-		onChange: function (data) {
-			$inputSSP.prop('value', data.from);
-			if (!sspIsChecked) {
-				activateSingleOption('ssp');
-			}
-			updateSummary();
-			reValidateTotal();
-			saveState();
-		}
-	});
-
-	instanceSSP = $rangeSSP.data("ionRangeSlider");
-
-	$inputSSP.on('input', function () {
-		var val = $(this).prop('value');
-
-		// Validate
-		if (val < sspMin) {
-			val = sspMin;
-			$inputSSP.val(sspMin);
-		} else if (val > sspMax) {
-			val = sspMax;
-			$inputSSP.val(sspMax);
-		}
-
-		instanceSSP.update({
-			from: val
-		});
-
-		if (!sspIsChecked) {
-			activateSingleOption('ssp');
 		}
 
 		updateSummary();
@@ -1346,28 +1346,28 @@
 	});
 
 	// =====================================================
-	//      RANGE SLIDER TEQLY Cloud Standard
+	//      RANGE SLIDER Tablet ohne 4G
 	// =====================================================
-	var $rangeTCS = $('#tcsRangeSlider'),
-		$inputTCS = $('#tcsQty'),
-		instanceTCS,
-		tcsMin = 1,
-		tcsMax = 5;
+	var $rangeTNC = $('#tncRangeSlider'),
+		$inputTNC = $('#tncQty'),
+		instanceTNC,
+		tncMin = 1,
+		tncMax = 5;
 
-	$rangeTCS.ionRangeSlider({
+	$rangeTNC.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: tcsMin,
-		max: tcsMax,
+		min: tncMin,
+		max: tncMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
-			$inputTCS.prop('value', data.from);
+			$inputTNC.prop('value', data.from);
 		},
 		onChange: function (data) {
-			$inputTCS.prop('value', data.from);
-			if (!tcsIsChecked) {
-				activateSingleOption('tcs');
+			$inputTNC.prop('value', data.from);
+			if (!tncIsChecked) {
+				activateSingleOption('tnc');
 			}
 			updateSummary();
 			reValidateTotal();
@@ -1375,26 +1375,26 @@
 		}
 	});
 
-	instanceTCS = $rangeTCS.data("ionRangeSlider");
+	instanceTNC = $rangeTNC.data("ionRangeSlider");
 
-	$inputTCS.on('input', function () {
+	$inputTNC.on('input', function () {
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < tcsMin) {
-			val = tcsMin;
-			$inputTCS.val(tcsMin);
-		} else if (val > tcsMax) {
-			val = tcsMax;
-			$inputTCS.val(tcsMax);
+		if (val < tncMin) {
+			val = tncMin;
+			$inputTNC.val(tncMin);
+		} else if (val > tncMax) {
+			val = tncMax;
+			$inputTNC.val(tncMax);
 		}
 
-		instanceTCS.update({
+		instanceTNC.update({
 			from: val
 		});
 
-		if (!tcsIsChecked) {
-			activateSingleOption('tcs');
+		if (!tncIsChecked) {
+			activateSingleOption('tnc');
 		}
 
 		updateSummary();
@@ -1404,28 +1404,28 @@
 	});
 
 	// =====================================================
-	//      RANGE SLIDER TEQLY Cloud Premium
+	//      RANGE SLIDER Tablet mit 4G
 	// =====================================================
-	var $rangeTCP = $('#tcpRangeSlider'),
-		$inputTCP = $('#tcpQty'),
-		instanceTCP,
-		tcpMin = 1,
-		tcpMax = 5;
+	var $rangeTWC = $('#twcRangeSlider'),
+		$inputTWC = $('#twcQty'),
+		instanceTWC,
+		twcMin = 1,
+		twcMax = 5;
 
-	$rangeTCP.ionRangeSlider({
+	$rangeTWC.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: tcpMin,
-		max: tcpMax,
+		min: twcMin,
+		max: twcMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
-			$inputTCP.prop('value', data.from);
+			$inputTWC.prop('value', data.from);
 		},
 		onChange: function (data) {
-			$inputTCP.prop('value', data.from);
-			if (!tcpIsChecked) {
-				activateSingleOption('tcp');
+			$inputTWC.prop('value', data.from);
+			if (!twcIsChecked) {
+				activateSingleOption('twc');
 			}
 			updateSummary();
 			reValidateTotal();
@@ -1433,26 +1433,26 @@
 		}
 	});
 
-	instanceTCP = $rangeTCP.data("ionRangeSlider");
+	instanceTWC = $rangeTWC.data("ionRangeSlider");
 
-	$inputTCP.on('input', function () {
+	$inputTWC.on('input', function () {
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < tcpMin) {
-			val = tcpMin;
-			$inputTCP.val(tcpMin);
-		} else if (val > tcpMax) {
-			val = tcpMax;
-			$inputTCP.val(tcpMax);
+		if (val < twcMin) {
+			val = twcMin;
+			$inputTWC.val(twcMin);
+		} else if (val > twcMax) {
+			val = twcMax;
+			$inputTWC.val(twcMax);
 		}
 
-		instanceTCP.update({
+		instanceTWC.update({
 			from: val
 		});
 
-		if (!tcpIsChecked) {
-			activateSingleOption('tcp');
+		if (!twcIsChecked) {
+			activateSingleOption('twc');
 		}
 
 		updateSummary();

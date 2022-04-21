@@ -76,7 +76,7 @@
                             <div class="portfolio-entry"
                                  style="background-image: url(images/products/hardware/desktops/teqly_pm_front.png);"></div>
                             <div class="portfolio-text">
-                                <h3>Desktop's</h3>
+                                <h3>Desktops</h3>
                                 <p style="color: #0b0b0b">Sie werden unsere leisen und kompakten Desktop Setups in Ihrem
                                     Arbeitsalltag nicht mehr missen wollen!</p>
                             </div>
@@ -89,7 +89,7 @@
                             <div class="portfolio-entry"
                                  style="background-image: url(images/products/hardware/laptops/teqly_axxiv_laptop_top.png);"></div>
                             <div class="portfolio-text">
-                                <h3>Laptop's</h3>
+                                <h3>Laptops</h3>
                                 <p style="color: #0b0b0b">Unsere 15.4" Laptops kommen standardmässig mit einem grossen
                                     Akku, so dass auch das Arbeiten von Unterwegs problemlos möglich ist.</p>
                             </div>

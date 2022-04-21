@@ -66,7 +66,7 @@ $errors = '';
 // Setup Seller Details
 $seller_name = 'EASIT.rent';
 $seller_address = 'c/o TEQLY GmbH' . '<br/>' . 'TECHNOPARK Aargau' . '<br/>' . 'Badenerstrasse 13' . '<br/>' . '5200 Brugg';
-$seller_notice = 'Alle Preise unverbindlich & exkl. Setup-/Konfigurations-/Zusatzkosten';
+$seller_notice = 'Alle Preise unverbindlich, inkl. MwSt. & exkl. Setup-/Konfigurations-/Zusatzkosten';
 
 /* Validate User Inputs
 ==================================== */
@@ -361,7 +361,7 @@ if (!$errors) {
     ==================================== */
 
     // Header Settings
-    $order->setLogo('phpinvoice/templates/purple/teqly_rental_logo.png');
+    $order->setLogo('phpinvoice/templates/purple/easit_logo.png');
     $order->setReference('ANFRAGE-' . $timestamp);
     $order->setDate(date('d, M, Y', time()));
 
