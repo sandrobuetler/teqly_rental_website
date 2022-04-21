@@ -85,7 +85,8 @@
                 </div>
                 <!-- Form -->
                 <!-- Form -->
-                <form method="POST" id="orderForm" name="orderForm" action="php/send_order_2_attached_pdf.php" autocomplete="chrome-off">
+                <form method="POST" id="orderForm" name="orderForm" action="php/send_order_2_attached_pdf.php" autocomplete="off">
+                    <input autocomplete="false" name="hidden" type="text" style="display:none;">
                     <div class="row">
                         <div class="col-lg-8" id="mainContent">
                             <!-- Calculator Area -->
