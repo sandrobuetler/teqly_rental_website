@@ -16,7 +16,7 @@
     <meta name="author" content="TEQLY GmbH"/>
 
     <!-- Favicon -->
-    <link href="images/teqly_favicon.png" rel="shortcut icon">
+    <link href="images/easit_favicon.png" rel="shortcut icon">
 
     <!-- Google Fonts - Poppins, Karla -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">

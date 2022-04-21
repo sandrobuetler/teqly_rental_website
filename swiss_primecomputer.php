@@ -14,7 +14,7 @@
     <meta name="author" content="TEQLY GmbH"/>
 
     <!-- Favicon -->
-    <link href="images/teqly_favicon.png" rel="shortcut icon">
+    <link href="images/easit_favicon.png" rel="shortcut icon">
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content=""/>
