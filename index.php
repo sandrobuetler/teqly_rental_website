@@ -2,9 +2,7 @@
 <html>
 <html lang="de">
 <head>
-    <?php
-    include('shared/cookie.php')
-    ?>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EASIT</title>
@@ -51,7 +49,9 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
 
-
+    <?php
+    include('shared/cookie.php')
+    ?>
 </head>
 <body>
 
