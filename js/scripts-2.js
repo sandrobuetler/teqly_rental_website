@@ -1372,6 +1372,7 @@
 			updateSummary();
 			reValidateTotal();
 			saveState();
+			console.log('InputTNC: '+$inputTNC)
 		}
 	});
 

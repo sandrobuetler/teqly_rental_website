@@ -358,7 +358,7 @@
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <input type="hidden" id="tncTitleHidden" name="tncTitle"
-                                           value="Tablet ohne 4G X4"/>
+                                           value="Tablet ohne 4G"/>
                                     <input type="hidden" id="tncPriceHidden" name="tncPrice" value="0"/>
                                     <input type="checkbox" id="tnc" class="inp-cbx" name="tnc" value="799.00"/>
                                     <label class="cbx" for="tnc">
@@ -367,7 +367,7 @@
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tncTitle">Tablet x1 <strong>ohne 4G x2</strong> | 799.- x3</span>
+                                        <span id="tncTitle">Tablet <strong>ohne 4G</strong> | 799.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
@@ -634,6 +634,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <button type="submit" name="submit" class="btn-form-func">
@@ -642,6 +643,7 @@
                                         </button>
                                     </div>
                                 </div>
+                                -->
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <button type="submit" name="submit" class="btn-form-func">
