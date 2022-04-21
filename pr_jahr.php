@@ -85,7 +85,7 @@
                 </div>
                 <!-- Form -->
                 <!-- Form -->
-                <form method="POST" id="orderForm" name="orderForm" action="php/send_order_2_attached_pdf.php">
+                <form method="POST" id="orderForm" name="orderForm" action="php/send_order_2_attached_pdf.php" autocomplete="off">
                     <div class="row">
                         <div class="col-lg-8" id="mainContent">
                             <!-- Calculator Area -->
