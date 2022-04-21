@@ -232,10 +232,10 @@ $errors .= sanitizePostTitle('shpTitle', 'Fehler beim Namen! (SHP)');
 $errors .= validatePostValue('shpPrice', 'Fehler beim Preis! (SHP)');
 $errors .= validatePostValue('shpGroupQty', 'Fehler bei der Anzahl! (SHP)');
 
-// TNC
-$errors .= sanitizePostTitle('tncTitle', 'Fehler beim Namen! (TNC)');
-$errors .= validatePostValue('tncPrice', 'Fehler beim Preis! (TNC)');
-$errors .= validatePostValue('tncGroupQty', 'Fehler bei der Anzahl! (TNC)');
+// TNOC
+$errors .= sanitizePostTitle('tnocTitle', 'Fehler beim Namen! (TNOC)');
+$errors .= validatePostValue('tnocPrice', 'Fehler beim Preis! (TNOC)');
+$errors .= validatePostValue('tnocGroupQty', 'Fehler bei der Anzahl! (TNOC)');
 
 // TWC
 $errors .= sanitizePostTitle('twcTitle', 'Fehler beim Namen! (TWC)');
@@ -327,11 +327,11 @@ if (!$errors) {
     $selected_shp_price = $_POST['shpPrice'];
     $shp_qty = $_POST['shpGroupQty'];
 
-    // TNC
-    $selected_tnc = $_POST['tnc'];
-    $selected_tnc_title = $_POST['tncTitle'];
-    $selected_tnc_price = $_POST['tncPrice'];
-    $tnc_qty = $_POST['tncGroupQty'];
+    // TNOC
+    $selected_tnoc = $_POST['tnoc'];
+    $selected_tnoc_title = $_POST['tnocTitle'];
+    $selected_tnoc_price = $_POST['tnocPrice'];
+    $tnoc_qty = $_POST['tnocGroupQty'];
 
     // TWC
     $selected_twc = $_POST['twc'];
@@ -393,8 +393,8 @@ if (!$errors) {
     if (isset($selected_shp)) {
         $order->addItem($selected_shp_title, 'Server High Performance', $shp_qty, "7.7%", $selected_shp_price, false);
     }
-    if (isset($selected_tnc)) {
-        $order->addItem($selected_tnc_title, 'Tablet ohne 4G', $tnc_qty, "7.7%", $selected_tnc_price, false);
+    if (isset($selected_tnoc)) {
+        $order->addItem($selected_tnoc_title, 'Tablet ohne 4G', $tnoc_qty, "7.7%", $selected_tnoc_price, false);
     }
     if (isset($selected_twc)) {
         $order->addItem($selected_twc_title, 'Tablet mit 4G', $twc_qty, "7.7%", $selected_twc_price, false);

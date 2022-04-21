@@ -149,11 +149,11 @@
 	var shpQuantity = 0;
 	var shpSum = 0;
 
-	var tncIsChecked = false;
-	var tncTitle = '';
-	var tncPrice = 0;
-	var tncQuantity = 0;
-	var tncSum = 0;
+	var tnocIsChecked = false;
+	var tnocTitle = '';
+	var tnocPrice = 0;
+	var tnocQuantity = 0;
+	var tnocSum = 0;
 
 	var twcIsChecked = false;
 	var twcTitle = '';
@@ -314,19 +314,19 @@
 		}
 
 		//Get the current data from Tablet ohne 4G elements
-		tncIsChecked = $('#tnc').is(':checked');
-		tncTitle = $('#tncTitle').text();
-		tncPrice = $('#tnc').val();
-		tncQuantity = $('#tncQty').val();
+		tnocIsChecked = $('#tnoc').is(':checked');
+		tnocTitle = $('#tnocTitle').text();
+		tnocPrice = $('#tnoc').val();
+		tnocQuantity = $('#tnocQty').val();
 
 		//Update order summary with Tablet ohne 4G details
-		if (tncIsChecked && (tncQuantity != 0)){
-			tncSum = (tncPrice * 1) * (tncQuantity * 1);
-			$('#tncSumTot').html('<a href="javascript:;" id="tncSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tncTitle + ' x ' + tncQuantity + '<span class="price">' + tncSum.toFixed(2) + '</span>')
+		if (tnocIsChecked && (tnocQuantity != 0)){
+			tnocSum = (tnocPrice * 1) * (tnocQuantity * 1);
+			$('#tnocSumTot').html('<a href="javascript:;" id="tnocSumTotReset"><i class="fa fa-times-circle"></i></a> ' + tnocTitle + ' x ' + tnocQuantity + '<span class="price">' + tnocSum.toFixed(2) + '</span>')
 			formatItemPrice()
 		} else {
-			tncSum = 0;
-			clearSummaryLine('tncSumTot');
+			tnocSum = 0;
+			clearSummaryLine('tnocSumTot');
 		}
 
 		//Get the current data from Tablet mit 4G elements
@@ -395,8 +395,8 @@
 
 
 		// Update total in order summary
-		total = dmpSum + dhpSum + lmpSum + lmtSum +lhpSum +lppSum + smpSum +shpSum +tncSum + twcSum + mbsSum + mbaSum +mbpSum;
-		total2 = dmpSum + dhpSum + lmpSum + lmtSum + lhpSum + lppSum+ smpSum +shpSum +tncSum + twcSum + mbsSum + mbaSum +mbpSum;
+		total = dmpSum + dhpSum + lmpSum + lmtSum +lhpSum +lppSum + smpSum +shpSum +tnocSum + twcSum + mbsSum + mbaSum +mbpSum;
+		total2 = dmpSum + dhpSum + lmpSum + lmtSum + lhpSum + lppSum+ smpSum +shpSum +tnocSum + twcSum + mbsSum + mbaSum +mbpSum;
 
 		$('#total').val(total.toFixed(2));
 		formatTotalPrice();
@@ -449,9 +449,9 @@
 		$('#shpSum').val(shpSum);
 
 		// Update hidden fields with Tablet ohne 4G details
-		$('#tncTitleHidden').val(tncTitle);
-		$('#tncPriceHidden').val(tncPrice);
-		$('#tncSum').val(tncSum);
+		$('#tnocTitleHidden').val(tnocTitle);
+		$('#tnocPriceHidden').val(tnocPrice);
+		$('#tnocSum').val(tnocSum);
 
 		// Update hidden fields with Tablet ohne 4G details
 		$('#twcTitleHidden').val(twcTitle);
@@ -491,7 +491,7 @@
 			$('#lppSumTot').html('');
 			$('#smpSumTot').html('');
 			$('#shpSumTot').html('');
-			$('#tncSumTot').html('');
+			$('#tnocSumTot').html('');
 			$('#twcSumTot').html('');
 			$('#mbaSumTot').html('');
 			$('#mbsSumTot').html('');
@@ -521,8 +521,8 @@
 		if (summaryLineName == 'shpSumTot') {
 			$('#shpSumTot').html('');
 		}
-		if (summaryLineName == 'tncSumTot') {
-			$('#tncSumTot').html('');
+		if (summaryLineName == 'tnocSumTot') {
+			$('#tnocSumTot').html('');
 		}
 		if (summaryLineName == 'twcSumTot') {
 			$('#twcSumTot').html('');
@@ -573,8 +573,8 @@
 			$('#shp').prop('checked', true);
 		}
 
-		if (singleOptionName == 'tnc'){
-			$('#tnc').prop('checked', true);
+		if (singleOptionName == 'tnoc'){
+			$('#tnoc').prop('checked', true);
 		}
 
 		if (singleOptionName == 'twc'){
@@ -606,7 +606,7 @@
 			$('#lpp').prop('checked', false);
 			$('#smp').prop('checked', false);
 			$('#shp').prop('checked', false);
-			$('#tnc').prop('checked', false);
+			$('#tnoc').prop('checked', false);
 			$('#twc').prop('checked', false);
 			$('#mba').prop('checked', false);
 			$('#mbs').prop('checked', false);
@@ -636,8 +636,8 @@
 		if (optionName == 'shp') {
 			$('#shp').prop('checked', false);
 		}
-		if (optionName == 'tnc') {
-			$('#tnc').prop('checked', false);
+		if (optionName == 'tnoc') {
+			$('#tnoc').prop('checked', false);
 		}
 		if (optionName == 'twc') {
 			$('#twc').prop('checked', false);
@@ -722,7 +722,7 @@
 	});
 
 	// When Tablet ohne 4G is clicked
-	$('#tnc').on('click', function () {
+	$('#tnoc').on('click', function () {
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -829,9 +829,9 @@
 	});
 
 	// Delete Tablet ohne 4G  in summary list
-	$('#tncSumTot').delegate('#tncSumTotReset', 'click', function () {
-		clearSummaryLine('tncSumTot');
-		resetCheckbox('tnc');
+	$('#tnocSumTot').delegate('#tnocSumTotReset', 'click', function () {
+		clearSummaryLine('tnocSumTot');
+		resetCheckbox('tnoc');
 		updateSummary();
 		saveState();
 		reValidateTotal();
@@ -1348,26 +1348,26 @@
 	// =====================================================
 	//      RANGE SLIDER Tablet ohne 4G
 	// =====================================================
-	var $rangeTNC = $('#tncRangeSlider'),
-		$inputTNC = $('#tncQty'),
-		instanceTNC,
-		tncMin = 1,
-		tncMax = 50;
+	var $rangeTNOC = $('#tnocRangeSlider'),
+		$inputTNOC = $('#tnocQty'),
+		instanceTNOC,
+		tnocMin = 1,
+		tnocMax = 50;
 
-	$rangeTNC.ionRangeSlider({
+	$rangeTNOC.ionRangeSlider({
 		skin: 'round',
 		type: 'single',
-		min: tncMin,
-		max: tncMax,
+		min: tnocMin,
+		max: tnocMax,
 		from: 1,
 		hide_min_max: true,
 		onStart: function (data) {
-			$inputTNC.prop('value', data.from);
+			$inputTNOC.prop('value', data.from);
 		},
 		onChange: function (data) {
-			$inputTNC.prop('value', data.from);
-			if (!tncIsChecked) {
-				activateSingleOption('tnc');
+			$inputTNOC.prop('value', data.from);
+			if (!tnocIsChecked) {
+				activateSingleOption('tnoc');
 			}
 			updateSummary();
 			reValidateTotal();
@@ -1375,26 +1375,26 @@
 		}
 	});
 
-	instanceTNC = $rangeTNC.data("ionRangeSlider");
+	instanceTNOC = $rangeTNOC.data("ionRangeSlider");
 
-	$inputTNC.on('input', function () {
+	$inputTNOC.on('input', function () {
 		var val = $(this).prop('value');
 
 		// Validate
-		if (val < tncMin) {
-			val = tncMin;
-			$inputTNC.val(tncMin);
-		} else if (val > tncMax) {
-			val = tncMax;
-			$inputTNC.val(tncMax);
+		if (val < tnocMin) {
+			val = tnocMin;
+			$inputTNOC.val(tnocMin);
+		} else if (val > tnocMax) {
+			val = tnocMax;
+			$inputTNOC.val(tnocMax);
 		}
 
-		instanceTNC.update({
+		instanceTNOC.update({
 			from: val
 		});
 
-		if (!tncIsChecked) {
-			activateSingleOption('tnc');
+		if (!tnocIsChecked) {
+			activateSingleOption('tnoc');
 		}
 
 		updateSummary();

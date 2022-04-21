@@ -359,27 +359,27 @@
                                     </p>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <input type="hidden" id="tcsTitleHidden" name="tncTitle"
+                                    <input type="hidden" id="tnocTitleHidden" name="tnocTitle"
                                            value="Tablet ohne 4G"/>
-                                    <input type="hidden" id="tncPriceHidden" name="tncPrice" value="0"/>
-                                    <input type="checkbox" id="tnc" class="inp-cbx" name="tnc" value="79.00"/>
-                                    <label class="cbx" for="tnc">
+                                    <input type="hidden" id="tnocPriceHidden" name="tnocPrice" value="0"/>
+                                    <input type="checkbox" id="tnoc" class="inp-cbx" name="tnoc" value="79.00"/>
+                                    <label class="cbx" for="tnoc">
 											<span>
 												<svg width="12px" height="10px" viewbox="0 0 12 10">
 													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
 												</svg>
 											</span>
-                                        <span id="tncTitle">Tablet <strong>ohne 4G</strong> | 79.-</span>
+                                        <span id="tnocTitle">Tablet <strong>ohne 4G</strong> | 79.-</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="row">
                                         <div class="col-8">
-                                            <input id="tncRangeSlider" type="text" value=""/>
+                                            <input id="tnocRangeSlider" type="text" value=""/>
                                         </div>
                                         <div class="col-4">
-                                            <input id="tncQty" type="text" class="qty-input form-control"
-                                                   name="tncGroupQty"
+                                            <input id="tnocQty" type="text" class="qty-input form-control"
+                                                   name="tnocGroupQty"
                                                    value="0"/>
                                         </div>
                                     </div>
@@ -576,7 +576,7 @@
                                         <input type="hidden" id="lppSum" name="lppSumHidden" value="0"/>
                                         <input type="hidden" id="smpSum" name="smpSumHidden" value="0"/>
                                         <input type="hidden" id="shpSum" name="shpSumHidden" value="0"/>
-                                        <input type="hidden" id="tncSum" name="tncSumHidden" value="0"/>
+                                        <input type="hidden" id="tnocSum" name="tnocSumHidden" value="0"/>
                                         <input type="hidden" id="twcSum" name="twcSumHidden" value="0"/>
                                         <input type="hidden" id="mbaSum" name="mbaSumHidden" value="0"/>
                                         <input type="hidden" id="mbsSum" name="mbsSumHidden" value="0"/>
@@ -592,7 +592,7 @@
                                             <li id="lppSumTot"></li>
                                             <li id="smpSumTot"></li>
                                             <li id="shpSumTot"></li>
-                                            <li id="tncSumTot"></li>
+                                            <li id="tnocSumTot"></li>
                                             <li id="twcSumTot"></li>
                                             <li id="mbaSumTot"></li>
                                             <li id="mbsSumTot"></li>
