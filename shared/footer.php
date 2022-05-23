@@ -24,9 +24,9 @@
                 <ul class="fh5co-footer-links">
                     <li><a href="https://teqly.ch/">Website</a></li>
                     <li><a href="https://blog.teqly.ch">Blog</a></li>
-                    <li><a href="https://teqly.ch/services.html">Services</a></li>
-                    <li><a href="https://teqly.ch/produkte.html">Produkte</a></li>
-                    <li><a href="https://support.teqly.app">Support Plattform</a></li>
+                    <li><a href="https://teqly.ch/de/tq_products.php">Dienstleistungen</a></li>
+                    <li><a href="https://teqly.ch/de/tq_app_plattform.php">App-Plattform</a></li>
+                    <li><a href="https://teqly.ch/de/tq_about.php">Über uns</a></li>
                 </ul>
             </div>
 
