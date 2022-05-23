@@ -10,6 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Entdecken Sie unsere Laptop Standardkonfigurationen mit Produkten von axxiv."/>
     <meta name="keywords"
+          content="computer mieten, computervermietung, miete computer, pc mieten, pc vermieten, laptop mieten, laptopmiete, server mieten, serververmietung,
+ hardware mieten, hardwaremiete, arbeitsstation mieten, softwaremiete, softwarevermietung, netzwerk mieten, netzwerkvermietung, desktop pc mieten,
+ rental computer, rental pc, rental it, it rental, computer infrastruktur mieten, server rental, rental service, support service, wartung, netzwerkwartung,
+ computerwartung, serverwartung, hardwarewartung, wartung computer, wartung Server, wartung netzwerk, wartung it infrastruktur, software as a service, infrastructure as a service,
+ system management, it flexibilität, it service, computer mieten zürich, computer mieten aargau, computer mieten brugg, computer mieten schweiz, it rental schweiz,
+ schweiz computer mieten, schweiz rental computer, it infrastruktur mieten, zürich computervermietung, support service schweiz, support service zürich, support service aargau, netzwerk einrichten, aufbau netzwerk,
+ it system rental, it system vermietung, it system mieten, support service mieten, rental support service, laptop support"/>
           content="IT-Partner, Iaas, Hardware mieten, Hardware, Software, mieten, rental, Support, IT-service"/>
     <meta name="author" content="TEQLY GmbH"/>
 
